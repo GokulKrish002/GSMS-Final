@@ -220,6 +220,9 @@
   <data name="Books" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Books.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="1242850" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1242850.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="library icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\library icons.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -229,7 +232,7 @@
   <data name="1251619" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1251619.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1242850" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1242850.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="dashboard" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\dashboard.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

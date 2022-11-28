@@ -47,7 +47,7 @@ namespace GSMS
 
         private void close_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void iconButton1_Click(object sender, EventArgs e)
