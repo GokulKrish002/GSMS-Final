@@ -55,60 +55,50 @@ namespace GSMS
 
         private void btn_Insert_Click(object sender, EventArgs e)
         {
-
-
-
-            if (string.IsNullOrEmpty(txtname.Text))
+            try
             {
-                txtname.Focus();
-                errorProvider1.SetError(txtname, "Please Enter User Name");
-            }
-            else
-            {
-                try
+                SqlConnection connection = StudentCon.connect();
+                SqlCommand cmd = new SqlCommand("Student_tbl_insert", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlParameter param1 = new SqlParameter("@Name", SqlDbType.VarChar);
+                cmd.Parameters.Add(param1).Value = txt_Name.Text;
+                SqlParameter param2 = new SqlParameter("@Roll", SqlDbType.Int);
+                cmd.Parameters.Add(param2).Value = Txt_RollNo.Text;
+                SqlParameter param3 = new SqlParameter("@Dob", SqlDbType.Date);
+                cmd.Parameters.Add(param3).Value = Txt_Date.Text;
+                SqlParameter param4 = new SqlParameter("@Gender", SqlDbType.VarChar);
+                cmd.Parameters.Add(param4).Value = Txt_Gender.Text;
+                SqlParameter param9 = new SqlParameter("@Mobile", SqlDbType.Int);
+                cmd.Parameters.Add(param9).Value = txt_Mobile.Text;
+                SqlParameter param5 = new SqlParameter("@Standard", SqlDbType.VarChar);
+                cmd.Parameters.Add(param5).Value = Combo_Standrad.Text;
+                SqlParameter param6 = new SqlParameter("@Section", SqlDbType.VarChar);
+                cmd.Parameters.Add(param6).Value = Combo_Section.Text;
+                SqlParameter param7 = new SqlParameter("@Address", SqlDbType.VarChar);
+                cmd.Parameters.Add(param7).Value = Txt_Address.Text;
+                SqlParameter param8 = new SqlParameter("@Blood_Group", SqlDbType.VarChar);
+                cmd.Parameters.Add(param8).Value = Combo_BloodGrp.Text;
+                int i = cmd.ExecuteNonQuery();
+                connection.Close();
+                if (i != 0)
                 {
-                    SqlConnection connection = StudentCon.connect();
-                    SqlCommand cmd = new SqlCommand("Student_tbl_insert", connection);
-                    cmd.CommandType = CommandType.StoredProcedure;
-                    SqlParameter param1 = new SqlParameter("@Name", SqlDbType.VarChar);
-                    cmd.Parameters.Add(param1).Value = txt_Name.Text;
-                    SqlParameter param2 = new SqlParameter("@Roll", SqlDbType.Int);
-                    cmd.Parameters.Add(param2).Value = Txt_RollNo.Text;
-                    SqlParameter param3 = new SqlParameter("@Dob", SqlDbType.Date);
-                    cmd.Parameters.Add(param3).Value = Txt_Date.Text;
-                    SqlParameter param4 = new SqlParameter("@Gender", SqlDbType.VarChar);
-                    cmd.Parameters.Add(param4).Value = Txt_Gender.Text;
-                    SqlParameter param9 = new SqlParameter("@Mobile", SqlDbType.Int);
-                    cmd.Parameters.Add(param9).Value = txt_Mobile.Text;
-                    SqlParameter param5 = new SqlParameter("@Standard", SqlDbType.VarChar);
-                    cmd.Parameters.Add(param5).Value = Combo_Standrad.Text;
-                    SqlParameter param6 = new SqlParameter("@Section", SqlDbType.VarChar);
-                    cmd.Parameters.Add(param6).Value = Combo_Section.Text;
-                    SqlParameter param7 = new SqlParameter("@Address", SqlDbType.VarChar);
-                    cmd.Parameters.Add(param7).Value = Txt_Address.Text;
-                    SqlParameter param8 = new SqlParameter("@Blood_Group", SqlDbType.VarChar);
-                    cmd.Parameters.Add(param8).Value = Combo_BloodGrp.Text;
-                    int i = cmd.ExecuteNonQuery();
-                    connection.Close();
-                    if (i != 0)
-                    {
-                        MessageBox.Show("Inserted successfully");
-                    }
-                    else
-                    {
-                        MessageBox.Show("There is an problem..");
-                    }
+                    MessageBox.Show("Inserted successfully");
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show(ex.Message);
-                }
-                finally
-                {
-                    RefreshTbl();
-                    ClearTextBox();
+                    MessageBox.Show("There is an problem..");
                 }
             }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                RefreshTbl();
+                ClearTextBox();
+            }
+         
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)

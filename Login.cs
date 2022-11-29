@@ -19,39 +19,65 @@ namespace GSMS
             InitializeComponent();
         }
         DBConnection LoginCon = new DBConnection();
+        Validate validation = new Validate();
         private void Btn_Submit_Click(object sender, EventArgs e)
         {
-            Index obj = new Index();
-            obj.Show();
-            this.Hide();
+            bool input1, input2;
 
-            /*try
-            {
-                SqlConnection connection = LoginCon.connect();
-                SqlCommand cmd = new SqlCommand("Staff_tbl_Search", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Email", SqlDbType.VarChar);
-                cmd.Parameters.Add(param1).Value = txt_Email.Text;
-                SqlParameter param2 = new SqlParameter("@phone", SqlDbType.Int);
-                cmd.Parameters.Add(param2).Value = txt_Password.Text;
-                int usercount = (Int32)cmd.ExecuteScalar();
-                connection.Close();
-                if (usercount == 1)
+            input1 = validation.ValidateEmail(txt_Email.Text);
+            input2 = validation.ValidateNumber(txt_Password.Text);
+
+                if (string.IsNullOrEmpty(txt_Email.Text))
                 {
-                    MessageBox.Show("Welcome");
-                    Index obj = new Index();
+
+                    txt_Email.Focus();
+                    MessageBox.Show("Please Enter Email ID");
+                }
+                else if(string.IsNullOrEmpty(txt_Password.Text))
+                {
+                    txt_Email.Focus();
+                    MessageBox.Show("Please Enter password");
+                }
+                else if(input1 == false && input2 == false)
+                {
+                    txt_Email.Focus();
+                    MessageBox.Show("Please Enter valid email/ password");
+            }
+            else
+            {
+                try
+                {
+                    SqlConnection connection = LoginCon.connect();
+                    SqlCommand cmd = new SqlCommand("Staff_tbl_Search", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlParameter param1 = new SqlParameter("@Email", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param1).Value = txt_Email.Text;
+                    SqlParameter param2 = new SqlParameter("@phone", SqlDbType.Int);
+                    cmd.Parameters.Add(param2).Value = txt_Password.Text;
+                    int usercount = (Int32)cmd.ExecuteScalar();
+                    connection.Close();
+                    if (usercount == 1)
+                    {
+                        MessageBox.Show("Welcome");
+                        Index obj = new Index();
+                        obj.Show();
+                        this.Hide();
+                    }
+                    else
+                    {
+                        MessageBox.Show("There is an server error.! try again Later");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    Login obj = new Login();
                     obj.Show();
                     this.Hide();
                 }
-                else
-                {
-                    MessageBox.Show("Enter your valid EmailId and phone number");
-                }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }*/
+
         }
     }
 }
+
