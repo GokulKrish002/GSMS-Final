@@ -12,12 +12,37 @@ using GSMS.App_Code;
 
 namespace GSMS
 {
-    public partial class Student : Form
+    public partial class Student_Form : Form
     {
         DBConnection StudentCon = new DBConnection();
-        public Student()
+        public Student_Form()
         {
             InitializeComponent();
+        }
+
+        public void RefreshTbl()
+        {
+            SqlConnection connection = StudentCon.connect();
+            SqlCommand cmd = new SqlCommand("Student_tbl_View", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter d = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+            Student_GridView.DataSource = dt;
+            StudentCon.disconnect();
+            connection.Dispose();
+        }
+        public void ClearTextBox()
+        {
+            txt_Blood_Group.Text = "";
+            txt_Mobile.Text = "";
+            txt_Name.Text = "";
+            Txt_Address.Text = "";
+            Txt_Date.Text = "";
+            Txt_Gender.Text = "";
+            Txt_RollNo.Text = "";
+            Txt_Section.Text = "";
+            Txt_Standrad.Text = "";
         }
 
         private void btn_Insert_Click(object sender, EventArgs e)
@@ -37,29 +62,25 @@ namespace GSMS
                 cmd.Parameters.Add(param4).Value = Txt_Gender.Text;
                 SqlParameter param9 = new SqlParameter("@Mobile", SqlDbType.Int);
                 cmd.Parameters.Add(param9).Value = txt_Mobile.Text;
-                SqlParameter param5 = new SqlParameter("@Standard", SqlDbType.Int);
-                cmd.Parameters.Add(param5).Value = Txt_Standrad.Text;
-                SqlParameter param6 = new SqlParameter("@Section", SqlDbType.Int);
-                cmd.Parameters.Add(param6).Value = Txt_Section.Text;
+                SqlParameter param5 = new SqlParameter("@Standard", SqlDbType.VarChar);
+                cmd.Parameters.Add(param5).Value = Combo_Standrad.Text;
+                SqlParameter param6 = new SqlParameter("@Section", SqlDbType.VarChar);
+                cmd.Parameters.Add(param6).Value = Combo_Section.Text;
                 SqlParameter param7 = new SqlParameter("@Address", SqlDbType.VarChar);
                 cmd.Parameters.Add(param7).Value = Txt_Address.Text;
                 SqlParameter param8 = new SqlParameter("@Blood_Group", SqlDbType.VarChar);
                 cmd.Parameters.Add(param8).Value = txt_Blood_Group.Text;
                 int i = cmd.ExecuteNonQuery();
+                StudentCon.disconnect();
+                connection.Close();
                 if (i != 0)
                 {
-                    MessageBox.Show("Success");
+                    MessageBox.Show("Inserted successfully");
                 }
                 else
                 {
-                    MessageBox.Show("Success");
+                    MessageBox.Show("There is an problem..");
                 }
-                SqlCommand comme = new SqlCommand("select * from Student_tbl", connection);
-                SqlDataAdapter d = new SqlDataAdapter(comme);
-                DataTable dt = new DataTable();
-                d.Fill(dt);
-                Student_GridView.DataSource = dt;
-                connection.Close();
             }
             catch(Exception ex)
             {
@@ -67,15 +88,8 @@ namespace GSMS
             }
             finally
             {
-                txt_Blood_Group.Text = "";
-                txt_Mobile.Text = "";
-                txt_Name.Text = "";
-                Txt_Address.Text= "";
-                Txt_Date.Text = "";
-                Txt_Gender.Text = "";
-                Txt_RollNo.Text = "";
-                Txt_Section.Text = "";
-                Txt_Standrad.Text = "";
+                RefreshTbl();
+                ClearTextBox();
             }
         }
 
@@ -186,39 +200,7 @@ namespace GSMS
         private void btn_Search_Click(object sender, EventArgs e)
         {
             SqlConnection connection = StudentCon.connect();
-            try
-            {
-                SqlCommand cmd = new SqlCommand("Student_tbl_Search", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Student_Roll", SqlDbType.Int);
-                cmd.Parameters.Add(param1).Value = Txt_RollNo.Text;
-                int i = cmd.ExecuteNonQuery();
-                if (i != 0)
-                {
-                    MessageBox.Show("Success");
-                }
-                else
-                {
-                    MessageBox.Show("Failure");
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                txt_Blood_Group.Text = "";
-                txt_Mobile.Text = "";
-                txt_Name.Text = "";
-                Txt_Address.Text = "";
-                Txt_Date.Text = "";
-                Txt_Gender.Text = "";
-                Txt_RollNo.Text = "";
-                Txt_Section.Text = "";
-                Txt_Standrad.Text = "";
-            }
-            SqlCommand comme = new SqlCommand("select * from Student_tbl",connection);
+            SqlCommand comme = new SqlCommand("Student_tbl_View", connection);
             SqlDataAdapter d = new SqlDataAdapter(comme);
             DataTable dt = new DataTable();
             d.Fill(dt);
@@ -259,6 +241,7 @@ namespace GSMS
                 Student_Marklist obj = new Student_Marklist();
                 obj.Show();
                 this.Hide();
+                GC.Collect();
             }
             catch (Exception ex)
             {
@@ -269,22 +252,10 @@ namespace GSMS
         {
             try
             {
-                Student obj = new Student();
+                Student_Form obj = new Student_Form();
                 obj.Show();
                 this.Hide();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void Home_btn_Click_1(object sender, EventArgs e)
-        {
-            try
-            {
-                Index anker = new Index();
-                anker.Show();
-                this.Hide();
+                GC.Collect();
             }
             catch (Exception ex)
             {
@@ -299,6 +270,7 @@ namespace GSMS
                 Library anker = new Library();
                 anker.Show();
                 this.Hide();
+                GC.Collect();
             }
             catch (Exception ex)
             {
@@ -313,6 +285,7 @@ namespace GSMS
                 Events anker = new Events();
                 anker.Show();
                 this.Hide();
+                GC.Collect();
             }
             catch (Exception ex)
             {
@@ -339,6 +312,7 @@ namespace GSMS
                 Teacher obj = new Teacher();
                 obj.Show();
                 this.Hide();
+                GC.Collect();
             }
             catch (Exception ex)
             {
@@ -353,6 +327,7 @@ namespace GSMS
                 Login obj = new Login();
                 obj.Show();
                 this.Hide();
+                GC.Collect();
             }
             catch (Exception ex)
             {
@@ -370,6 +345,11 @@ namespace GSMS
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void txt_searchteacher_KeyUp(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

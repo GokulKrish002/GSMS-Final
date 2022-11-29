@@ -145,9 +145,6 @@
   <data name="69524" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\695241.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Pa_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Pa_logo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Teaching" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Teaching.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -231,5 +228,8 @@
   </data>
   <data name="1242850" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1242850.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Pa_logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Pa_logo.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

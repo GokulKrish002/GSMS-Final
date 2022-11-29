@@ -17,37 +17,56 @@ namespace GSMS
             InitializeComponent();
         }
 
-        private void Students_btn_Click(object sender, EventArgs e)
+        private void close_btn_Click(object sender, EventArgs e)
         {
-            Student obj = new Student();
+            Close_Timer.Start();
+        }
+
+        private void Btn_Students_Click(object sender, EventArgs e)
+        {
+            Student_Form obj = new Student_Form();
             obj.Show();
             this.Hide();
         }
 
-        private void Library_btn_Click(object sender, EventArgs e)
-        {
-            Library obj = new Library();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void Events_btn_Click(object sender, EventArgs e)
-        {
-            Events obj = new Events();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void Teachers_btn_Click(object sender, EventArgs e)
+        private void Btn_Teachers_Click(object sender, EventArgs e)
         {
             Teacher obj = new Teacher();
             obj.Show();
             this.Hide();
         }
 
-        private void close_btn_Click(object sender, EventArgs e)
+        private void Btn_Library_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Library obj = new Library();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Btn_Events_Click(object sender, EventArgs e)
+        {
+            Events obj = new Events();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Btn_Logout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Close_Timer_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity > 0.0)
+            {
+                this.Opacity -= 0.25;
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
     }
 }

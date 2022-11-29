@@ -902,13 +902,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private Guna.UI2.WinForms.Guna2DataGridView StudentMarkGrid;
         private System.Windows.Forms.BindingSource stutable2BindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tamilDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn englishDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mathsDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn scienceDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hindiDataGridViewTextBoxColumn;
         private gsms_dbDataSet gsms_dbDataSet;
         private System.Windows.Forms.BindingSource librarytblBindingSource;
         private gsms_dbDataSetTableAdapters.Library_tblTableAdapter library_tblTableAdapter;

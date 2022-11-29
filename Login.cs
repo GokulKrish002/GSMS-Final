@@ -19,19 +19,21 @@ namespace GSMS
             InitializeComponent();
         }
         DBConnection LoginCon = new DBConnection();
-
-        private void submit_btn_Click(object sender, EventArgs e)
+        private void Btn_Submit_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = LoginCon.connect();
+            Index obj = new Index();
+            obj.Show();
+            this.Hide();
 
-            try
+            /*try
             {
+                SqlConnection connection = LoginCon.connect();
                 SqlCommand cmd = new SqlCommand("Staff_tbl_Search", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param1 = new SqlParameter("@Email", SqlDbType.VarChar);
-                cmd.Parameters.Add(param1).Value = teacherid_txt.Text;
+                cmd.Parameters.Add(param1).Value = txt_Email.Text;
                 SqlParameter param2 = new SqlParameter("@phone", SqlDbType.Int);
-                cmd.Parameters.Add(param2).Value = pwd_txt.Text;
+                cmd.Parameters.Add(param2).Value = txt_Password.Text;
                 int usercount = (Int32)cmd.ExecuteScalar();
                 connection.Close();
                 if (usercount == 1)
@@ -43,18 +45,13 @@ namespace GSMS
                 }
                 else
                 {
-                    MessageBox.Show("Type the correct Id/Pwd");
+                    MessageBox.Show("Enter your valid EmailId and phone number");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
-            }
-
-
-
-
-
+            }*/
         }
     }
 }

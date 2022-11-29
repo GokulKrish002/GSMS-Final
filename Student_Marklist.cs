@@ -45,7 +45,7 @@ namespace GSMS
 
             avg = tot / 5;
             Avg_Txt.Text = avg.ToString();
-            string grade;
+            /*string grade;
             if (avg >= 75)
             {
                 grade = "A";
@@ -66,7 +66,7 @@ namespace GSMS
             {
                 grade = "D";
             }
-            Grade_Txt.Text = "grade";
+            Grade_Txt.Text = "grade";*/
         }
 
         private void Btn_view_Click(object sender, EventArgs e)
@@ -202,7 +202,7 @@ namespace GSMS
         }
         private void Btn_Students_Click(object sender, EventArgs e)
         {
-            Student obj = new Student();
+            Student_Form obj = new Student_Form();
             obj.Show();
             this.Hide();
         }

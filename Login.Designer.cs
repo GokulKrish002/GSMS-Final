@@ -33,9 +33,9 @@ namespace GSMS
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Btn_Minimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Btn_Close = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.submit_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.pwd_txt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.teacherid_txt = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Btn_Submit = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_Password = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txt_Email = new Guna.UI2.WinForms.Guna2TextBox();
             this.Animated_Picture = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label_LoginNow = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Animated_Picture)).BeginInit();
@@ -69,74 +69,74 @@ namespace GSMS
             this.Btn_Close.Size = new System.Drawing.Size(31, 28);
             this.Btn_Close.TabIndex = 8;
             // 
-            // submit_btn
+            // Btn_Submit
             // 
-            this.submit_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.submit_btn.BorderRadius = 10;
-            this.submit_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.submit_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.submit_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.submit_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.submit_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(132)))), ((int)(((byte)(31)))));
-            this.submit_btn.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold);
-            this.submit_btn.ForeColor = System.Drawing.Color.White;
-            this.submit_btn.Location = new System.Drawing.Point(780, 510);
-            this.submit_btn.Name = "submit_btn";
-            this.submit_btn.Size = new System.Drawing.Size(180, 45);
-            this.submit_btn.TabIndex = 27;
-            this.submit_btn.Text = "Submit";
-            this.submit_btn.Click += new System.EventHandler(this.submit_btn_Click);
+            this.Btn_Submit.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Btn_Submit.BorderRadius = 10;
+            this.Btn_Submit.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Submit.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Submit.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_Submit.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_Submit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(132)))), ((int)(((byte)(31)))));
+            this.Btn_Submit.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold);
+            this.Btn_Submit.ForeColor = System.Drawing.Color.White;
+            this.Btn_Submit.Location = new System.Drawing.Point(780, 510);
+            this.Btn_Submit.Name = "Btn_Submit";
+            this.Btn_Submit.Size = new System.Drawing.Size(180, 45);
+            this.Btn_Submit.TabIndex = 27;
+            this.Btn_Submit.Text = "Submit";
+            this.Btn_Submit.Click += new System.EventHandler(this.Btn_Submit_Click);
             // 
-            // pwd_txt
+            // txt_Password
             // 
-            this.pwd_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.pwd_txt.BorderRadius = 10;
-            this.pwd_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.pwd_txt.DefaultText = "";
-            this.pwd_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.pwd_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.pwd_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.pwd_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.pwd_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.pwd_txt.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
-            this.pwd_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pwd_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.pwd_txt.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.pwd_txt.IconRightSize = new System.Drawing.Size(22, 22);
-            this.pwd_txt.Location = new System.Drawing.Point(718, 392);
-            this.pwd_txt.Name = "pwd_txt";
-            this.pwd_txt.PasswordChar = '\0';
-            this.pwd_txt.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.pwd_txt.PlaceholderText = "Phone_Number";
-            this.pwd_txt.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.pwd_txt.SelectedText = "";
-            this.pwd_txt.Size = new System.Drawing.Size(320, 54);
-            this.pwd_txt.TabIndex = 26;
+            this.txt_Password.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.txt_Password.BorderRadius = 10;
+            this.txt_Password.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Password.DefaultText = "";
+            this.txt_Password.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Password.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Password.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Password.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Password.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Password.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
+            this.txt_Password.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_Password.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Password.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_Password.IconRightSize = new System.Drawing.Size(22, 22);
+            this.txt_Password.Location = new System.Drawing.Point(718, 392);
+            this.txt_Password.Name = "txt_Password";
+            this.txt_Password.PasswordChar = '\0';
+            this.txt_Password.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_Password.PlaceholderText = "Phone_Number";
+            this.txt_Password.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txt_Password.SelectedText = "";
+            this.txt_Password.Size = new System.Drawing.Size(320, 54);
+            this.txt_Password.TabIndex = 26;
             // 
-            // teacherid_txt
+            // txt_Email
             // 
-            this.teacherid_txt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.teacherid_txt.BorderRadius = 10;
-            this.teacherid_txt.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.teacherid_txt.DefaultText = "";
-            this.teacherid_txt.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.teacherid_txt.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.teacherid_txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.teacherid_txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.teacherid_txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.teacherid_txt.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
-            this.teacherid_txt.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.teacherid_txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.teacherid_txt.IconRightCursor = System.Windows.Forms.Cursors.Hand;
-            this.teacherid_txt.IconRightSize = new System.Drawing.Size(22, 22);
-            this.teacherid_txt.Location = new System.Drawing.Point(718, 323);
-            this.teacherid_txt.Name = "teacherid_txt";
-            this.teacherid_txt.PasswordChar = '\0';
-            this.teacherid_txt.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.teacherid_txt.PlaceholderText = "Email _ID";
-            this.teacherid_txt.SelectedText = "";
-            this.teacherid_txt.Size = new System.Drawing.Size(320, 54);
-            this.teacherid_txt.TabIndex = 25;
+            this.txt_Email.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.txt_Email.BorderRadius = 10;
+            this.txt_Email.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_Email.DefaultText = "";
+            this.txt_Email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_Email.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_Email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_Email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Email.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
+            this.txt_Email.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txt_Email.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_Email.IconRightCursor = System.Windows.Forms.Cursors.Hand;
+            this.txt_Email.IconRightSize = new System.Drawing.Size(22, 22);
+            this.txt_Email.Location = new System.Drawing.Point(718, 323);
+            this.txt_Email.Name = "txt_Email";
+            this.txt_Email.PasswordChar = '\0';
+            this.txt_Email.PlaceholderForeColor = System.Drawing.Color.Silver;
+            this.txt_Email.PlaceholderText = "Email _ID";
+            this.txt_Email.SelectedText = "";
+            this.txt_Email.Size = new System.Drawing.Size(320, 54);
+            this.txt_Email.TabIndex = 25;
             // 
             // Animated_Picture
             // 
@@ -167,9 +167,9 @@ namespace GSMS
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 728);
             this.Controls.Add(this.label_LoginNow);
-            this.Controls.Add(this.submit_btn);
-            this.Controls.Add(this.pwd_txt);
-            this.Controls.Add(this.teacherid_txt);
+            this.Controls.Add(this.Btn_Submit);
+            this.Controls.Add(this.txt_Password);
+            this.Controls.Add(this.txt_Email);
             this.Controls.Add(this.Btn_Minimize);
             this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.Animated_Picture);
@@ -189,9 +189,9 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2PictureBox Animated_Picture;
         private Guna.UI2.WinForms.Guna2ControlBox Btn_Minimize;
         private Guna.UI2.WinForms.Guna2ControlBox Btn_Close;
-        private Guna.UI2.WinForms.Guna2Button submit_btn;
-        private Guna.UI2.WinForms.Guna2TextBox pwd_txt;
-        private Guna.UI2.WinForms.Guna2TextBox teacherid_txt;
+        private Guna.UI2.WinForms.Guna2Button Btn_Submit;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Password;
+        private Guna.UI2.WinForms.Guna2TextBox txt_Email;
         private System.Windows.Forms.Label label_LoginNow;
     }
 }

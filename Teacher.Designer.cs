@@ -634,6 +634,8 @@ namespace GSMS
             // 
             // txt_dataGrid
             // 
+            this.txt_dataGrid.AllowUserToAddRows = false;
+            this.txt_dataGrid.AllowUserToDeleteRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
             this.txt_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.txt_dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
@@ -660,6 +662,7 @@ namespace GSMS
             this.txt_dataGrid.MaximumSize = new System.Drawing.Size(1447, 375);
             this.txt_dataGrid.MinimumSize = new System.Drawing.Size(1447, 375);
             this.txt_dataGrid.Name = "txt_dataGrid";
+            this.txt_dataGrid.ReadOnly = true;
             this.txt_dataGrid.RowHeadersVisible = false;
             this.txt_dataGrid.RowHeadersWidth = 51;
             this.txt_dataGrid.RowTemplate.Height = 24;
@@ -679,7 +682,7 @@ namespace GSMS
             this.txt_dataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txt_dataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.txt_dataGrid.ThemeStyle.HeaderStyle.Height = 4;
-            this.txt_dataGrid.ThemeStyle.ReadOnly = false;
+            this.txt_dataGrid.ThemeStyle.ReadOnly = true;
             this.txt_dataGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
             this.txt_dataGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.txt_dataGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));

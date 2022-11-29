@@ -150,7 +150,7 @@ namespace GSMS
 
         private void Btn_Students_Click(object sender, EventArgs e)
         {
-           Student obj = new Student();
+           Student_Form obj = new Student_Form();
             obj.Show();
             this.Hide();
         }
