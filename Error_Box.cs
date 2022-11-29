@@ -19,8 +19,6 @@ namespace GSMS.App_Code
 
         private void Error_click(object sender, EventArgs e)
         {
-            Login obj = new Login();
-            obj.Show();
             this.Close();
         }
     }

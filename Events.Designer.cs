@@ -103,14 +103,14 @@ namespace GSMS
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.Event_GridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.Event_GridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Event_GridView.Location = new System.Drawing.Point(14, 13);
+            this.Event_GridView.Location = new System.Drawing.Point(34, 23);
             this.Event_GridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Event_GridView.Name = "Event_GridView";
             this.Event_GridView.ReadOnly = true;
             this.Event_GridView.RowHeadersVisible = false;
             this.Event_GridView.RowHeadersWidth = 51;
             this.Event_GridView.RowTemplate.Height = 24;
-            this.Event_GridView.Size = new System.Drawing.Size(1419, 407);
+            this.Event_GridView.Size = new System.Drawing.Size(1423, 407);
             this.Event_GridView.TabIndex = 0;
             this.Event_GridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.Event_GridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -177,16 +177,13 @@ namespace GSMS
             // 
             // Btn_Add
             // 
-            this.Btn_Add.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Btn_Add.BorderRadius = 6;
-            this.Btn_Add.BorderThickness = 1;
             this.Btn_Add.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Add.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Add.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Btn_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Add.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Add.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Btn_Add.ForeColor = System.Drawing.Color.White;
-            this.Btn_Add.Location = new System.Drawing.Point(857, 176);
+            this.Btn_Add.Location = new System.Drawing.Point(833, 176);
             this.Btn_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Add.Name = "Btn_Add";
             this.Btn_Add.Size = new System.Drawing.Size(209, 46);
@@ -196,14 +193,11 @@ namespace GSMS
             // 
             // Btn_Delete
             // 
-            this.Btn_Delete.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Btn_Delete.BorderRadius = 6;
-            this.Btn_Delete.BorderThickness = 1;
             this.Btn_Delete.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Delete.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Delete.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Delete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Delete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Btn_Delete.ForeColor = System.Drawing.Color.White;
             this.Btn_Delete.Location = new System.Drawing.Point(857, 306);
             this.Btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -215,14 +209,11 @@ namespace GSMS
             // 
             // Btn_Update
             // 
-            this.Btn_Update.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Btn_Update.BorderRadius = 6;
-            this.Btn_Update.BorderThickness = 1;
             this.Btn_Update.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Update.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Update.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Update.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Update.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Btn_Update.ForeColor = System.Drawing.Color.White;
             this.Btn_Update.Location = new System.Drawing.Point(857, 241);
             this.Btn_Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -234,7 +225,6 @@ namespace GSMS
             // 
             // txt_EventName
             // 
-            this.txt_EventName.BorderRadius = 6;
             this.txt_EventName.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_EventName.DefaultText = "";
             this.txt_EventName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -242,7 +232,7 @@ namespace GSMS
             this.txt_EventName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_EventName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_EventName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_EventName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_EventName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_EventName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_EventName.Location = new System.Drawing.Point(460, 179);
             this.txt_EventName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -282,7 +272,7 @@ namespace GSMS
             this.sPanel2.Location = new System.Drawing.Point(285, 54);
             this.sPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel2.Name = "sPanel2";
-            this.sPanel2.Size = new System.Drawing.Size(1442, 73);
+            this.sPanel2.Size = new System.Drawing.Size(1442, 89);
             this.sPanel2.TabIndex = 80;
             // 
             // Btn_LogOut
@@ -327,13 +317,38 @@ namespace GSMS
             this.label_Event_Details.TabIndex = 58;
             this.label_Event_Details.Text = "EVENT DETAILS";
             // 
+            // txt_searchteacher
+            // 
+            this.txt_searchteacher.BorderRadius = 6;
+            this.txt_searchteacher.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_searchteacher.DefaultText = "";
+            this.txt_searchteacher.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_searchteacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_searchteacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_searchteacher.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_searchteacher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_searchteacher.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_searchteacher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_searchteacher.IconLeft = global::GSMS.Properties.Resources._1251067;
+            this.txt_searchteacher.IconLeftSize = new System.Drawing.Size(25, 25);
+            this.txt_searchteacher.Location = new System.Drawing.Point(997, 16);
+            this.txt_searchteacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.txt_searchteacher.Name = "txt_searchteacher";
+            this.txt_searchteacher.PasswordChar = '\0';
+            this.txt_searchteacher.PlaceholderForeColor = System.Drawing.Color.DarkGray;
+            this.txt_searchteacher.PlaceholderText = "Search";
+            this.txt_searchteacher.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.txt_searchteacher.SelectedText = "";
+            this.txt_searchteacher.Size = new System.Drawing.Size(425, 49);
+            this.txt_searchteacher.TabIndex = 2;
+            // 
             // txt_EventDiscription
             // 
             this.txt_EventDiscription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_EventDiscription.Location = new System.Drawing.Point(1127, 211);
+            this.txt_EventDiscription.Location = new System.Drawing.Point(1127, 191);
             this.txt_EventDiscription.Margin = new System.Windows.Forms.Padding(4);
             this.txt_EventDiscription.Name = "txt_EventDiscription";
-            this.txt_EventDiscription.Size = new System.Drawing.Size(590, 141);
+            this.txt_EventDiscription.Size = new System.Drawing.Size(590, 161);
             this.txt_EventDiscription.TabIndex = 81;
             this.txt_EventDiscription.Text = "";
             // 
@@ -510,7 +525,7 @@ namespace GSMS
             this.Home_btn.TabIndex = 11;
             this.Home_btn.Tag = "Home";
             this.Home_btn.Text = "HOME";
-            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click_);
+            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click_1);
             // 
             // Main_Pannel
             // 
@@ -523,7 +538,6 @@ namespace GSMS
             // 
             // txt_Eventid
             // 
-            this.txt_Eventid.BorderRadius = 6;
             this.txt_Eventid.Cursor = System.Windows.Forms.Cursors.IBeam;
             this.txt_Eventid.DefaultText = "";
             this.txt_Eventid.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
@@ -531,7 +545,7 @@ namespace GSMS
             this.txt_Eventid.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Eventid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Eventid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Eventid.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_Eventid.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Eventid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Eventid.Location = new System.Drawing.Point(461, 240);
             this.txt_Eventid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -565,7 +579,6 @@ namespace GSMS
             this.minimize_btn.Name = "minimize_btn";
             this.minimize_btn.Size = new System.Drawing.Size(31, 28);
             this.minimize_btn.TabIndex = 85;
-            this.minimize_btn.Click += new System.EventHandler(this.minimize_btn_Click);
             // 
             // close_btn
             // 
@@ -578,7 +591,6 @@ namespace GSMS
             this.close_btn.Name = "close_btn";
             this.close_btn.Size = new System.Drawing.Size(31, 28);
             this.close_btn.TabIndex = 84;
-            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
             // Events
             // 
@@ -652,6 +664,5 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2TextBox txt_Eventid;
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
-        private FontAwesome.Sharp.IconButton Btn_LogOut;
     }
 }
