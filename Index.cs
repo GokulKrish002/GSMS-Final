@@ -17,49 +17,37 @@ namespace GSMS
             InitializeComponent();
         }
 
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void Btn_Teachers_Click(object sender, EventArgs e)
-        {
-            Teacher obj = new Teacher();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void Home_btn_Click(object sender, EventArgs e)
-        {
-            MessageBox.Show("Home la dhaa eruka da mangaaa.");
-        }
-
-        private void Btn_Students_Click(object sender, EventArgs e)
+        private void Students_btn_Click(object sender, EventArgs e)
         {
             Student obj = new Student();
             obj.Show();
             this.Hide();
         }
 
-        private void Btn_Library_Click(object sender, EventArgs e)
+        private void Library_btn_Click(object sender, EventArgs e)
         {
             Library obj = new Library();
             obj.Show();
             this.Hide();
         }
 
-        private void Btn_Events_Click(object sender, EventArgs e)
+        private void Events_btn_Click(object sender, EventArgs e)
         {
             Events obj = new Events();
             obj.Show();
             this.Hide();
         }
 
-        private void Btn_Logout_Click(object sender, EventArgs e)
+        private void Teachers_btn_Click(object sender, EventArgs e)
         {
-            Login obj = new Login();
+            Teacher obj = new Teacher();
             obj.Show();
             this.Hide();
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
