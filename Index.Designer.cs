@@ -296,6 +296,7 @@ namespace GSMS
             // 
             this.Pannel_Dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pannel_Dashboard.Image = global::GSMS.Properties.Resources.Dashboard_GSMS;
             this.Pannel_Dashboard.ImageRotate = 0F;
             this.Pannel_Dashboard.Location = new System.Drawing.Point(273, 152);
             this.Pannel_Dashboard.Name = "Pannel_Dashboard";
