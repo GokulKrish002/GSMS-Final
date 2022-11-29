@@ -168,6 +168,13 @@ namespace GSMS
             obj.Show();
             this.Hide();
         }
+
+        private void Btn_Logout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
 

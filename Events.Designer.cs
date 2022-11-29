@@ -30,9 +30,9 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Event_GridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
@@ -63,6 +63,7 @@ namespace GSMS
             this.label_EventID = new System.Windows.Forms.Label();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.Event_GridView)).BeginInit();
             this.sPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Img_Event_Logo)).BeginInit();
@@ -81,35 +82,35 @@ namespace GSMS
             // 
             this.Event_GridView.AllowUserToAddRows = false;
             this.Event_GridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.Event_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Event_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            this.Event_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Event_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.Event_GridView.ColumnHeadersHeight = 4;
             this.Event_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Event_GridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Event_GridView.DefaultCellStyle = dataGridViewCellStyle9;
             this.Event_GridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.Event_GridView.Location = new System.Drawing.Point(34, 23);
+            this.Event_GridView.Location = new System.Drawing.Point(7, 7);
             this.Event_GridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Event_GridView.Name = "Event_GridView";
             this.Event_GridView.ReadOnly = true;
             this.Event_GridView.RowHeadersVisible = false;
             this.Event_GridView.RowHeadersWidth = 51;
             this.Event_GridView.RowTemplate.Height = 24;
-            this.Event_GridView.Size = new System.Drawing.Size(1423, 407);
+            this.Event_GridView.Size = new System.Drawing.Size(1433, 419);
             this.Event_GridView.TabIndex = 0;
             this.Event_GridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.Event_GridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -182,7 +183,7 @@ namespace GSMS
             this.Btn_Add.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Btn_Add.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.Btn_Add.ForeColor = System.Drawing.Color.White;
-            this.Btn_Add.Location = new System.Drawing.Point(833, 176);
+            this.Btn_Add.Location = new System.Drawing.Point(857, 176);
             this.Btn_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Add.Name = "Btn_Add";
             this.Btn_Add.Size = new System.Drawing.Size(209, 46);
@@ -264,6 +265,7 @@ namespace GSMS
             this.sPanel2.BorderRadius = 10;
             this.sPanel2.BorderSize = 0;
             this.sPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sPanel2.Controls.Add(this.Btn_Logout);
             this.sPanel2.Controls.Add(this.Img_Event_Logo);
             this.sPanel2.Controls.Add(this.label_Event_Details);
             this.sPanel2.ForeColor = System.Drawing.Color.White;
@@ -277,7 +279,7 @@ namespace GSMS
             // 
             this.Img_Event_Logo.Image = global::GSMS.Properties.Resources._1250932;
             this.Img_Event_Logo.ImageRotate = 0F;
-            this.Img_Event_Logo.Location = new System.Drawing.Point(36, 10);
+            this.Img_Event_Logo.Location = new System.Drawing.Point(26, 22);
             this.Img_Event_Logo.Margin = new System.Windows.Forms.Padding(4);
             this.Img_Event_Logo.Name = "Img_Event_Logo";
             this.Img_Event_Logo.Size = new System.Drawing.Size(63, 43);
@@ -290,7 +292,7 @@ namespace GSMS
             this.label_Event_Details.AutoSize = true;
             this.label_Event_Details.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
             this.label_Event_Details.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label_Event_Details.Location = new System.Drawing.Point(95, 15);
+            this.label_Event_Details.Location = new System.Drawing.Point(97, 27);
             this.label_Event_Details.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label_Event_Details.Name = "label_Event_Details";
             this.label_Event_Details.Size = new System.Drawing.Size(221, 38);
@@ -300,10 +302,10 @@ namespace GSMS
             // txt_EventDiscription
             // 
             this.txt_EventDiscription.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txt_EventDiscription.Location = new System.Drawing.Point(1127, 191);
+            this.txt_EventDiscription.Location = new System.Drawing.Point(1127, 211);
             this.txt_EventDiscription.Margin = new System.Windows.Forms.Padding(4);
             this.txt_EventDiscription.Name = "txt_EventDiscription";
-            this.txt_EventDiscription.Size = new System.Drawing.Size(590, 161);
+            this.txt_EventDiscription.Size = new System.Drawing.Size(590, 141);
             this.txt_EventDiscription.TabIndex = 81;
             this.txt_EventDiscription.Text = "";
             // 
@@ -547,6 +549,24 @@ namespace GSMS
             this.close_btn.Size = new System.Drawing.Size(31, 28);
             this.close_btn.TabIndex = 84;
             // 
+            // Btn_Logout
+            // 
+            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.Btn_Logout.IconColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_Logout.IconSize = 30;
+            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Btn_Logout.Location = new System.Drawing.Point(1266, 24);
+            this.Btn_Logout.Name = "Btn_Logout";
+            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
+            this.Btn_Logout.TabIndex = 93;
+            this.Btn_Logout.Text = "LOG OUT    ";
+            this.Btn_Logout.UseVisualStyleBackColor = false;
+            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
+            // 
             // Events
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -619,5 +639,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2TextBox txt_Eventid;
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
+        private FontAwesome.Sharp.IconButton Btn_Logout;
     }
 }
