@@ -142,7 +142,6 @@ namespace GSMS
             this.view_btn.TabIndex = 84;
             this.view_btn.Tag = "Delete";
             this.view_btn.Text = "VIEW DATA";
-            this.view_btn.Click += new System.EventHandler(this.view_btn_Click);
             // 
             // Img_Library
             // 
@@ -611,7 +610,6 @@ namespace GSMS
             this.Btn_Logout.TabIndex = 93;
             this.Btn_Logout.Text = "LOG OUT    ";
             this.Btn_Logout.UseVisualStyleBackColor = false;
-            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
             // 
             // pic_library
             // 

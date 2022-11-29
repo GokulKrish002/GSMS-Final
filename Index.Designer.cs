@@ -98,12 +98,10 @@ namespace GSMS
             this.Btn_Logout.TabIndex = 91;
             this.Btn_Logout.Text = "LOG OUT    ";
             this.Btn_Logout.UseVisualStyleBackColor = false;
-            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
             // 
             // guna2PictureBox2
             // 
             this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::GSMS.Properties.Resources.Dashboard_icon;
             this.guna2PictureBox2.ImageRotate = 0F;
             this.guna2PictureBox2.Location = new System.Drawing.Point(43, 9);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
@@ -174,7 +172,6 @@ namespace GSMS
             this.Btn_Events.TabIndex = 26;
             this.Btn_Events.Tag = "Home";
             this.Btn_Events.Text = "EVENTS";
-            this.Btn_Events.Click += new System.EventHandler(this.Btn_Events_Click);
             // 
             // Btn_Library
             // 
@@ -195,7 +192,6 @@ namespace GSMS
             this.Btn_Library.TabIndex = 25;
             this.Btn_Library.Tag = "Home";
             this.Btn_Library.Text = "LIBRARY";
-            this.Btn_Library.Click += new System.EventHandler(this.Btn_Library_Click);
             // 
             // Btn_Teachers
             // 
@@ -216,7 +212,6 @@ namespace GSMS
             this.Btn_Teachers.TabIndex = 24;
             this.Btn_Teachers.Tag = "Home";
             this.Btn_Teachers.Text = "TEACHERS";
-            this.Btn_Teachers.Click += new System.EventHandler(this.Btn_Teachers_Click);
             // 
             // Btn_Students
             // 
@@ -237,7 +232,6 @@ namespace GSMS
             this.Btn_Students.TabIndex = 23;
             this.Btn_Students.Tag = "Home";
             this.Btn_Students.Text = "STUDENTS";
-            this.Btn_Students.Click += new System.EventHandler(this.Btn_Students_Click);
             // 
             // logo_pic
             // 
@@ -266,8 +260,6 @@ namespace GSMS
             this.Home_btn.Size = new System.Drawing.Size(179, 51);
             this.Home_btn.TabIndex = 21;
             this.Home_btn.Tag = "Home";
-            this.Home_btn.Text = "HOME";
-            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click);
             // 
             // close_btn
             // 
@@ -290,7 +282,6 @@ namespace GSMS
             // 
             // Img_Dashboard
             // 
-            this.Img_Dashboard.Image = global::GSMS.Properties.Resources.Dashboard_GSMS;
             this.Img_Dashboard.ImageRotate = 0F;
             this.Img_Dashboard.Location = new System.Drawing.Point(273, 152);
             this.Img_Dashboard.Name = "Img_Dashboard";

@@ -44,7 +44,6 @@ namespace GSMS
             this.txt_EventName = new Guna.UI2.WinForms.Guna2TextBox();
             this.date_EventDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.sPanel2 = new Sipaa.Framework.SPanel();
-            this.Btn_LogOut = new FontAwesome.Sharp.IconButton();
             this.Img_Event_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label_Event_Details = new System.Windows.Forms.Label();
             this.txt_EventDiscription = new System.Windows.Forms.RichTextBox();
@@ -265,7 +264,6 @@ namespace GSMS
             this.sPanel2.BorderRadius = 10;
             this.sPanel2.BorderSize = 0;
             this.sPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sPanel2.Controls.Add(this.Btn_LogOut);
             this.sPanel2.Controls.Add(this.Img_Event_Logo);
             this.sPanel2.Controls.Add(this.label_Event_Details);
             this.sPanel2.ForeColor = System.Drawing.Color.White;
@@ -274,24 +272,6 @@ namespace GSMS
             this.sPanel2.Name = "sPanel2";
             this.sPanel2.Size = new System.Drawing.Size(1442, 89);
             this.sPanel2.TabIndex = 80;
-            // 
-            // Btn_LogOut
-            // 
-            this.Btn_LogOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_LogOut.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_LogOut.ForeColor = System.Drawing.Color.White;
-            this.Btn_LogOut.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.Btn_LogOut.IconColor = System.Drawing.Color.White;
-            this.Btn_LogOut.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Btn_LogOut.IconSize = 30;
-            this.Btn_LogOut.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Btn_LogOut.Location = new System.Drawing.Point(1280, 15);
-            this.Btn_LogOut.Name = "Btn_LogOut";
-            this.Btn_LogOut.Size = new System.Drawing.Size(138, 41);
-            this.Btn_LogOut.TabIndex = 92;
-            this.Btn_LogOut.Text = "LOG OUT    ";
-            this.Btn_LogOut.UseVisualStyleBackColor = false;
-            this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
             // Img_Event_Logo
             // 
@@ -316,31 +296,6 @@ namespace GSMS
             this.label_Event_Details.Size = new System.Drawing.Size(221, 38);
             this.label_Event_Details.TabIndex = 58;
             this.label_Event_Details.Text = "EVENT DETAILS";
-            // 
-            // txt_searchteacher
-            // 
-            this.txt_searchteacher.BorderRadius = 6;
-            this.txt_searchteacher.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txt_searchteacher.DefaultText = "";
-            this.txt_searchteacher.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txt_searchteacher.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txt_searchteacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_searchteacher.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txt_searchteacher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_searchteacher.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_searchteacher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_searchteacher.IconLeft = global::GSMS.Properties.Resources._1251067;
-            this.txt_searchteacher.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.txt_searchteacher.Location = new System.Drawing.Point(997, 16);
-            this.txt_searchteacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
-            this.txt_searchteacher.Name = "txt_searchteacher";
-            this.txt_searchteacher.PasswordChar = '\0';
-            this.txt_searchteacher.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_searchteacher.PlaceholderText = "Search";
-            this.txt_searchteacher.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
-            this.txt_searchteacher.SelectedText = "";
-            this.txt_searchteacher.Size = new System.Drawing.Size(425, 49);
-            this.txt_searchteacher.TabIndex = 2;
             // 
             // txt_EventDiscription
             // 

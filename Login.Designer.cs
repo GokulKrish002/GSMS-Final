@@ -68,7 +68,6 @@ namespace GSMS
             this.Btn_Close.Name = "Btn_Close";
             this.Btn_Close.Size = new System.Drawing.Size(31, 28);
             this.Btn_Close.TabIndex = 8;
-            this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
             // submit_btn
             // 
