@@ -80,6 +80,7 @@ namespace GSMS
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Close_Timer = new System.Windows.Forms.Timer(this.components);
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             ((System.ComponentModel.ISupportInitialize)(this.StudentMarkGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentMarklisttblBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gsms_dbDataSet1)).BeginInit();
@@ -107,7 +108,7 @@ namespace GSMS
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
             this.StudentMarkGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.StudentMarkGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
+            this.StudentMarkGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -142,7 +143,7 @@ namespace GSMS
             this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
             this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.StudentMarkGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
+            this.StudentMarkGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.StudentMarkGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.StudentMarkGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.StudentMarkGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -261,8 +262,9 @@ namespace GSMS
             // label_Avg
             // 
             this.label_Avg.AutoSize = true;
+            this.label_Avg.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Avg.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label_Avg.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Avg.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Avg.Location = new System.Drawing.Point(1134, 265);
             this.label_Avg.Name = "label_Avg";
             this.label_Avg.Size = new System.Drawing.Size(74, 34);
@@ -272,8 +274,9 @@ namespace GSMS
             // label_Total
             // 
             this.label_Total.AutoSize = true;
+            this.label_Total.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Total.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label_Total.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Total.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Total.Location = new System.Drawing.Point(1134, 199);
             this.label_Total.Name = "label_Total";
             this.label_Total.Size = new System.Drawing.Size(106, 34);
@@ -309,8 +312,9 @@ namespace GSMS
             // label_StudentId
             // 
             this.label_StudentId.AutoSize = true;
+            this.label_StudentId.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_StudentId.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label_StudentId.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_StudentId.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_StudentId.Location = new System.Drawing.Point(1134, 394);
             this.label_StudentId.Name = "label_StudentId";
             this.label_StudentId.Size = new System.Drawing.Size(163, 34);
@@ -319,6 +323,7 @@ namespace GSMS
             // 
             // Btn_Grade
             // 
+            this.Btn_Grade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.Btn_Grade.BorderColor = System.Drawing.Color.Transparent;
             this.Btn_Grade.BorderRadius = 10;
             this.Btn_Grade.BorderThickness = 2;
@@ -346,8 +351,9 @@ namespace GSMS
             // label_Grade
             // 
             this.label_Grade.AutoSize = true;
+            this.label_Grade.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Grade.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label_Grade.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Grade.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Grade.Location = new System.Drawing.Point(1134, 330);
             this.label_Grade.Name = "label_Grade";
             this.label_Grade.Size = new System.Drawing.Size(113, 34);
@@ -357,8 +363,9 @@ namespace GSMS
             // label_Name
             // 
             this.label_Name.AutoSize = true;
+            this.label_Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Name.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Name.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Name.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Name.Location = new System.Drawing.Point(314, 206);
             this.label_Name.Name = "label_Name";
             this.label_Name.Size = new System.Drawing.Size(98, 34);
@@ -368,8 +375,9 @@ namespace GSMS
             // label_Hindi
             // 
             this.label_Hindi.AutoSize = true;
+            this.label_Hindi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Hindi.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Hindi.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Hindi.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Hindi.Location = new System.Drawing.Point(314, 510);
             this.label_Hindi.Name = "label_Hindi";
             this.label_Hindi.Size = new System.Drawing.Size(107, 34);
@@ -379,8 +387,9 @@ namespace GSMS
             // label_Science
             // 
             this.label_Science.AutoSize = true;
+            this.label_Science.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Science.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Science.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Science.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Science.Location = new System.Drawing.Point(314, 454);
             this.label_Science.Name = "label_Science";
             this.label_Science.Size = new System.Drawing.Size(141, 34);
@@ -390,8 +399,9 @@ namespace GSMS
             // label_Maths
             // 
             this.label_Maths.AutoSize = true;
+            this.label_Maths.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Maths.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Maths.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Maths.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Maths.Location = new System.Drawing.Point(314, 394);
             this.label_Maths.Name = "label_Maths";
             this.label_Maths.Size = new System.Drawing.Size(115, 34);
@@ -401,8 +411,9 @@ namespace GSMS
             // label_English
             // 
             this.label_English.AutoSize = true;
+            this.label_English.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_English.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_English.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_English.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_English.Location = new System.Drawing.Point(314, 330);
             this.label_English.Name = "label_English";
             this.label_English.Size = new System.Drawing.Size(144, 34);
@@ -412,8 +423,9 @@ namespace GSMS
             // label_Tamil
             // 
             this.label_Tamil.AutoSize = true;
+            this.label_Tamil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.label_Tamil.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_Tamil.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Tamil.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Tamil.Location = new System.Drawing.Point(314, 265);
             this.label_Tamil.Name = "label_Tamil";
             this.label_Tamil.Size = new System.Drawing.Size(106, 34);
@@ -422,6 +434,7 @@ namespace GSMS
             // 
             // Btn_view
             // 
+            this.Btn_view.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.Btn_view.BorderColor = System.Drawing.Color.Transparent;
             this.Btn_view.BorderRadius = 10;
             this.Btn_view.BorderThickness = 2;
@@ -448,6 +461,7 @@ namespace GSMS
             // 
             // btn_Update
             // 
+            this.btn_Update.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.btn_Update.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Update.BorderRadius = 10;
             this.btn_Update.BorderThickness = 2;
@@ -474,6 +488,7 @@ namespace GSMS
             // 
             // btn_Delete
             // 
+            this.btn_Delete.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.btn_Delete.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Delete.BorderRadius = 10;
             this.btn_Delete.BorderThickness = 2;
@@ -787,6 +802,7 @@ namespace GSMS
             // 
             // btn_Insert
             // 
+            this.btn_Insert.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.btn_Insert.BorderColor = System.Drawing.Color.Transparent;
             this.btn_Insert.BorderRadius = 10;
             this.btn_Insert.BorderThickness = 2;
@@ -837,6 +853,14 @@ namespace GSMS
             this.close_btn.TabIndex = 140;
             this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
+            this.guna2Panel1.Location = new System.Drawing.Point(260, 162);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(1463, 695);
+            this.guna2Panel1.TabIndex = 142;
+            // 
             // Student_Marklist
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -872,6 +896,7 @@ namespace GSMS
             this.Controls.Add(this.btn_Update);
             this.Controls.Add(this.btn_Delete);
             this.Controls.Add(this.sPanel2);
+            this.Controls.Add(this.guna2Panel1);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -946,5 +971,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
         private System.Windows.Forms.Timer Close_Timer;
         private Guna.UI2.WinForms.Guna2Button Btn_Home;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }

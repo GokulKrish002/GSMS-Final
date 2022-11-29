@@ -278,10 +278,10 @@ namespace GSMS
             this.Txt_Address.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Txt_Address.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Txt_Address.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Txt_Address.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Txt_Address.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Txt_Address.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Txt_Address.Location = new System.Drawing.Point(1124, 217);
-            this.Txt_Address.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_Address.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_Address.Name = "Txt_Address";
             this.Txt_Address.PasswordChar = '\0';
             this.Txt_Address.PlaceholderText = "";
@@ -300,7 +300,7 @@ namespace GSMS
             this.txt_Mobile.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Mobile.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Mobile.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Mobile.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_Mobile.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.txt_Mobile.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Mobile.Location = new System.Drawing.Point(261, 290);
             this.txt_Mobile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -322,7 +322,7 @@ namespace GSMS
             this.Txt_RollNo.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Txt_RollNo.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Txt_RollNo.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Txt_RollNo.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.Txt_RollNo.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.Txt_RollNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Txt_RollNo.Location = new System.Drawing.Point(261, 100);
             this.Txt_RollNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -344,7 +344,7 @@ namespace GSMS
             this.txt_Name.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Name.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Name.Font = new System.Drawing.Font("Trebuchet MS", 12F, System.Drawing.FontStyle.Bold);
+            this.txt_Name.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.txt_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Name.Location = new System.Drawing.Point(259, 32);
             this.txt_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -640,7 +640,7 @@ namespace GSMS
             // 
             this.label_Address.AutoSize = true;
             this.label_Address.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label_Address.Location = new System.Drawing.Point(935, 217);
+            this.label_Address.Location = new System.Drawing.Point(935, 226);
             this.label_Address.Name = "label_Address";
             this.label_Address.Size = new System.Drawing.Size(160, 36);
             this.label_Address.TabIndex = 37;
@@ -760,11 +760,9 @@ namespace GSMS
             this.Btn_Students.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Students.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Btn_Students.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Students.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Students.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.Btn_Students.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Students.ForeColor = System.Drawing.Color.White;
-            this.Btn_Students.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.Btn_Students.HoverState.ForeColor = System.Drawing.Color.Black;
             this.Btn_Students.Image = global::GSMS.Properties.Resources._1252284;
             this.Btn_Students.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Btn_Students.Location = new System.Drawing.Point(23, 341);
@@ -773,7 +771,6 @@ namespace GSMS
             this.Btn_Students.TabIndex = 23;
             this.Btn_Students.Tag = "Home";
             this.Btn_Students.Text = "STUDENTS";
-            this.Btn_Students.Click += new System.EventHandler(this.Btn_Students_Click);
             // 
             // label_CopyRights
             // 

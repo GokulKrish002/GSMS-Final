@@ -15,7 +15,7 @@ namespace GSMS
     public partial class Student : Form
     {
         DBConnection StudentCon = new DBConnection();
-        Validate validate = new Validate();
+        Validate validation = new Validate();
         public Student()
         {
             InitializeComponent();
@@ -55,51 +55,59 @@ namespace GSMS
 
         private void btn_Insert_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = StudentCon.connect();
-            try
+
+
+
+            if (string.IsNullOrEmpty(txtname.Text))
             {
-
-
-
-                SqlCommand cmd = new SqlCommand("Student_tbl_insert", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Name", SqlDbType.VarChar);
-                cmd.Parameters.Add(param1).Value = txt_Name.Text;
-                SqlParameter param2 = new SqlParameter("@Roll", SqlDbType.Int);
-                cmd.Parameters.Add(param2).Value = Txt_RollNo.Text;
-                SqlParameter param3 = new SqlParameter("@Dob", SqlDbType.Date);
-                cmd.Parameters.Add(param3).Value = Txt_Date.Text;
-                SqlParameter param4 = new SqlParameter("@Gender", SqlDbType.VarChar);
-                cmd.Parameters.Add(param4).Value = Txt_Gender.Text;
-                SqlParameter param9 = new SqlParameter("@Mobile", SqlDbType.Int);
-                cmd.Parameters.Add(param9).Value = txt_Mobile.Text;
-                SqlParameter param5 = new SqlParameter("@Standard", SqlDbType.VarChar);
-                cmd.Parameters.Add(param5).Value = Combo_Standrad.Text;
-                SqlParameter param6 = new SqlParameter("@Section", SqlDbType.VarChar);
-                cmd.Parameters.Add(param6).Value = Combo_Section.Text;
-                SqlParameter param7 = new SqlParameter("@Address", SqlDbType.VarChar);
-                cmd.Parameters.Add(param7).Value = Txt_Address.Text;
-                SqlParameter param8 = new SqlParameter("@Blood_Group", SqlDbType.VarChar);
-                cmd.Parameters.Add(param8).Value = Combo_BloodGrp.Text;
-                int i = cmd.ExecuteNonQuery();
-                connection.Close();
-                if (i != 0)
-                {
-                    MessageBox.Show("Inserted successfully");
-                }
-                else
-                {
-                    MessageBox.Show("There is an problem..");
-                }
+                txtname.Focus();
+                errorProvider1.SetError(txtname, "Please Enter User Name");
             }
-            catch (Exception ex)
+            else
             {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                RefreshTbl();
-                ClearTextBox();
+                try
+                {
+                    SqlConnection connection = StudentCon.connect();
+                    SqlCommand cmd = new SqlCommand("Student_tbl_insert", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlParameter param1 = new SqlParameter("@Name", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param1).Value = txt_Name.Text;
+                    SqlParameter param2 = new SqlParameter("@Roll", SqlDbType.Int);
+                    cmd.Parameters.Add(param2).Value = Txt_RollNo.Text;
+                    SqlParameter param3 = new SqlParameter("@Dob", SqlDbType.Date);
+                    cmd.Parameters.Add(param3).Value = Txt_Date.Text;
+                    SqlParameter param4 = new SqlParameter("@Gender", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param4).Value = Txt_Gender.Text;
+                    SqlParameter param9 = new SqlParameter("@Mobile", SqlDbType.Int);
+                    cmd.Parameters.Add(param9).Value = txt_Mobile.Text;
+                    SqlParameter param5 = new SqlParameter("@Standard", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param5).Value = Combo_Standrad.Text;
+                    SqlParameter param6 = new SqlParameter("@Section", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param6).Value = Combo_Section.Text;
+                    SqlParameter param7 = new SqlParameter("@Address", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param7).Value = Txt_Address.Text;
+                    SqlParameter param8 = new SqlParameter("@Blood_Group", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param8).Value = Combo_BloodGrp.Text;
+                    int i = cmd.ExecuteNonQuery();
+                    connection.Close();
+                    if (i != 0)
+                    {
+                        MessageBox.Show("Inserted successfully");
+                    }
+                    else
+                    {
+                        MessageBox.Show("There is an problem..");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+                finally
+                {
+                    RefreshTbl();
+                    ClearTextBox();
+                }
             }
         }
 
@@ -233,19 +241,6 @@ namespace GSMS
             try
             {
                 Student_Marklist obj = new Student_Marklist();
-                obj.Show();
-                this.Hide();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-        private void Btn_Students_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Student obj = new Student();
                 obj.Show();
                 this.Hide();
             }

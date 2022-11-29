@@ -47,6 +47,8 @@ namespace GSMS
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Pannel_Dashboard = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.gunaAreaDataset1 = new Guna.Charts.WinForms.GunaAreaDataset();
+            this.gunaPieDataset1 = new Guna.Charts.WinForms.GunaPieDataset();
             this.HeadderPannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.Panel_Navigate.SuspendLayout();
@@ -302,6 +304,16 @@ namespace GSMS
             this.Pannel_Dashboard.TabIndex = 60;
             this.Pannel_Dashboard.TabStop = false;
             // 
+            // gunaAreaDataset1
+            // 
+            this.gunaAreaDataset1.BorderColor = System.Drawing.Color.Empty;
+            this.gunaAreaDataset1.FillColor = System.Drawing.Color.Empty;
+            this.gunaAreaDataset1.Label = "Area1";
+            // 
+            // gunaPieDataset1
+            // 
+            this.gunaPieDataset1.Label = "Pie1";
+            // 
             // Index
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -349,6 +361,8 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2PictureBox Pannel_Dashboard;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private FontAwesome.Sharp.IconButton Btn_Logout;
+        private Guna.Charts.WinForms.GunaAreaDataset gunaAreaDataset1;
+        private Guna.Charts.WinForms.GunaPieDataset gunaPieDataset1;
     }
 }
 
