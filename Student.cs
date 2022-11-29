@@ -12,11 +12,11 @@ using GSMS.App_Code;
 
 namespace GSMS
 {
-    public partial class Student_Form : Form
+    public partial class Student : Form
     {
         DBConnection StudentCon = new DBConnection();
         Validate validate = new Validate();
-        public Student_Form()
+        public Student()
         {
             InitializeComponent();
         }
@@ -58,6 +58,9 @@ namespace GSMS
             SqlConnection connection = StudentCon.connect();
             try
             {
+
+
+
                 SqlCommand cmd = new SqlCommand("Student_tbl_insert", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param1 = new SqlParameter("@Name", SqlDbType.VarChar);
@@ -242,7 +245,7 @@ namespace GSMS
         {
             try
             {
-                Student_Form obj = new Student_Form();
+                Student obj = new Student();
                 obj.Show();
                 this.Hide();
             }

@@ -143,37 +143,72 @@ namespace GSMS
 
         private void Home_btn_Click_1(object sender, EventArgs e)
         {
-            Index obj = new Index();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Index obj = new Index();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Students_Click(object sender, EventArgs e)
         {
-           Student_Form obj = new Student_Form();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Student obj = new Student();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Teachers_Click(object sender, EventArgs e)
         {
-            Teacher obj = new Teacher();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Teacher obj = new Teacher();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Library_Click(object sender, EventArgs e)
         {
-            Library obj = new Library();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Library obj = new Library();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Logout_Click(object sender, EventArgs e)
         {
-            Login obj = new Login();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Login obj = new Login();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

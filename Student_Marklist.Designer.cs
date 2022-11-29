@@ -335,7 +335,7 @@ namespace GSMS
             this.Btn_Grade.HoverState.ForeColor = System.Drawing.Color.Black;
             this.Btn_Grade.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Btn_Grade.ImageSize = new System.Drawing.Size(40, 40);
-            this.Btn_Grade.Location = new System.Drawing.Point(1379, 493);
+            this.Btn_Grade.Location = new System.Drawing.Point(1392, 454);
             this.Btn_Grade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Grade.Name = "Btn_Grade";
             this.Btn_Grade.Size = new System.Drawing.Size(163, 51);

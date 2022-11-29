@@ -20,6 +20,27 @@ namespace GSMS
             InitializeComponent();
         }
 
+        public void TableRefresh()
+        {
+            SqlConnection connection = StudentMarklistCon.connect();
+            SqlCommand comme = new SqlCommand("select * from StudentMarklist_tbl", connection);
+            SqlDataAdapter da = new SqlDataAdapter(comme);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+            StudentMarkGrid.DataSource = dt;
+            connection.Close();
+        }
+        public void TextClean()
+        {
+            Name_Text.Text = "";
+            Tamil_Text.Text = "";
+            Eng_Text.Text = "";
+            Maths_Text.Text = "";
+            Science_Text.Text = "";
+            Hindi_Text.Text = "";
+            txt_ID.Text = "";
+        }
+
         private void Student_Marklist_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'gsms_dbDataSet1.StudentMarklist_tbl' table. You can move, or remove it, as needed.
@@ -45,39 +66,33 @@ namespace GSMS
 
             avg = tot / 5;
             Avg_Txt.Text = avg.ToString();
-            /*string grade;
-            if (avg >= 75)
+            char grade = 'T';
+            if (avg >= 85)
             {
-                grade = "A";
+                grade = 'A';
             }
             else if (avg >= 65)
 
             {
-                grade = "B";
+                grade = 'B';
             }
-            else if (avg >= 55)
-
-            {
-                grade = "c";
-            }
-
             else if (avg >= 45)
 
             {
-                grade = "D";
+                grade = 'C';
             }
-            Grade_Txt.Text = "grade";*/
+
+            else if (avg >= 35)
+
+            {
+                grade = 'D';
+            }
+            Grade_Txt.Text = Convert.ToString(grade);
         }
 
         private void Btn_view_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = StudentMarklistCon.connect();
-            SqlCommand comme = new SqlCommand("select * from StudentMarklist_tbl", connection);
-            SqlDataAdapter da = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            StudentMarkGrid.DataSource = dt;
-            connection.Close();
+            TableRefresh();
         }
 
         private void btn_Delete_Click(object sender, EventArgs e)
@@ -90,6 +105,7 @@ namespace GSMS
                 SqlParameter param1 = new SqlParameter("@Student_id", SqlDbType.Int);
                 cmd.Parameters.Add(param1).Value = txt_ID.Text;
                 int i = cmd.ExecuteNonQuery();
+                connection.Close();
                 if (i != 0)
                 {
                     MessageBox.Show("Success");
@@ -105,20 +121,9 @@ namespace GSMS
             }
             finally
             {
-                Name_Text.Text = "";
-                Tamil_Text.Text = "";
-                Eng_Text.Text = "";
-                Maths_Text.Text = "";
-                Science_Text.Text = "";
-                Hindi_Text.Text = "";
-                txt_ID.Text = "";
+                TableRefresh();
+                TextClean();
             }
-            SqlCommand comme = new SqlCommand("select * from StudentMarklist_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            StudentMarkGrid.DataSource = dt;
-            connection.Close();
         }
 
         private void btn_Update_Click(object sender, EventArgs e)
@@ -202,7 +207,7 @@ namespace GSMS
         }
         private void Btn_Students_Click(object sender, EventArgs e)
         {
-            Student_Form obj = new Student_Form();
+            Student obj = new Student();
             obj.Show();
             this.Hide();
         }
