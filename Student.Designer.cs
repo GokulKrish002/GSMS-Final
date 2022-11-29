@@ -43,49 +43,49 @@ namespace GSMS
             this.txt_Mobile = new Guna.UI2.WinForms.Guna2TextBox();
             this.Txt_RollNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.txt_warning = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Img_Warning = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Label_warning = new System.Windows.Forms.Label();
+            this.label_BloodGroup = new System.Windows.Forms.Label();
             this.Txt_Gender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Txt_Date = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.Btn_MarkList = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Print = new Guna.UI2.WinForms.Guna2Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label_MobileNo = new System.Windows.Forms.Label();
             this.btn_Search = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.label_Section = new System.Windows.Forms.Label();
             this.btn_Submit = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Insert = new Guna.UI2.WinForms.Guna2Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.label_Gender = new System.Windows.Forms.Label();
+            this.label_Standard = new System.Windows.Forms.Label();
+            this.label_Dob = new System.Windows.Forms.Label();
+            this.label_Address = new System.Windows.Forms.Label();
+            this.label_RollNo = new System.Windows.Forms.Label();
+            this.label_Name = new System.Windows.Forms.Label();
             this.sPanel1 = new Sipaa.Framework.SPanel();
             this.Btn_Events = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Library = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Teachers = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Students = new Guna.UI2.WinForms.Guna2Button();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label_CopyRights = new System.Windows.Forms.Label();
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Home_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.sPanel2 = new Sipaa.Framework.SPanel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label12 = new System.Windows.Forms.Label();
+            this.HeadderPannel = new Sipaa.Framework.SPanel();
+            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
+            this.Img_Student_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label_Student_details = new System.Windows.Forms.Label();
             this.txt_searchteacher = new Guna.UI2.WinForms.Guna2TextBox();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btn_close = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Close_Timer = new System.Windows.Forms.Timer(this.components);
-            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).BeginInit();
             this.ribbenPannel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Warning)).BeginInit();
             this.sPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
-            this.sPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.HeadderPannel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Student_Logo)).BeginInit();
             this.SuspendLayout();
             // 
             // Student_GridView
@@ -106,7 +106,7 @@ namespace GSMS
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -138,7 +138,7 @@ namespace GSMS
             this.Student_GridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.Student_GridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.Student_GridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Student_GridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.Student_GridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.Control;
             this.Student_GridView.ThemeStyle.RowsStyle.Height = 24;
             this.Student_GridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.Student_GridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -160,25 +160,25 @@ namespace GSMS
             this.ribbenPannel.Controls.Add(this.txt_Mobile);
             this.ribbenPannel.Controls.Add(this.Txt_RollNo);
             this.ribbenPannel.Controls.Add(this.txt_Name);
-            this.ribbenPannel.Controls.Add(this.guna2PictureBox2);
-            this.ribbenPannel.Controls.Add(this.txt_warning);
-            this.ribbenPannel.Controls.Add(this.label1);
+            this.ribbenPannel.Controls.Add(this.Img_Warning);
+            this.ribbenPannel.Controls.Add(this.Label_warning);
+            this.ribbenPannel.Controls.Add(this.label_BloodGroup);
             this.ribbenPannel.Controls.Add(this.Txt_Gender);
             this.ribbenPannel.Controls.Add(this.Txt_Date);
             this.ribbenPannel.Controls.Add(this.Btn_MarkList);
             this.ribbenPannel.Controls.Add(this.Btn_Print);
-            this.ribbenPannel.Controls.Add(this.label9);
+            this.ribbenPannel.Controls.Add(this.label_MobileNo);
             this.ribbenPannel.Controls.Add(this.btn_Search);
             this.ribbenPannel.Controls.Add(this.btn_Delete);
-            this.ribbenPannel.Controls.Add(this.label8);
+            this.ribbenPannel.Controls.Add(this.label_Section);
             this.ribbenPannel.Controls.Add(this.btn_Submit);
             this.ribbenPannel.Controls.Add(this.btn_Insert);
-            this.ribbenPannel.Controls.Add(this.label5);
-            this.ribbenPannel.Controls.Add(this.label7);
-            this.ribbenPannel.Controls.Add(this.label4);
-            this.ribbenPannel.Controls.Add(this.label6);
-            this.ribbenPannel.Controls.Add(this.label3);
-            this.ribbenPannel.Controls.Add(this.label2);
+            this.ribbenPannel.Controls.Add(this.label_Gender);
+            this.ribbenPannel.Controls.Add(this.label_Standard);
+            this.ribbenPannel.Controls.Add(this.label_Dob);
+            this.ribbenPannel.Controls.Add(this.label_Address);
+            this.ribbenPannel.Controls.Add(this.label_RollNo);
+            this.ribbenPannel.Controls.Add(this.label_Name);
             this.ribbenPannel.Controls.Add(this.Student_GridView);
             this.ribbenPannel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.ribbenPannel.ForeColor = System.Drawing.SystemColors.Control;
@@ -327,7 +327,7 @@ namespace GSMS
             this.txt_Name.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Name.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txt_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Name.Location = new System.Drawing.Point(257, 32);
+            this.txt_Name.Location = new System.Drawing.Point(259, 32);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.PasswordChar = '\0';
             this.txt_Name.PlaceholderText = "";
@@ -335,37 +335,37 @@ namespace GSMS
             this.txt_Name.Size = new System.Drawing.Size(264, 46);
             this.txt_Name.TabIndex = 86;
             // 
-            // guna2PictureBox2
+            // Img_Warning
             // 
-            this.guna2PictureBox2.Image = global::GSMS.Properties.Resources._1243910;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(927, 377);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(24, 20);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox2.TabIndex = 85;
-            this.guna2PictureBox2.TabStop = false;
+            this.Img_Warning.Image = global::GSMS.Properties.Resources._1243910;
+            this.Img_Warning.ImageRotate = 0F;
+            this.Img_Warning.Location = new System.Drawing.Point(927, 377);
+            this.Img_Warning.Name = "Img_Warning";
+            this.Img_Warning.Size = new System.Drawing.Size(24, 20);
+            this.Img_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Img_Warning.TabIndex = 85;
+            this.Img_Warning.TabStop = false;
             // 
-            // txt_warning
+            // Label_warning
             // 
-            this.txt_warning.AutoSize = true;
-            this.txt_warning.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_warning.ForeColor = System.Drawing.SystemColors.Control;
-            this.txt_warning.Location = new System.Drawing.Point(632, 379);
-            this.txt_warning.Name = "txt_warning";
-            this.txt_warning.Size = new System.Drawing.Size(289, 18);
-            this.txt_warning.TabIndex = 42;
-            this.txt_warning.Text = "Teacher only access the student mark list";
+            this.Label_warning.AutoSize = true;
+            this.Label_warning.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_warning.ForeColor = System.Drawing.SystemColors.Control;
+            this.Label_warning.Location = new System.Drawing.Point(632, 379);
+            this.Label_warning.Name = "Label_warning";
+            this.Label_warning.Size = new System.Drawing.Size(289, 18);
+            this.Label_warning.TabIndex = 42;
+            this.Label_warning.Text = "Teacher only access the student mark list";
             // 
-            // label1
+            // label_BloodGroup
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(866, 298);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(240, 36);
-            this.label1.TabIndex = 41;
-            this.label1.Text = "BLOOD GROUP";
+            this.label_BloodGroup.AutoSize = true;
+            this.label_BloodGroup.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_BloodGroup.Location = new System.Drawing.Point(866, 298);
+            this.label_BloodGroup.Name = "label_BloodGroup";
+            this.label_BloodGroup.Size = new System.Drawing.Size(240, 36);
+            this.label_BloodGroup.TabIndex = 41;
+            this.label_BloodGroup.Text = "BLOOD GROUP";
             // 
             // Txt_Gender
             // 
@@ -459,15 +459,15 @@ namespace GSMS
             this.Btn_Print.Text = "PRINT";
             this.Btn_Print.Click += new System.EventHandler(this.Btn_Print_Click);
             // 
-            // label9
+            // label_MobileNo
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label9.Location = new System.Drawing.Point(38, 293);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(191, 36);
-            this.label9.TabIndex = 37;
-            this.label9.Text = "MOBILE NO";
+            this.label_MobileNo.AutoSize = true;
+            this.label_MobileNo.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_MobileNo.Location = new System.Drawing.Point(38, 293);
+            this.label_MobileNo.Name = "label_MobileNo";
+            this.label_MobileNo.Size = new System.Drawing.Size(191, 36);
+            this.label_MobileNo.TabIndex = 37;
+            this.label_MobileNo.Text = "MOBILE NO";
             // 
             // btn_Search
             // 
@@ -523,15 +523,15 @@ namespace GSMS
             this.btn_Delete.Text = "DELETE";
             this.btn_Delete.Click += new System.EventHandler(this.btn_Delete_Click);
             // 
-            // label8
+            // label_Section
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label8.Location = new System.Drawing.Point(944, 139);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(151, 36);
-            this.label8.TabIndex = 37;
-            this.label8.Text = "SECTION";
+            this.label_Section.AutoSize = true;
+            this.label_Section.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Section.Location = new System.Drawing.Point(944, 139);
+            this.label_Section.Name = "label_Section";
+            this.label_Section.Size = new System.Drawing.Size(151, 36);
+            this.label_Section.TabIndex = 37;
+            this.label_Section.Text = "SECTION";
             // 
             // btn_Submit
             // 
@@ -586,65 +586,65 @@ namespace GSMS
             this.btn_Insert.Text = "INSERT";
             this.btn_Insert.Click += new System.EventHandler(this.btn_Insert_Click);
             // 
-            // label5
+            // label_Gender
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label5.Location = new System.Drawing.Point(88, 234);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(141, 36);
-            this.label5.TabIndex = 37;
-            this.label5.Text = "GENDER";
+            this.label_Gender.AutoSize = true;
+            this.label_Gender.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Gender.Location = new System.Drawing.Point(88, 234);
+            this.label_Gender.Name = "label_Gender";
+            this.label_Gender.Size = new System.Drawing.Size(141, 36);
+            this.label_Gender.TabIndex = 37;
+            this.label_Gender.Text = "GENDER";
             // 
-            // label7
+            // label_Standard
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label7.Location = new System.Drawing.Point(910, 55);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(185, 36);
-            this.label7.TabIndex = 37;
-            this.label7.Text = "STANDARD";
+            this.label_Standard.AutoSize = true;
+            this.label_Standard.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Standard.Location = new System.Drawing.Point(910, 55);
+            this.label_Standard.Name = "label_Standard";
+            this.label_Standard.Size = new System.Drawing.Size(185, 36);
+            this.label_Standard.TabIndex = 37;
+            this.label_Standard.Text = "STANDARD";
             // 
-            // label4
+            // label_Dob
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label4.Location = new System.Drawing.Point(147, 173);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 36);
-            this.label4.TabIndex = 37;
-            this.label4.Text = "DOB";
+            this.label_Dob.AutoSize = true;
+            this.label_Dob.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Dob.Location = new System.Drawing.Point(147, 173);
+            this.label_Dob.Name = "label_Dob";
+            this.label_Dob.Size = new System.Drawing.Size(82, 36);
+            this.label_Dob.TabIndex = 37;
+            this.label_Dob.Text = "DOB";
             // 
-            // label6
+            // label_Address
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label6.Location = new System.Drawing.Point(935, 217);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(160, 36);
-            this.label6.TabIndex = 37;
-            this.label6.Text = "ADDRESS";
+            this.label_Address.AutoSize = true;
+            this.label_Address.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Address.Location = new System.Drawing.Point(935, 217);
+            this.label_Address.Name = "label_Address";
+            this.label_Address.Size = new System.Drawing.Size(160, 36);
+            this.label_Address.TabIndex = 37;
+            this.label_Address.Text = "ADDRESS";
             // 
-            // label3
+            // label_RollNo
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label3.Location = new System.Drawing.Point(80, 102);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(149, 36);
-            this.label3.TabIndex = 37;
-            this.label3.Text = "ROLL NO";
+            this.label_RollNo.AutoSize = true;
+            this.label_RollNo.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_RollNo.Location = new System.Drawing.Point(80, 102);
+            this.label_RollNo.Name = "label_RollNo";
+            this.label_RollNo.Size = new System.Drawing.Size(149, 36);
+            this.label_RollNo.TabIndex = 37;
+            this.label_RollNo.Text = "ROLL NO";
             // 
-            // label2
+            // label_Name
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(121, 37);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(104, 36);
-            this.label2.TabIndex = 37;
-            this.label2.Text = "NAME";
+            this.label_Name.AutoSize = true;
+            this.label_Name.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold);
+            this.label_Name.Location = new System.Drawing.Point(121, 37);
+            this.label_Name.Name = "label_Name";
+            this.label_Name.Size = new System.Drawing.Size(104, 36);
+            this.label_Name.TabIndex = 37;
+            this.label_Name.Text = "NAME";
             // 
             // sPanel1
             // 
@@ -656,7 +656,7 @@ namespace GSMS
             this.sPanel1.Controls.Add(this.Btn_Library);
             this.sPanel1.Controls.Add(this.Btn_Teachers);
             this.sPanel1.Controls.Add(this.Btn_Students);
-            this.sPanel1.Controls.Add(this.label11);
+            this.sPanel1.Controls.Add(this.label_CopyRights);
             this.sPanel1.Controls.Add(this.logo_pic);
             this.sPanel1.Controls.Add(this.Home_btn);
             this.sPanel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -751,15 +751,15 @@ namespace GSMS
             this.Btn_Students.Text = "STUDENTS";
             this.Btn_Students.Click += new System.EventHandler(this.Btn_Students_Click);
             // 
-            // label11
+            // label_CopyRights
             // 
-            this.label11.AutoSize = true;
-            this.label11.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label11.Location = new System.Drawing.Point(65, 854);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(118, 17);
-            this.label11.TabIndex = 22;
-            this.label11.Text = "Copyright © 2022";
+            this.label_CopyRights.AutoSize = true;
+            this.label_CopyRights.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_CopyRights.Location = new System.Drawing.Point(65, 854);
+            this.label_CopyRights.Name = "label_CopyRights";
+            this.label_CopyRights.Size = new System.Drawing.Size(118, 17);
+            this.label_CopyRights.TabIndex = 22;
+            this.label_CopyRights.Text = "Copyright © 2022";
             // 
             // logo_pic
             // 
@@ -801,45 +801,63 @@ namespace GSMS
             this.guna2HtmlLabel1.TabIndex = 26;
             this.guna2HtmlLabel1.Text = "Copyright © 2022";
             // 
-            // sPanel2
+            // HeadderPannel
             // 
-            this.sPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.sPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.sPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.sPanel2.BorderRadius = 10;
-            this.sPanel2.BorderSize = 0;
-            this.sPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sPanel2.Controls.Add(this.Btn_Logout);
-            this.sPanel2.Controls.Add(this.guna2PictureBox1);
-            this.sPanel2.Controls.Add(this.label12);
-            this.sPanel2.Controls.Add(this.txt_searchteacher);
-            this.sPanel2.ForeColor = System.Drawing.Color.White;
-            this.sPanel2.Location = new System.Drawing.Point(242, 50);
-            this.sPanel2.Name = "sPanel2";
-            this.sPanel2.Size = new System.Drawing.Size(1483, 73);
-            this.sPanel2.TabIndex = 78;
+            this.HeadderPannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.HeadderPannel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HeadderPannel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.HeadderPannel.BorderRadius = 10;
+            this.HeadderPannel.BorderSize = 0;
+            this.HeadderPannel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HeadderPannel.Controls.Add(this.Btn_Logout);
+            this.HeadderPannel.Controls.Add(this.Img_Student_Logo);
+            this.HeadderPannel.Controls.Add(this.label_Student_details);
+            this.HeadderPannel.Controls.Add(this.txt_searchteacher);
+            this.HeadderPannel.ForeColor = System.Drawing.Color.White;
+            this.HeadderPannel.Location = new System.Drawing.Point(242, 50);
+            this.HeadderPannel.Name = "HeadderPannel";
+            this.HeadderPannel.Size = new System.Drawing.Size(1483, 73);
+            this.HeadderPannel.TabIndex = 78;
             // 
-            // guna2PictureBox1
+            // Btn_Logout
             // 
-            this.guna2PictureBox1.Image = global::GSMS.Properties.Resources.Student_logo;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(54, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(76, 65);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 59;
-            this.guna2PictureBox1.TabStop = false;
+            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.Btn_Logout.IconColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_Logout.IconSize = 30;
+            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Btn_Logout.Location = new System.Drawing.Point(1315, 14);
+            this.Btn_Logout.Name = "Btn_Logout";
+            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
+            this.Btn_Logout.TabIndex = 92;
+            this.Btn_Logout.Text = "LOG OUT    ";
+            this.Btn_Logout.UseVisualStyleBackColor = false;
+            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
             // 
-            // label12
+            // Img_Student_Logo
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(136, 23);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(259, 31);
-            this.label12.TabIndex = 58;
-            this.label12.Text = "STUDENT\'S DETAILS";
+            this.Img_Student_Logo.Image = global::GSMS.Properties.Resources.Student_logo;
+            this.Img_Student_Logo.ImageRotate = 0F;
+            this.Img_Student_Logo.Location = new System.Drawing.Point(54, 3);
+            this.Img_Student_Logo.Name = "Img_Student_Logo";
+            this.Img_Student_Logo.Size = new System.Drawing.Size(76, 65);
+            this.Img_Student_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Img_Student_Logo.TabIndex = 59;
+            this.Img_Student_Logo.TabStop = false;
+            // 
+            // label_Student_details
+            // 
+            this.label_Student_details.AutoSize = true;
+            this.label_Student_details.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Student_details.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Student_details.Location = new System.Drawing.Point(136, 23);
+            this.label_Student_details.Name = "label_Student_details";
+            this.label_Student_details.Size = new System.Drawing.Size(259, 31);
+            this.label_Student_details.TabIndex = 58;
+            this.label_Student_details.Text = "STUDENT\'S DETAILS";
             // 
             // txt_searchteacher
             // 
@@ -879,40 +897,18 @@ namespace GSMS
             this.minimize_btn.TabIndex = 83;
             this.minimize_btn.Click += new System.EventHandler(this.minimize_btn_Click);
             // 
-            // close_btn
+            // btn_close
             // 
-            this.close_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.close_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.close_btn.CustomIconSize = 15F;
-            this.close_btn.FillColor = System.Drawing.Color.Transparent;
-            this.close_btn.IconColor = System.Drawing.Color.Black;
-            this.close_btn.Location = new System.Drawing.Point(1707, 12);
-            this.close_btn.Name = "close_btn";
-            this.close_btn.Size = new System.Drawing.Size(31, 28);
-            this.close_btn.TabIndex = 82;
-            this.close_btn.Click += new System.EventHandler(this.close_btn_Click);
-            // 
-            // Close_Timer
-            // 
-            this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
-            // 
-            // Btn_Logout
-            // 
-            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
-            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.Btn_Logout.IconColor = System.Drawing.Color.White;
-            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Btn_Logout.IconSize = 30;
-            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Btn_Logout.Location = new System.Drawing.Point(1315, 14);
-            this.Btn_Logout.Name = "Btn_Logout";
-            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
-            this.Btn_Logout.TabIndex = 92;
-            this.Btn_Logout.Text = "LOG OUT    ";
-            this.Btn_Logout.UseVisualStyleBackColor = false;
-            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
+            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.btn_close.CustomIconSize = 15F;
+            this.btn_close.FillColor = System.Drawing.Color.Transparent;
+            this.btn_close.IconColor = System.Drawing.Color.Black;
+            this.btn_close.Location = new System.Drawing.Point(1707, 12);
+            this.btn_close.Name = "btn_close";
+            this.btn_close.Size = new System.Drawing.Size(31, 28);
+            this.btn_close.TabIndex = 82;
+            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
             // Student
             // 
@@ -920,8 +916,8 @@ namespace GSMS
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1750, 885);
             this.Controls.Add(this.minimize_btn);
-            this.Controls.Add(this.close_btn);
-            this.Controls.Add(this.sPanel2);
+            this.Controls.Add(this.btn_close);
+            this.Controls.Add(this.HeadderPannel);
             this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.ribbenPannel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -932,13 +928,13 @@ namespace GSMS
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).EndInit();
             this.ribbenPannel.ResumeLayout(false);
             this.ribbenPannel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Warning)).EndInit();
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
-            this.sPanel2.ResumeLayout(false);
-            this.sPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.HeadderPannel.ResumeLayout(false);
+            this.HeadderPannel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Student_Logo)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -950,32 +946,32 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button btn_Submit;
         private Guna.UI2.WinForms.Guna2Button btn_Insert;
         private Guna.UI2.WinForms.Guna2Panel ribbenPannel;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_MobileNo;
+        private System.Windows.Forms.Label label_Section;
+        private System.Windows.Forms.Label label_Gender;
+        private System.Windows.Forms.Label label_Standard;
+        private System.Windows.Forms.Label label_Dob;
+        private System.Windows.Forms.Label label_Address;
+        private System.Windows.Forms.Label label_RollNo;
+        private System.Windows.Forms.Label label_Name;
         private Guna.UI2.WinForms.Guna2Button Btn_Print;
         private Guna.UI2.WinForms.Guna2Button Btn_MarkList;
         private Guna.UI2.WinForms.Guna2ComboBox Txt_Gender;
         private Guna.UI2.WinForms.Guna2DateTimePicker Txt_Date;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_BloodGroup;
         private Sipaa.Framework.SPanel sPanel1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel1;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label_CopyRights;
         private Guna.UI2.WinForms.Guna2PictureBox logo_pic;
         private Guna.UI2.WinForms.Guna2Button Home_btn;
-        private Sipaa.Framework.SPanel sPanel2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label12;
+        private Sipaa.Framework.SPanel HeadderPannel;
+        private Guna.UI2.WinForms.Guna2PictureBox Img_Student_Logo;
+        private System.Windows.Forms.Label label_Student_details;
         private Guna.UI2.WinForms.Guna2TextBox txt_searchteacher;
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
-        private Guna.UI2.WinForms.Guna2ControlBox close_btn;
-        private System.Windows.Forms.Label txt_warning;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2ControlBox btn_close;
+        private System.Windows.Forms.Label Label_warning;
+        private Guna.UI2.WinForms.Guna2PictureBox Img_Warning;
         private Guna.UI2.WinForms.Guna2TextBox txt_Blood_Group;
         private Guna.UI2.WinForms.Guna2TextBox Txt_Address;
         private Guna.UI2.WinForms.Guna2TextBox Txt_Section;

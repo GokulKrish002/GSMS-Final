@@ -184,18 +184,7 @@ namespace GSMS
                 txt_Shelves.Text = "";
             }
         }
-        private void Close_timer_Tick(object sender, EventArgs e)
-        {
-            if (this.Opacity > 0.0)
-            {
-                this.Opacity -= 0.25;
-            }
-            else
-            {
-                Close_Timer.Stop();
-                Application.Exit();
-            }
-        }
+
         private void Home_btn_Click_1(object sender, EventArgs e)
         {
             Index obj = new Index();
@@ -205,7 +194,7 @@ namespace GSMS
 
         private void close_btn_Click_1(object sender, EventArgs e)
         {
-            Close_Timer.Start();
+            Application.Exit();
         }
 
         private void Btn_Students_Click(object sender, EventArgs e)

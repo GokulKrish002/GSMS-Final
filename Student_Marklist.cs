@@ -276,25 +276,12 @@ namespace GSMS
 
         private void close_btn_Click(object sender, EventArgs e)
         {
-            Close_Timer.Start();
+            Application.Exit();
         }
 
         private void minimize_btn_Click(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Close_Timer_Tick(object sender, EventArgs e)
-        {
-            if (this.Opacity > 0.0)
-            {
-                this.Opacity -= 0.25;
-            }
-            else
-            {
-                Close_Timer.Stop();
-                Application.Exit();
-            }
         }
 
         private void Btn_Events_Click(object sender, EventArgs e)

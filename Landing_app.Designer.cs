@@ -31,9 +31,9 @@ namespace GSMS
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.Btn_Minimize = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Btn_Close = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Btn_Sign_in = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -42,46 +42,47 @@ namespace GSMS
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // guna2ControlBox2
+            // Btn_Minimize
             // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1121, 12);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(31, 28);
-            this.guna2ControlBox2.TabIndex = 7;
+            this.Btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Minimize.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Minimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.Btn_Minimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Btn_Minimize.IconColor = System.Drawing.Color.Black;
+            this.Btn_Minimize.Location = new System.Drawing.Point(1121, 12);
+            this.Btn_Minimize.Name = "Btn_Minimize";
+            this.Btn_Minimize.Size = new System.Drawing.Size(31, 28);
+            this.Btn_Minimize.TabIndex = 7;
             // 
-            // guna2ControlBox1
+            // Btn_Close
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.CustomIconSize = 15F;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1158, 12);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(31, 28);
-            this.guna2ControlBox1.TabIndex = 6;
+            this.Btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Close.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Close.CustomIconSize = 15F;
+            this.Btn_Close.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Btn_Close.IconColor = System.Drawing.Color.Black;
+            this.Btn_Close.Location = new System.Drawing.Point(1158, 12);
+            this.Btn_Close.Name = "Btn_Close";
+            this.Btn_Close.Size = new System.Drawing.Size(31, 28);
+            this.Btn_Close.TabIndex = 6;
+            this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
-            // guna2Button1
+            // Btn_Sign_in
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(132)))), ((int)(((byte)(31)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold);
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Location = new System.Drawing.Point(146, 448);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(180, 45);
-            this.guna2Button1.TabIndex = 5;
-            this.guna2Button1.Text = "Sign-In";
-            this.guna2Button1.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.Btn_Sign_in.BorderRadius = 10;
+            this.Btn_Sign_in.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Sign_in.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Sign_in.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_Sign_in.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_Sign_in.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(132)))), ((int)(((byte)(31)))));
+            this.Btn_Sign_in.Font = new System.Drawing.Font("Consolas", 10.8F, System.Drawing.FontStyle.Bold);
+            this.Btn_Sign_in.ForeColor = System.Drawing.Color.White;
+            this.Btn_Sign_in.Location = new System.Drawing.Point(146, 448);
+            this.Btn_Sign_in.Name = "Btn_Sign_in";
+            this.Btn_Sign_in.Size = new System.Drawing.Size(180, 45);
+            this.Btn_Sign_in.TabIndex = 5;
+            this.Btn_Sign_in.Text = "Sign-In";
+            this.Btn_Sign_in.Click += new System.EventHandler(this.Btn_Sign_in_Click);
             // 
             // guna2PictureBox1
             // 
@@ -99,9 +100,9 @@ namespace GSMS
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 728);
-            this.Controls.Add(this.guna2ControlBox2);
-            this.Controls.Add(this.guna2ControlBox1);
-            this.Controls.Add(this.guna2Button1);
+            this.Controls.Add(this.Btn_Minimize);
+            this.Controls.Add(this.Btn_Close);
+            this.Controls.Add(this.Btn_Sign_in);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Landing_app";
@@ -115,9 +116,9 @@ namespace GSMS
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2ControlBox Btn_Minimize;
+        private Guna.UI2.WinForms.Guna2ControlBox Btn_Close;
+        private Guna.UI2.WinForms.Guna2Button Btn_Sign_in;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
     }
 }

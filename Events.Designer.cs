@@ -30,9 +30,9 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Event_GridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
@@ -45,31 +45,31 @@ namespace GSMS
             this.date_EventDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.sPanel2 = new Sipaa.Framework.SPanel();
             this.Btn_LogOut = new FontAwesome.Sharp.IconButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.Img_Event_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label_Event_Details = new System.Windows.Forms.Label();
             this.txt_EventDiscription = new System.Windows.Forms.RichTextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_EventName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.label_Discription = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.Btn_Events = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Library = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Teachers = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Students = new Guna.UI2.WinForms.Guna2Button();
-            this.label9 = new System.Windows.Forms.Label();
+            this.label_CopyRight = new System.Windows.Forms.Label();
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Home_btn = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Main_Pannel = new Guna.UI2.WinForms.Guna2Panel();
             this.txt_Eventid = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.label_EventID = new System.Windows.Forms.Label();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             ((System.ComponentModel.ISupportInitialize)(this.Event_GridView)).BeginInit();
             this.sPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Event_Logo)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
-            this.guna2Panel2.SuspendLayout();
+            this.Main_Pannel.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -82,26 +82,26 @@ namespace GSMS
             // 
             this.Event_GridView.AllowUserToAddRows = false;
             this.Event_GridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.Event_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Event_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Event_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Event_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Event_GridView.ColumnHeadersHeight = 4;
             this.Event_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Event_GridView.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Event_GridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.Event_GridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Event_GridView.Location = new System.Drawing.Point(14, 13);
             this.Event_GridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -189,9 +189,9 @@ namespace GSMS
             this.Btn_Add.Location = new System.Drawing.Point(857, 176);
             this.Btn_Add.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Add.Name = "Btn_Add";
-            this.Btn_Add.Size = new System.Drawing.Size(180, 46);
+            this.Btn_Add.Size = new System.Drawing.Size(209, 46);
             this.Btn_Add.TabIndex = 0;
-            this.Btn_Add.Text = "ADD";
+            this.Btn_Add.Text = "ADD EVENT";
             this.Btn_Add.Click += new System.EventHandler(this.Btn_Add_Click);
             // 
             // Btn_Delete
@@ -205,12 +205,12 @@ namespace GSMS
             this.Btn_Delete.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Btn_Delete.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Delete.ForeColor = System.Drawing.Color.White;
-            this.Btn_Delete.Location = new System.Drawing.Point(857, 240);
+            this.Btn_Delete.Location = new System.Drawing.Point(857, 306);
             this.Btn_Delete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Delete.Name = "Btn_Delete";
-            this.Btn_Delete.Size = new System.Drawing.Size(180, 46);
+            this.Btn_Delete.Size = new System.Drawing.Size(209, 46);
             this.Btn_Delete.TabIndex = 48;
-            this.Btn_Delete.Text = "DELETE";
+            this.Btn_Delete.Text = "REMOVE EVENT";
             this.Btn_Delete.Click += new System.EventHandler(this.Btn_Delete_Click);
             // 
             // Btn_Update
@@ -224,12 +224,12 @@ namespace GSMS
             this.Btn_Update.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.Btn_Update.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Update.ForeColor = System.Drawing.Color.White;
-            this.Btn_Update.Location = new System.Drawing.Point(857, 306);
+            this.Btn_Update.Location = new System.Drawing.Point(857, 241);
             this.Btn_Update.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Update.Name = "Btn_Update";
-            this.Btn_Update.Size = new System.Drawing.Size(180, 46);
+            this.Btn_Update.Size = new System.Drawing.Size(209, 46);
             this.Btn_Update.TabIndex = 49;
-            this.Btn_Update.Text = "UPDATE";
+            this.Btn_Update.Text = "UPDATE EVENT";
             this.Btn_Update.Click += new System.EventHandler(this.Btn_Update_Click);
             // 
             // txt_EventName
@@ -276,8 +276,8 @@ namespace GSMS
             this.sPanel2.BorderSize = 0;
             this.sPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sPanel2.Controls.Add(this.Btn_LogOut);
-            this.sPanel2.Controls.Add(this.guna2PictureBox1);
-            this.sPanel2.Controls.Add(this.label3);
+            this.sPanel2.Controls.Add(this.Img_Event_Logo);
+            this.sPanel2.Controls.Add(this.label_Event_Details);
             this.sPanel2.ForeColor = System.Drawing.Color.White;
             this.sPanel2.Location = new System.Drawing.Point(285, 54);
             this.sPanel2.Margin = new System.Windows.Forms.Padding(4);
@@ -303,29 +303,29 @@ namespace GSMS
             this.Btn_LogOut.UseVisualStyleBackColor = false;
             this.Btn_LogOut.Click += new System.EventHandler(this.Btn_LogOut_Click);
             // 
-            // guna2PictureBox1
+            // Img_Event_Logo
             // 
-            this.guna2PictureBox1.Image = global::GSMS.Properties.Resources._1250932;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(36, 10);
-            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(63, 43);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 59;
-            this.guna2PictureBox1.TabStop = false;
+            this.Img_Event_Logo.Image = global::GSMS.Properties.Resources._1250932;
+            this.Img_Event_Logo.ImageRotate = 0F;
+            this.Img_Event_Logo.Location = new System.Drawing.Point(36, 10);
+            this.Img_Event_Logo.Margin = new System.Windows.Forms.Padding(4);
+            this.Img_Event_Logo.Name = "Img_Event_Logo";
+            this.Img_Event_Logo.Size = new System.Drawing.Size(63, 43);
+            this.Img_Event_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Img_Event_Logo.TabIndex = 59;
+            this.Img_Event_Logo.TabStop = false;
             // 
-            // label3
+            // label_Event_Details
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(95, 15);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(221, 38);
-            this.label3.TabIndex = 58;
-            this.label3.Text = "EVENT DETAILS";
+            this.label_Event_Details.AutoSize = true;
+            this.label_Event_Details.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
+            this.label_Event_Details.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Event_Details.Location = new System.Drawing.Point(95, 15);
+            this.label_Event_Details.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Event_Details.Name = "label_Event_Details";
+            this.label_Event_Details.Size = new System.Drawing.Size(221, 38);
+            this.label_Event_Details.TabIndex = 58;
+            this.label_Event_Details.Text = "EVENT DETAILS";
             // 
             // txt_EventDiscription
             // 
@@ -337,17 +337,17 @@ namespace GSMS
             this.txt_EventDiscription.TabIndex = 81;
             this.txt_EventDiscription.Text = "";
             // 
-            // label1
+            // label_EventName
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(264, 188);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(178, 31);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "EVENT NAME";
+            this.label_EventName.AutoSize = true;
+            this.label_EventName.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_EventName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_EventName.Location = new System.Drawing.Point(264, 188);
+            this.label_EventName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_EventName.Name = "label_EventName";
+            this.label_EventName.Size = new System.Drawing.Size(178, 31);
+            this.label_EventName.TabIndex = 58;
+            this.label_EventName.Text = "EVENT NAME";
             // 
             // label2
             // 
@@ -361,17 +361,17 @@ namespace GSMS
             this.label2.TabIndex = 58;
             this.label2.Text = "EVENT DATE";
             // 
-            // label4
+            // label_Discription
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(1121, 176);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(276, 31);
-            this.label4.TabIndex = 58;
-            this.label4.Text = "EVENT DISCRIPTION :";
+            this.label_Discription.AutoSize = true;
+            this.label_Discription.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Discription.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Discription.Location = new System.Drawing.Point(1121, 176);
+            this.label_Discription.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_Discription.Name = "label_Discription";
+            this.label_Discription.Size = new System.Drawing.Size(276, 31);
+            this.label_Discription.TabIndex = 58;
+            this.label_Discription.Text = "EVENT DISCRIPTION :";
             // 
             // guna2Panel1
             // 
@@ -380,7 +380,7 @@ namespace GSMS
             this.guna2Panel1.Controls.Add(this.Btn_Library);
             this.guna2Panel1.Controls.Add(this.Btn_Teachers);
             this.guna2Panel1.Controls.Add(this.Btn_Students);
-            this.guna2Panel1.Controls.Add(this.label9);
+            this.guna2Panel1.Controls.Add(this.label_CopyRight);
             this.guna2Panel1.Controls.Add(this.logo_pic);
             this.guna2Panel1.Controls.Add(this.Home_btn);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -472,15 +472,15 @@ namespace GSMS
             this.Btn_Students.Text = "STUDENTS";
             this.Btn_Students.Click += new System.EventHandler(this.Btn_Students_Click);
             // 
-            // label9
+            // label_CopyRight
             // 
-            this.label9.AutoSize = true;
-            this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(54, 840);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(118, 17);
-            this.label9.TabIndex = 15;
-            this.label9.Text = "Copyright © 2022";
+            this.label_CopyRight.AutoSize = true;
+            this.label_CopyRight.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_CopyRight.Location = new System.Drawing.Point(54, 840);
+            this.label_CopyRight.Name = "label_CopyRight";
+            this.label_CopyRight.Size = new System.Drawing.Size(118, 17);
+            this.label_CopyRight.TabIndex = 15;
+            this.label_CopyRight.Text = "Copyright © 2022";
             // 
             // logo_pic
             // 
@@ -512,14 +512,14 @@ namespace GSMS
             this.Home_btn.Text = "HOME";
             this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click_);
             // 
-            // guna2Panel2
+            // Main_Pannel
             // 
-            this.guna2Panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.guna2Panel2.Controls.Add(this.Event_GridView);
-            this.guna2Panel2.Location = new System.Drawing.Point(270, 424);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(1447, 433);
-            this.guna2Panel2.TabIndex = 83;
+            this.Main_Pannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
+            this.Main_Pannel.Controls.Add(this.Event_GridView);
+            this.Main_Pannel.Location = new System.Drawing.Point(270, 424);
+            this.Main_Pannel.Name = "Main_Pannel";
+            this.Main_Pannel.Size = new System.Drawing.Size(1447, 433);
+            this.Main_Pannel.TabIndex = 83;
             // 
             // txt_Eventid
             // 
@@ -542,17 +542,17 @@ namespace GSMS
             this.txt_Eventid.Size = new System.Drawing.Size(291, 46);
             this.txt_Eventid.TabIndex = 50;
             // 
-            // label5
+            // label_EventID
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(265, 249);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(128, 31);
-            this.label5.TabIndex = 58;
-            this.label5.Text = "EVENT ID";
+            this.label_EventID.AutoSize = true;
+            this.label_EventID.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_EventID.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_EventID.Location = new System.Drawing.Point(265, 249);
+            this.label_EventID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label_EventID.Name = "label_EventID";
+            this.label_EventID.Size = new System.Drawing.Size(128, 31);
+            this.label_EventID.TabIndex = 58;
+            this.label_EventID.Text = "EVENT ID";
             // 
             // minimize_btn
             // 
@@ -589,10 +589,10 @@ namespace GSMS
             this.Controls.Add(this.close_btn);
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.txt_EventDiscription);
-            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label_Discription);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_EventID);
+            this.Controls.Add(this.label_EventName);
             this.Controls.Add(this.sPanel2);
             this.Controls.Add(this.date_EventDate);
             this.Controls.Add(this.txt_Eventid);
@@ -603,7 +603,7 @@ namespace GSMS
             this.Controls.Add(this.iconButton3);
             this.Controls.Add(this.iconButton1);
             this.Controls.Add(this.iconButton2);
-            this.Controls.Add(this.guna2Panel2);
+            this.Controls.Add(this.Main_Pannel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Events";
@@ -611,11 +611,11 @@ namespace GSMS
             ((System.ComponentModel.ISupportInitialize)(this.Event_GridView)).EndInit();
             this.sPanel2.ResumeLayout(false);
             this.sPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Event_Logo)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
-            this.guna2Panel2.ResumeLayout(false);
+            this.Main_Pannel.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -634,21 +634,21 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2DataGridView Event_GridView;
         private System.Windows.Forms.RichTextBox txt_EventDiscription;
         private Sipaa.Framework.SPanel sPanel2;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private Guna.UI2.WinForms.Guna2PictureBox Img_Event_Logo;
+        private System.Windows.Forms.Label label_Event_Details;
+        private System.Windows.Forms.Label label_Discription;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_EventName;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label_CopyRight;
         private Guna.UI2.WinForms.Guna2PictureBox logo_pic;
         private Guna.UI2.WinForms.Guna2Button Home_btn;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private Guna.UI2.WinForms.Guna2Panel Main_Pannel;
         private Guna.UI2.WinForms.Guna2Button Btn_Events;
         private Guna.UI2.WinForms.Guna2Button Btn_Library;
         private Guna.UI2.WinForms.Guna2Button Btn_Teachers;
         private Guna.UI2.WinForms.Guna2Button Btn_Students;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label_EventID;
         private Guna.UI2.WinForms.Guna2TextBox txt_Eventid;
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;

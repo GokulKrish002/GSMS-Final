@@ -249,19 +249,6 @@ namespace GSMS
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void Close_Timer_Tick(object sender, EventArgs e)
-        {
-            if (this.Opacity > 0.0)
-            {
-                this.Opacity -= 0.25;
-            }
-            else
-            {
-                Close_Timer.Stop();
-                Application.Exit();
-            }
-        }
-
         private void Btn_Home_Click(object sender, EventArgs e)
         {
             Index obj = new Index();

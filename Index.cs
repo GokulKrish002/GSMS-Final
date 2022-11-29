@@ -19,14 +19,7 @@ namespace GSMS
 
         private void close_btn_Click(object sender, EventArgs e)
         {
-            this.Close();
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            Landing_app obj = new Landing_app();
-            obj.Show();
-            this.Hide();
+            Application.Exit();
         }
 
         private void Btn_Teachers_Click(object sender, EventArgs e)

@@ -35,10 +35,11 @@ namespace GSMS
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.sPanel1 = new Sipaa.Framework.SPanel();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label10 = new System.Windows.Forms.Label();
+            this.label_Teacher_Details = new System.Windows.Forms.Label();
             this.txt_searchteacher = new Guna.UI2.WinForms.Guna2TextBox();
-            this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.btn_minimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.txt_address = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_email = new Guna.UI2.WinForms.Guna2TextBox();
@@ -47,13 +48,13 @@ namespace GSMS
             this.txt_fullname = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_staffid = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_designation = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
+            this.label_Email = new System.Windows.Forms.Label();
+            this.label_Designation = new System.Windows.Forms.Label();
+            this.label_Basic_Pay = new System.Windows.Forms.Label();
+            this.label_Address = new System.Windows.Forms.Label();
+            this.Label_PhoneNo = new System.Windows.Forms.Label();
+            this.label_FullName = new System.Windows.Forms.Label();
+            this.label_Staff = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.sPanel2 = new Sipaa.Framework.SPanel();
             this.Btn_Events = new Guna.UI2.WinForms.Guna2Button();
@@ -61,7 +62,7 @@ namespace GSMS
             this.Btn_Teachers = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Students = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
-            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Gsms_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Btn_Home = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -75,14 +76,13 @@ namespace GSMS
             this.update_btn = new Guna.UI2.WinForms.Guna2Button();
             this.btn_insert = new Guna.UI2.WinForms.Guna2Button();
             this.Close_Timer = new System.Windows.Forms.Timer(this.components);
-            this.label8 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label_Warning = new System.Windows.Forms.Label();
+            this.label_Warning2 = new System.Windows.Forms.Label();
             this.sPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.sPanel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Gsms_Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_dataGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -102,13 +102,31 @@ namespace GSMS
             this.sPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sPanel1.Controls.Add(this.iconButton1);
             this.sPanel1.Controls.Add(this.guna2PictureBox1);
-            this.sPanel1.Controls.Add(this.label10);
+            this.sPanel1.Controls.Add(this.label_Teacher_Details);
             this.sPanel1.Controls.Add(this.txt_searchteacher);
             this.sPanel1.ForeColor = System.Drawing.Color.White;
             this.sPanel1.Location = new System.Drawing.Point(226, 46);
             this.sPanel1.Name = "sPanel1";
             this.sPanel1.Size = new System.Drawing.Size(1496, 73);
             this.sPanel1.TabIndex = 77;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.iconButton1.Location = new System.Drawing.Point(1336, 14);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(138, 41);
+            this.iconButton1.TabIndex = 94;
+            this.iconButton1.Text = "LOG OUT    ";
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // guna2PictureBox1
             // 
@@ -121,16 +139,16 @@ namespace GSMS
             this.guna2PictureBox1.TabIndex = 59;
             this.guna2PictureBox1.TabStop = false;
             // 
-            // label10
+            // label_Teacher_Details
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label10.Location = new System.Drawing.Point(136, 23);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(257, 31);
-            this.label10.TabIndex = 58;
-            this.label10.Text = "TEACHER\'S DETAILS";
+            this.label_Teacher_Details.AutoSize = true;
+            this.label_Teacher_Details.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Teacher_Details.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Teacher_Details.Location = new System.Drawing.Point(136, 23);
+            this.label_Teacher_Details.Name = "label_Teacher_Details";
+            this.label_Teacher_Details.Size = new System.Drawing.Size(257, 31);
+            this.label_Teacher_Details.TabIndex = 58;
+            this.label_Teacher_Details.Text = "TEACHER\'S DETAILS";
             // 
             // txt_searchteacher
             // 
@@ -158,18 +176,18 @@ namespace GSMS
             this.txt_searchteacher.TabIndex = 2;
             this.txt_searchteacher.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_searchteacher_KeyUp);
             // 
-            // minimize_btn
+            // btn_minimize
             // 
-            this.minimize_btn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.minimize_btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.minimize_btn.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.minimize_btn.FillColor = System.Drawing.Color.Transparent;
-            this.minimize_btn.IconColor = System.Drawing.Color.Black;
-            this.minimize_btn.Location = new System.Drawing.Point(1670, 12);
-            this.minimize_btn.Name = "minimize_btn";
-            this.minimize_btn.Size = new System.Drawing.Size(31, 28);
-            this.minimize_btn.TabIndex = 75;
-            this.minimize_btn.Click += new System.EventHandler(this.minimize_btn_Click);
+            this.btn_minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btn_minimize.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.btn_minimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.btn_minimize.FillColor = System.Drawing.Color.Transparent;
+            this.btn_minimize.IconColor = System.Drawing.Color.Black;
+            this.btn_minimize.Location = new System.Drawing.Point(1670, 12);
+            this.btn_minimize.Name = "btn_minimize";
+            this.btn_minimize.Size = new System.Drawing.Size(31, 28);
+            this.btn_minimize.TabIndex = 75;
+            this.btn_minimize.Click += new System.EventHandler(this.minimize_btn_Click);
             // 
             // close_btn
             // 
@@ -334,89 +352,89 @@ namespace GSMS
             this.txt_designation.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txt_designation.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
             // 
-            // label7
+            // label_Email
             // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label7.Location = new System.Drawing.Point(812, 221);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(79, 29);
-            this.label7.TabIndex = 64;
-            this.label7.Text = "Email";
+            this.label_Email.AutoSize = true;
+            this.label_Email.BackColor = System.Drawing.Color.Transparent;
+            this.label_Email.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Email.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Email.Location = new System.Drawing.Point(812, 221);
+            this.label_Email.Name = "label_Email";
+            this.label_Email.Size = new System.Drawing.Size(79, 29);
+            this.label_Email.TabIndex = 64;
+            this.label_Email.Text = "Email";
             // 
-            // label6
+            // label_Designation
             // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label6.Location = new System.Drawing.Point(812, 145);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(155, 29);
-            this.label6.TabIndex = 63;
-            this.label6.Text = "Designation";
+            this.label_Designation.AutoSize = true;
+            this.label_Designation.BackColor = System.Drawing.Color.Transparent;
+            this.label_Designation.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Designation.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Designation.Location = new System.Drawing.Point(812, 145);
+            this.label_Designation.Name = "label_Designation";
+            this.label_Designation.Size = new System.Drawing.Size(155, 29);
+            this.label_Designation.TabIndex = 63;
+            this.label_Designation.Text = "Designation";
             // 
-            // label5
+            // label_Basic_Pay
             // 
-            this.label5.AutoSize = true;
-            this.label5.BackColor = System.Drawing.Color.Transparent;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(294, 421);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(126, 29);
-            this.label5.TabIndex = 62;
-            this.label5.Text = "Basic Pay";
+            this.label_Basic_Pay.AutoSize = true;
+            this.label_Basic_Pay.BackColor = System.Drawing.Color.Transparent;
+            this.label_Basic_Pay.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Basic_Pay.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Basic_Pay.Location = new System.Drawing.Point(299, 422);
+            this.label_Basic_Pay.Name = "label_Basic_Pay";
+            this.label_Basic_Pay.Size = new System.Drawing.Size(126, 29);
+            this.label_Basic_Pay.TabIndex = 62;
+            this.label_Basic_Pay.Text = "Basic Pay";
             // 
-            // label4
+            // label_Address
             // 
-            this.label4.AutoSize = true;
-            this.label4.BackColor = System.Drawing.Color.Transparent;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(313, 355);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 29);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "Address";
+            this.label_Address.AutoSize = true;
+            this.label_Address.BackColor = System.Drawing.Color.Transparent;
+            this.label_Address.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Address.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Address.Location = new System.Drawing.Point(299, 355);
+            this.label_Address.Name = "label_Address";
+            this.label_Address.Size = new System.Drawing.Size(107, 29);
+            this.label_Address.TabIndex = 61;
+            this.label_Address.Text = "Address";
             // 
-            // label3
+            // Label_PhoneNo
             // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(303, 283);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(129, 29);
-            this.label3.TabIndex = 60;
-            this.label3.Text = "Phone No";
+            this.Label_PhoneNo.AutoSize = true;
+            this.Label_PhoneNo.BackColor = System.Drawing.Color.Transparent;
+            this.Label_PhoneNo.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_PhoneNo.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Label_PhoneNo.Location = new System.Drawing.Point(299, 289);
+            this.Label_PhoneNo.Name = "Label_PhoneNo";
+            this.Label_PhoneNo.Size = new System.Drawing.Size(129, 29);
+            this.Label_PhoneNo.TabIndex = 60;
+            this.Label_PhoneNo.Text = "Phone No";
             // 
-            // label2
+            // label_FullName
             // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label2.Location = new System.Drawing.Point(299, 221);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(133, 29);
-            this.label2.TabIndex = 59;
-            this.label2.Text = "Full Name";
+            this.label_FullName.AutoSize = true;
+            this.label_FullName.BackColor = System.Drawing.Color.Transparent;
+            this.label_FullName.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_FullName.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_FullName.Location = new System.Drawing.Point(299, 221);
+            this.label_FullName.Name = "label_FullName";
+            this.label_FullName.Size = new System.Drawing.Size(133, 29);
+            this.label_FullName.TabIndex = 59;
+            this.label_FullName.Text = "Full Name";
             // 
-            // label1
+            // label_Staff
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(314, 145);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(110, 29);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Staff-ID";
+            this.label_Staff.AutoSize = true;
+            this.label_Staff.BackColor = System.Drawing.Color.Transparent;
+            this.label_Staff.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Staff.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Staff.Location = new System.Drawing.Point(299, 145);
+            this.label_Staff.Name = "label_Staff";
+            this.label_Staff.Size = new System.Drawing.Size(110, 29);
+            this.label_Staff.TabIndex = 58;
+            this.label_Staff.Text = "Staff-ID";
             // 
             // guna2Panel1
             // 
@@ -442,7 +460,7 @@ namespace GSMS
             this.sPanel2.Controls.Add(this.Btn_Teachers);
             this.sPanel2.Controls.Add(this.Btn_Students);
             this.sPanel2.Controls.Add(this.label11);
-            this.sPanel2.Controls.Add(this.guna2PictureBox3);
+            this.sPanel2.Controls.Add(this.Gsms_Logo);
             this.sPanel2.Controls.Add(this.Btn_Home);
             this.sPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel2.ForeColor = System.Drawing.Color.White;
@@ -545,16 +563,16 @@ namespace GSMS
             this.label11.TabIndex = 22;
             this.label11.Text = "Copyright © 2022";
             // 
-            // guna2PictureBox3
+            // Gsms_Logo
             // 
-            this.guna2PictureBox3.Image = global::GSMS.Properties.Resources.Logo_GSMS;
-            this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(0, 0);
-            this.guna2PictureBox3.Name = "guna2PictureBox3";
-            this.guna2PictureBox3.Size = new System.Drawing.Size(220, 219);
-            this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox3.TabIndex = 20;
-            this.guna2PictureBox3.TabStop = false;
+            this.Gsms_Logo.Image = global::GSMS.Properties.Resources.Logo_GSMS;
+            this.Gsms_Logo.ImageRotate = 0F;
+            this.Gsms_Logo.Location = new System.Drawing.Point(0, 0);
+            this.Gsms_Logo.Name = "Gsms_Logo";
+            this.Gsms_Logo.Size = new System.Drawing.Size(220, 219);
+            this.Gsms_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Gsms_Logo.TabIndex = 20;
+            this.Gsms_Logo.TabStop = false;
             // 
             // Btn_Home
             // 
@@ -620,9 +638,9 @@ namespace GSMS
             this.txt_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.txt_dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
@@ -655,10 +673,10 @@ namespace GSMS
             this.txt_dataGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.txt_dataGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.txt_dataGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.txt_dataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            this.txt_dataGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
             this.txt_dataGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.txt_dataGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_dataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.txt_dataGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.WhiteSmoke;
             this.txt_dataGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.txt_dataGrid.ThemeStyle.HeaderStyle.Height = 4;
             this.txt_dataGrid.ThemeStyle.ReadOnly = false;
@@ -786,54 +804,32 @@ namespace GSMS
             this.btn_insert.Text = "Insert";
             this.btn_insert.Click += new System.EventHandler(this.btn_insert_Click);
             // 
-            // Close_Timer
+            // label_Warning
             // 
-            this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
+            this.label_Warning.AutoSize = true;
+            this.label_Warning.Location = new System.Drawing.Point(1058, 375);
+            this.label_Warning.Name = "label_Warning";
+            this.label_Warning.Size = new System.Drawing.Size(502, 17);
+            this.label_Warning.TabIndex = 92;
+            this.label_Warning.Text = ". If you want update your information use your email id update your information";
             // 
-            // label8
+            // label_Warning2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(1058, 375);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(502, 17);
-            this.label8.TabIndex = 92;
-            this.label8.Text = ". If you want update your information use your email id update your information";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(835, 398);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(844, 17);
-            this.label12.TabIndex = 92;
-            this.label12.Text = ". If you want delete your information use your email id delete your information, " +
+            this.label_Warning2.AutoSize = true;
+            this.label_Warning2.Location = new System.Drawing.Point(835, 398);
+            this.label_Warning2.Name = "label_Warning2";
+            this.label_Warning2.Size = new System.Drawing.Size(844, 17);
+            this.label_Warning2.TabIndex = 92;
+            this.label_Warning2.Text = ". If you want delete your information use your email id delete your information, " +
     "but don\'t use continuously Admin will be terminate you.";
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.iconButton1.Location = new System.Drawing.Point(1336, 14);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(138, 41);
-            this.iconButton1.TabIndex = 94;
-            this.iconButton1.Text = "LOG OUT    ";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
             // 
             // Teacher
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1750, 885);
-            this.Controls.Add(this.label12);
-            this.Controls.Add(this.label8);
+            this.Controls.Add(this.label_Warning2);
+            this.Controls.Add(this.label_Warning);
             this.Controls.Add(this.txt_gridview);
             this.Controls.Add(this.txt_warning3);
             this.Controls.Add(this.guna2PictureBox2);
@@ -842,7 +838,7 @@ namespace GSMS
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.delete_btn);
-            this.Controls.Add(this.minimize_btn);
+            this.Controls.Add(this.btn_minimize);
             this.Controls.Add(this.update_btn);
             this.Controls.Add(this.close_btn);
             this.Controls.Add(this.btn_insert);
@@ -853,13 +849,13 @@ namespace GSMS
             this.Controls.Add(this.txt_fullname);
             this.Controls.Add(this.txt_staffid);
             this.Controls.Add(this.txt_designation);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_Email);
+            this.Controls.Add(this.label_Designation);
+            this.Controls.Add(this.label_Basic_Pay);
+            this.Controls.Add(this.label_Address);
+            this.Controls.Add(this.Label_PhoneNo);
+            this.Controls.Add(this.label_FullName);
+            this.Controls.Add(this.label_Staff);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(1750, 885);
             this.Name = "Teacher";
@@ -872,7 +868,7 @@ namespace GSMS
             this.guna2Panel1.PerformLayout();
             this.sPanel2.ResumeLayout(false);
             this.sPanel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Gsms_Logo)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_dataGrid)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
@@ -886,9 +882,9 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Sipaa.Framework.SPanel sPanel1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label_Teacher_Details;
         private Guna.UI2.WinForms.Guna2TextBox txt_searchteacher;
-        private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
+        private Guna.UI2.WinForms.Guna2ControlBox btn_minimize;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
         private Guna.UI2.WinForms.Guna2TextBox txt_address;
         private Guna.UI2.WinForms.Guna2TextBox txt_email;
@@ -897,13 +893,13 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2TextBox txt_fullname;
         private Guna.UI2.WinForms.Guna2TextBox txt_staffid;
         private Guna.UI2.WinForms.Guna2ComboBox txt_designation;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label_Email;
+        private System.Windows.Forms.Label label_Designation;
+        private System.Windows.Forms.Label label_Basic_Pay;
+        private System.Windows.Forms.Label label_Address;
+        private System.Windows.Forms.Label Label_PhoneNo;
+        private System.Windows.Forms.Label label_FullName;
+        private System.Windows.Forms.Label label_Staff;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private System.Windows.Forms.Label label9;
         private Guna.UI2.WinForms.Guna2PictureBox logo_pic;
@@ -922,11 +918,11 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button Btn_Teachers;
         private Guna.UI2.WinForms.Guna2Button Btn_Students;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
+        private Guna.UI2.WinForms.Guna2PictureBox Gsms_Logo;
         private Guna.UI2.WinForms.Guna2Button Btn_Home;
         private System.Windows.Forms.Timer Close_Timer;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label_Warning2;
+        private System.Windows.Forms.Label label_Warning;
         private FontAwesome.Sharp.IconButton iconButton1;
     }
 }

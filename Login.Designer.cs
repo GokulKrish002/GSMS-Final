@@ -36,10 +36,9 @@ namespace GSMS
             this.submit_btn = new Guna.UI2.WinForms.Guna2Button();
             this.pwd_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.teacherid_txt = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.Animated_Picture = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.label_LoginNow = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.Animated_Picture)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Elipse1
@@ -109,7 +108,7 @@ namespace GSMS
             this.pwd_txt.Name = "pwd_txt";
             this.pwd_txt.PasswordChar = '\0';
             this.pwd_txt.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.pwd_txt.PlaceholderText = "Password";
+            this.pwd_txt.PlaceholderText = "Phone_Number";
             this.pwd_txt.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.pwd_txt.SelectedText = "";
             this.pwd_txt.Size = new System.Drawing.Size(320, 54);
@@ -135,63 +134,51 @@ namespace GSMS
             this.teacherid_txt.Name = "teacherid_txt";
             this.teacherid_txt.PasswordChar = '\0';
             this.teacherid_txt.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.teacherid_txt.PlaceholderText = "Username(or)ID";
+            this.teacherid_txt.PlaceholderText = "Email _ID";
             this.teacherid_txt.SelectedText = "";
             this.teacherid_txt.Size = new System.Drawing.Size(320, 54);
             this.teacherid_txt.TabIndex = 25;
             // 
-            // guna2PictureBox1
+            // Animated_Picture
             // 
-            this.guna2PictureBox1.Image = global::GSMS.Properties.Resources.gsms_login;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(0, -1);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1198, 729);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 10;
-            this.guna2PictureBox1.TabStop = false;
+            this.Animated_Picture.Image = global::GSMS.Properties.Resources.gsms_login;
+            this.Animated_Picture.ImageRotate = 0F;
+            this.Animated_Picture.Location = new System.Drawing.Point(0, -1);
+            this.Animated_Picture.Name = "Animated_Picture";
+            this.Animated_Picture.Size = new System.Drawing.Size(1198, 729);
+            this.Animated_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Animated_Picture.TabIndex = 10;
+            this.Animated_Picture.TabStop = false;
             // 
-            // label1
+            // label_LoginNow
             // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(132)))), ((int)(((byte)(31)))));
-            this.label1.Location = new System.Drawing.Point(879, 264);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 38);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "Login Now";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(732, 458);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(270, 20);
-            this.label2.TabIndex = 31;
-            this.label2.Text = "PHONE NUMBER IS PASSWORD";
+            this.label_LoginNow.AutoSize = true;
+            this.label_LoginNow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.label_LoginNow.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_LoginNow.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(132)))), ((int)(((byte)(31)))));
+            this.label_LoginNow.Location = new System.Drawing.Point(879, 264);
+            this.label_LoginNow.Name = "label_LoginNow";
+            this.label_LoginNow.Size = new System.Drawing.Size(159, 38);
+            this.label_LoginNow.TabIndex = 30;
+            this.label_LoginNow.Text = "Login Now";
             // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 728);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label_LoginNow);
             this.Controls.Add(this.submit_btn);
             this.Controls.Add(this.pwd_txt);
             this.Controls.Add(this.teacherid_txt);
             this.Controls.Add(this.Btn_Minimize);
             this.Controls.Add(this.Btn_Close);
-            this.Controls.Add(this.guna2PictureBox1);
+            this.Controls.Add(this.Animated_Picture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Animated_Picture)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -200,13 +187,12 @@ namespace GSMS
         #endregion
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox Animated_Picture;
         private Guna.UI2.WinForms.Guna2ControlBox Btn_Minimize;
         private Guna.UI2.WinForms.Guna2ControlBox Btn_Close;
         private Guna.UI2.WinForms.Guna2Button submit_btn;
         private Guna.UI2.WinForms.Guna2TextBox pwd_txt;
         private Guna.UI2.WinForms.Guna2TextBox teacherid_txt;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label_LoginNow;
     }
 }

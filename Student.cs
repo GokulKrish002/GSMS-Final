@@ -54,7 +54,14 @@ namespace GSMS
                 {
                     MessageBox.Show("Success");
                 }
-            }catch(Exception ex)
+                SqlCommand comme = new SqlCommand("select * from Student_tbl", connection);
+                SqlDataAdapter d = new SqlDataAdapter(comme);
+                DataTable dt = new DataTable();
+                d.Fill(dt);
+                Student_GridView.DataSource = dt;
+                connection.Close();
+            }
+            catch(Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
@@ -70,12 +77,6 @@ namespace GSMS
                 Txt_Section.Text = "";
                 Txt_Standrad.Text = "";
             }
-            SqlCommand comme = new SqlCommand("select * from Student_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            Student_GridView.DataSource = dt;
-            connection.Close();
         }
 
         private void btn_Submit_Click(object sender, EventArgs e)
@@ -227,91 +228,148 @@ namespace GSMS
 
         private void Btn_Print_Click(object sender, EventArgs e)
         {
-            Student_GridView.SelectAll();
-            DataObject copydata = Student_GridView.GetClipboardContent();
-            if (copydata != null) Clipboard.SetDataObject(copydata);
-            Microsoft.Office.Interop.Excel.Application xlapp = new Microsoft.Office.Interop.Excel.Application();
-            xlapp.Visible = true;
-            Microsoft.Office.Interop.Excel.Workbook xlWbook;
-            Microsoft.Office.Interop.Excel.Worksheet xlsheet;
-            object miseddata = System.Reflection.Missing.Value;
-            xlWbook = xlapp.Workbooks.Add(miseddata);
+            try
+            {
+                Student_GridView.SelectAll();
+                DataObject copydata = Student_GridView.GetClipboardContent();
+                if (copydata != null) Clipboard.SetDataObject(copydata);
+                Microsoft.Office.Interop.Excel.Application xlapp = new Microsoft.Office.Interop.Excel.Application();
+                xlapp.Visible = true;
+                Microsoft.Office.Interop.Excel.Workbook xlWbook;
+                Microsoft.Office.Interop.Excel.Worksheet xlsheet;
+                object miseddata = System.Reflection.Missing.Value;
+                xlWbook = xlapp.Workbooks.Add(miseddata);
 
-            xlsheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWbook.Worksheets.get_Item(1);
-            Microsoft.Office.Interop.Excel.Range xlr = (Microsoft.Office.Interop.Excel.Range)xlsheet.Cells[1, 1];
-            xlr.Select();
+                xlsheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWbook.Worksheets.get_Item(1);
+                Microsoft.Office.Interop.Excel.Range xlr = (Microsoft.Office.Interop.Excel.Range)xlsheet.Cells[1, 1];
+                xlr.Select();
 
-            xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+                xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_MarkList_Click(object sender, EventArgs e)
         {
-            Student_Marklist obj = new Student_Marklist();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Student_Marklist obj = new Student_Marklist();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void Btn_Students_Click(object sender, EventArgs e)
         {
-            Student obj = new Student();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Student obj = new Student();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void Home_btn_Click_1(object sender, EventArgs e)
         {
-            Index anker = new Index();
-            anker.Show();
-            this.Hide();
+            try
+            {
+                Index anker = new Index();
+                anker.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Library_Click(object sender, EventArgs e)
         {
-            Library anker = new Library();
-            anker.Show();
-            this.Hide();
+            try
+            {
+                Library anker = new Library();
+                anker.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Events_Click(object sender, EventArgs e)
         {
-            Events anker = new Events();
-            anker.Show();
-            this.Hide();
-        }
-
-        private void close_btn_Click(object sender, EventArgs e)
-        {
-            Close_Timer.Start();
+            try
+            {
+                Events anker = new Events();
+                anker.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void minimize_btn_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
-        }
-
-        private void Close_Timer_Tick(object sender, EventArgs e)
-        {
-            if (this.Opacity > 0.0)
+            try
             {
-                this.Opacity -= 0.25;
+                this.WindowState = FormWindowState.Minimized;
             }
-            else
+            catch (Exception ex)
             {
-                Close_Timer.Stop();
-                Application.Exit();
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void Btn_Teachers_Click(object sender, EventArgs e)
         {
-            Teacher obj = new Teacher();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Teacher obj = new Teacher();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Logout_Click(object sender, EventArgs e)
         {
-            Login obj = new Login();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Login obj = new Login();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Application.Exit();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

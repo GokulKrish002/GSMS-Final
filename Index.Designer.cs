@@ -30,8 +30,8 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.label12 = new System.Windows.Forms.Label();
-            this.sPanel2 = new Sipaa.Framework.SPanel();
+            this.label_Dashboard = new System.Windows.Forms.Label();
+            this.HeadderPannel = new Sipaa.Framework.SPanel();
             this.Btn_Logout = new FontAwesome.Sharp.IconButton();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -46,41 +46,41 @@ namespace GSMS
             this.Home_btn = new Guna.UI2.WinForms.Guna2Button();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.sPanel2.SuspendLayout();
+            this.Img_Dashboard = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.HeadderPannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
             this.sPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Dashboard)).BeginInit();
             this.SuspendLayout();
             // 
-            // label12
+            // label_Dashboard
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label12.Location = new System.Drawing.Point(101, 15);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(193, 38);
-            this.label12.TabIndex = 58;
-            this.label12.Text = "DASHBOARD";
+            this.label_Dashboard.AutoSize = true;
+            this.label_Dashboard.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Dashboard.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.label_Dashboard.Location = new System.Drawing.Point(101, 15);
+            this.label_Dashboard.Name = "label_Dashboard";
+            this.label_Dashboard.Size = new System.Drawing.Size(193, 38);
+            this.label_Dashboard.TabIndex = 58;
+            this.label_Dashboard.Text = "DASHBOARD";
             // 
-            // sPanel2
+            // HeadderPannel
             // 
-            this.sPanel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.sPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.sPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.sPanel2.BorderRadius = 10;
-            this.sPanel2.BorderSize = 0;
-            this.sPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sPanel2.Controls.Add(this.Btn_Logout);
-            this.sPanel2.Controls.Add(this.guna2PictureBox2);
-            this.sPanel2.Controls.Add(this.label12);
-            this.sPanel2.ForeColor = System.Drawing.Color.White;
-            this.sPanel2.Location = new System.Drawing.Point(273, 73);
-            this.sPanel2.Name = "sPanel2";
-            this.sPanel2.Size = new System.Drawing.Size(1422, 73);
-            this.sPanel2.TabIndex = 87;
+            this.HeadderPannel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.HeadderPannel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.HeadderPannel.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.HeadderPannel.BorderRadius = 10;
+            this.HeadderPannel.BorderSize = 0;
+            this.HeadderPannel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.HeadderPannel.Controls.Add(this.Btn_Logout);
+            this.HeadderPannel.Controls.Add(this.guna2PictureBox2);
+            this.HeadderPannel.Controls.Add(this.label_Dashboard);
+            this.HeadderPannel.ForeColor = System.Drawing.Color.White;
+            this.HeadderPannel.Location = new System.Drawing.Point(273, 73);
+            this.HeadderPannel.Name = "HeadderPannel";
+            this.HeadderPannel.Size = new System.Drawing.Size(1422, 73);
+            this.HeadderPannel.TabIndex = 87;
             // 
             // Btn_Logout
             // 
@@ -288,16 +288,16 @@ namespace GSMS
             this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
             this.guna2BorderlessForm1.TransparentWhileDrag = true;
             // 
-            // guna2PictureBox1
+            // Img_Dashboard
             // 
-            this.guna2PictureBox1.Image = global::GSMS.Properties.Resources.Dashboard_GSMS;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(273, 152);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(1422, 694);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 60;
-            this.guna2PictureBox1.TabStop = false;
+            this.Img_Dashboard.Image = global::GSMS.Properties.Resources.Dashboard_GSMS;
+            this.Img_Dashboard.ImageRotate = 0F;
+            this.Img_Dashboard.Location = new System.Drawing.Point(273, 152);
+            this.Img_Dashboard.Name = "Img_Dashboard";
+            this.Img_Dashboard.Size = new System.Drawing.Size(1422, 694);
+            this.Img_Dashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Img_Dashboard.TabIndex = 60;
+            this.Img_Dashboard.TabStop = false;
             // 
             // Index
             // 
@@ -305,8 +305,8 @@ namespace GSMS
             this.AutoSize = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1750, 885);
-            this.Controls.Add(this.guna2PictureBox1);
-            this.Controls.Add(this.sPanel2);
+            this.Controls.Add(this.Img_Dashboard);
+            this.Controls.Add(this.HeadderPannel);
             this.Controls.Add(this.minimize_btn);
             this.Controls.Add(this.sPanel1);
             this.Controls.Add(this.close_btn);
@@ -316,21 +316,21 @@ namespace GSMS
             this.MinimumSize = new System.Drawing.Size(1750, 885);
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.sPanel2.ResumeLayout(false);
-            this.sPanel2.PerformLayout();
+            this.HeadderPannel.ResumeLayout(false);
+            this.HeadderPannel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Img_Dashboard)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.Label label12;
-        private Sipaa.Framework.SPanel sPanel2;
+        private System.Windows.Forms.Label label_Dashboard;
+        private Sipaa.Framework.SPanel HeadderPannel;
         private Guna.UI2.WinForms.Guna2Button Home_btn;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2PictureBox logo_pic;
@@ -343,7 +343,7 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button Btn_Library;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox Img_Dashboard;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private FontAwesome.Sharp.IconButton Btn_Logout;
     }

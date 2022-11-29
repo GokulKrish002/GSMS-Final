@@ -17,11 +17,16 @@ namespace GSMS
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void Btn_Sign_in_Click(object sender, EventArgs e)
         {
             Login obj = new Login();
             obj.Show();
             this.Hide();
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
