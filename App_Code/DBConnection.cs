@@ -17,7 +17,6 @@ namespace GSMS.App_Code
         public SqlConnection connect()
         {
             connection.Open();
-
             return connection;
         }
         public void disconnect()

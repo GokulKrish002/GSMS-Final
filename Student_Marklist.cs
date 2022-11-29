@@ -296,6 +296,13 @@ namespace GSMS
                 Application.Exit();
             }
         }
+
+        private void Btn_Events_Click(object sender, EventArgs e)
+        {
+            Events obj = new Events();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
 

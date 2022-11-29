@@ -19,42 +19,63 @@ namespace GSMS
             InitializeComponent();
         }
         DBConnection LoginCon = new DBConnection();
+        Validate validate = new Validate();
 
         private void submit_btn_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = LoginCon.connect();
+            bool inputMail, inputpwd;
 
-            try
+            inputMail = validate.ValidateEmail(teacherid_txt.Text);
+            inputpwd = validate.ValidateNumber(pwd_txt.Text);
+
+            if (inputMail & inputpwd == false)
             {
-                SqlCommand cmd = new SqlCommand("Staff_tbl_Search", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Email", SqlDbType.VarChar);
-                cmd.Parameters.Add(param1).Value = teacherid_txt.Text;
-                SqlParameter param2 = new SqlParameter("@phone", SqlDbType.Int);
-                cmd.Parameters.Add(param2).Value = pwd_txt.Text;
-                int usercount = (Int32)cmd.ExecuteScalar();
-                connection.Close();
-                if (usercount == 1)
+                Error_Box obj = new Error_Box();
+                obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                try
                 {
-                    MessageBox.Show("Welcome");
-                    Index obj = new Index();
-                    obj.Show();
-                    this.Hide();
+                    SqlConnection connection = LoginCon.connect();
+                    SqlCommand cmd = new SqlCommand("Staff_tbl_Search", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlParameter param1 = new SqlParameter("@Email", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param1).Value = teacherid_txt.Text;
+                    SqlParameter param2 = new SqlParameter("@phone", SqlDbType.Int);
+                    cmd.Parameters.Add(param2).Value = pwd_txt.Text;
+                    int usercount = (Int32)cmd.ExecuteScalar();
+                    connection.Close();
+                    LoginCon.disconnect();
+                    if (usercount == 1)
+                    {
+                        MessageBox.Show("Welcome");
+                        Index obj = new Index();
+                        obj.Show();
+                        this.Hide();
+                        connection.Close();
+                    }
+                    else
+                    {
+                        MessageBox.Show("Type the correct Id/Pwd");
+                        connection.Close();
+                        Landing_app obj = new Landing_app();
+                        obj.Show();
+                        this.Hide();
+                    }
+
                 }
-                else
+                catch (Exception ex)
                 {
                     MessageBox.Show("Type the correct Id/Pwd");
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            }   
+        }
 
-
-
-
-
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

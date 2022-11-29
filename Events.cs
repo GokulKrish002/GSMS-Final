@@ -141,13 +141,6 @@ namespace GSMS
             connection.Close();
         }
 
-        private void Home_btn_Click_1(object sender, EventArgs e)
-        {
-            Index obj = new Index();
-            obj.Show();
-            this.Hide();
-        }
-
         private void Btn_Students_Click(object sender, EventArgs e)
         {
            Student obj = new Student();
@@ -165,6 +158,30 @@ namespace GSMS
         private void Btn_Library_Click(object sender, EventArgs e)
         {
             Library obj = new Library();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Btn_LogOut_Click(object sender, EventArgs e)
+        {
+            Landing_app obj = new Landing_app();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void close_btn_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void minimize_btn_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void Home_btn_Click_(object sender, EventArgs e)
+        {
+            Index obj = new Index();
             obj.Show();
             this.Hide();
         }

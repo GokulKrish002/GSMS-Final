@@ -38,6 +38,7 @@ namespace GSMS
                 SqlParameter param5 = new SqlParameter("@Borrowed_Books", SqlDbType.VarChar);
                 cmd.Parameters.Add(param5).Value = txt_Borrowed.Text;
                 int i = cmd.ExecuteNonQuery();
+
                 if (i != 0)
                 {
                     MessageBox.Show("executed successfully...");
@@ -66,7 +67,7 @@ namespace GSMS
             DataTable dt = new DataTable();
             d.Fill(dt);
             txt_GridLibrary.DataSource = dt;
-            connection.Close();
+            LibraryCon.disconnect();
         }
 
         private void txt_Search_KeyUp(object sender, KeyEventArgs e)
@@ -84,6 +85,10 @@ namespace GSMS
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                LibraryCon.disconnect();
             }
         }
         private void Btn_Update_Click(object sender, EventArgs e)
@@ -129,6 +134,7 @@ namespace GSMS
                 txt_Rack.Text = "";
                 txt_Search.Text = "";
                 txt_Shelves.Text = "";
+                LibraryCon.disconnect();
             }
             SqlCommand comme = new SqlCommand("select * from Library_tbl", connection);
             SqlDataAdapter d = new SqlDataAdapter(comme);
@@ -223,14 +229,29 @@ namespace GSMS
 
         private void Btn_Library_Click(object sender, EventArgs e)
         {
-           Library obj = new Library();
-            obj.Show();
-            this.Hide();
+            MessageBox.Show("You are already at Library.");
         }
 
         private void Btn_Events_Click(object sender, EventArgs e)
         {
             Events obj = new Events();
+            obj.Show();
+            this.Hide();
+        }
+        private void view_btn_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = LibraryCon.connect();
+            SqlCommand comme = new SqlCommand("select * from Library_tbl", connection);
+            SqlDataAdapter d = new SqlDataAdapter(comme);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+            txt_GridLibrary.DataSource = dt;
+            LibraryCon.disconnect();
+        }
+
+        private void Btn_Logout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
             obj.Show();
             this.Hide();
         }

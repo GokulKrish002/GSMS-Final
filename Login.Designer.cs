@@ -31,13 +31,14 @@ namespace GSMS
         {
             this.components = new System.ComponentModel.Container();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.guna2ControlBox2 = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.guna2ControlBox1 = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Btn_Minimize = new Guna.UI2.WinForms.Guna2ControlBox();
+            this.Btn_Close = new Guna.UI2.WinForms.Guna2ControlBox();
             this.submit_btn = new Guna.UI2.WinForms.Guna2Button();
             this.pwd_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.teacherid_txt = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -45,29 +46,30 @@ namespace GSMS
             // 
             this.guna2Elipse1.TargetControl = this;
             // 
-            // guna2ControlBox2
+            // Btn_Minimize
             // 
-            this.guna2ControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox2.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.guna2ControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.guna2ControlBox2.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox2.Location = new System.Drawing.Point(1120, 12);
-            this.guna2ControlBox2.Name = "guna2ControlBox2";
-            this.guna2ControlBox2.Size = new System.Drawing.Size(31, 28);
-            this.guna2ControlBox2.TabIndex = 9;
+            this.Btn_Minimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Minimize.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Minimize.ControlBoxType = Guna.UI2.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.Btn_Minimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Btn_Minimize.IconColor = System.Drawing.Color.Black;
+            this.Btn_Minimize.Location = new System.Drawing.Point(1120, 12);
+            this.Btn_Minimize.Name = "Btn_Minimize";
+            this.Btn_Minimize.Size = new System.Drawing.Size(31, 28);
+            this.Btn_Minimize.TabIndex = 9;
             // 
-            // guna2ControlBox1
+            // Btn_Close
             // 
-            this.guna2ControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.guna2ControlBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ControlBox1.CustomIconSize = 15F;
-            this.guna2ControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.guna2ControlBox1.IconColor = System.Drawing.Color.Black;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(1157, 12);
-            this.guna2ControlBox1.Name = "guna2ControlBox1";
-            this.guna2ControlBox1.Size = new System.Drawing.Size(31, 28);
-            this.guna2ControlBox1.TabIndex = 8;
+            this.Btn_Close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.Btn_Close.BackColor = System.Drawing.Color.Transparent;
+            this.Btn_Close.CustomIconSize = 15F;
+            this.Btn_Close.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.Btn_Close.IconColor = System.Drawing.Color.Black;
+            this.Btn_Close.Location = new System.Drawing.Point(1157, 12);
+            this.Btn_Close.Name = "Btn_Close";
+            this.Btn_Close.Size = new System.Drawing.Size(31, 28);
+            this.Btn_Close.TabIndex = 8;
+            this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
             // submit_btn
             // 
@@ -161,17 +163,29 @@ namespace GSMS
             this.label1.TabIndex = 30;
             this.label1.Text = "Login Now";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(732, 458);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(270, 20);
+            this.label2.TabIndex = 31;
+            this.label2.Text = "PHONE NUMBER IS PASSWORD";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1200, 728);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.submit_btn);
             this.Controls.Add(this.pwd_txt);
             this.Controls.Add(this.teacherid_txt);
-            this.Controls.Add(this.guna2ControlBox2);
-            this.Controls.Add(this.guna2ControlBox1);
+            this.Controls.Add(this.Btn_Minimize);
+            this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Login";
@@ -187,11 +201,12 @@ namespace GSMS
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox2;
-        private Guna.UI2.WinForms.Guna2ControlBox guna2ControlBox1;
+        private Guna.UI2.WinForms.Guna2ControlBox Btn_Minimize;
+        private Guna.UI2.WinForms.Guna2ControlBox Btn_Close;
         private Guna.UI2.WinForms.Guna2Button submit_btn;
         private Guna.UI2.WinForms.Guna2TextBox pwd_txt;
         private Guna.UI2.WinForms.Guna2TextBox teacherid_txt;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
     }
 }

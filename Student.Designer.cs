@@ -78,6 +78,7 @@ namespace GSMS
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Close_Timer = new System.Windows.Forms.Timer(this.components);
+            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).BeginInit();
             this.ribbenPannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
@@ -727,6 +728,7 @@ namespace GSMS
             this.Btn_Teachers.TabIndex = 24;
             this.Btn_Teachers.Tag = "Home";
             this.Btn_Teachers.Text = "TEACHERS";
+            this.Btn_Teachers.Click += new System.EventHandler(this.Btn_Teachers_Click);
             // 
             // Btn_Students
             // 
@@ -807,6 +809,7 @@ namespace GSMS
             this.sPanel2.BorderRadius = 10;
             this.sPanel2.BorderSize = 0;
             this.sPanel2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sPanel2.Controls.Add(this.Btn_Logout);
             this.sPanel2.Controls.Add(this.guna2PictureBox1);
             this.sPanel2.Controls.Add(this.label12);
             this.sPanel2.Controls.Add(this.txt_searchteacher);
@@ -852,7 +855,7 @@ namespace GSMS
             this.txt_searchteacher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_searchteacher.IconLeft = global::GSMS.Properties.Resources._1251067;
             this.txt_searchteacher.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.txt_searchteacher.Location = new System.Drawing.Point(1083, 14);
+            this.txt_searchteacher.Location = new System.Drawing.Point(590, 14);
             this.txt_searchteacher.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_searchteacher.Name = "txt_searchteacher";
             this.txt_searchteacher.PasswordChar = '\0';
@@ -892,6 +895,24 @@ namespace GSMS
             // Close_Timer
             // 
             this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
+            // 
+            // Btn_Logout
+            // 
+            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.Btn_Logout.IconColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_Logout.IconSize = 30;
+            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Btn_Logout.Location = new System.Drawing.Point(1315, 14);
+            this.Btn_Logout.Name = "Btn_Logout";
+            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
+            this.Btn_Logout.TabIndex = 92;
+            this.Btn_Logout.Text = "LOG OUT    ";
+            this.Btn_Logout.UseVisualStyleBackColor = false;
+            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
             // 
             // Student
             // 
@@ -967,5 +988,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button Btn_Teachers;
         private Guna.UI2.WinForms.Guna2Button Btn_Students;
         private System.Windows.Forms.Timer Close_Timer;
+        private FontAwesome.Sharp.IconButton Btn_Logout;
     }
 }

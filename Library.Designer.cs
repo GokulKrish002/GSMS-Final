@@ -30,10 +30,11 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.middlePannel = new Guna.UI2.WinForms.Guna2Panel();
+            this.view_btn = new Guna.UI2.WinForms.Guna2Button();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txt_Borrowed = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_BookId = new Guna.UI2.WinForms.Guna2TextBox();
@@ -78,12 +79,7 @@ namespace GSMS
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.Lbl_Total = new System.Windows.Forms.Label();
-            this.Lbl_Available = new System.Windows.Forms.Label();
-            this.Lbl_Borrowed = new System.Windows.Forms.Label();
+            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
             this.middlePannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GridLibrary)).BeginInit();
@@ -100,6 +96,7 @@ namespace GSMS
             this.middlePannel.BackColor = System.Drawing.Color.Transparent;
             this.middlePannel.BorderRadius = 20;
             this.middlePannel.BorderThickness = 10;
+            this.middlePannel.Controls.Add(this.view_btn);
             this.middlePannel.Controls.Add(this.guna2PictureBox1);
             this.middlePannel.Controls.Add(this.txt_Borrowed);
             this.middlePannel.Controls.Add(this.txt_BookId);
@@ -117,12 +114,6 @@ namespace GSMS
             this.middlePannel.Controls.Add(this.Btn_add);
             this.middlePannel.Controls.Add(this.label11);
             this.middlePannel.Controls.Add(this.label10);
-            this.middlePannel.Controls.Add(this.label5);
-            this.middlePannel.Controls.Add(this.label4);
-            this.middlePannel.Controls.Add(this.Lbl_Borrowed);
-            this.middlePannel.Controls.Add(this.Lbl_Available);
-            this.middlePannel.Controls.Add(this.Lbl_Total);
-            this.middlePannel.Controls.Add(this.label3);
             this.middlePannel.Controls.Add(this.label8);
             this.middlePannel.Controls.Add(this.txt_GridLibrary);
             this.middlePannel.Controls.Add(this.txt_Search);
@@ -133,6 +124,27 @@ namespace GSMS
             this.middlePannel.Name = "middlePannel";
             this.middlePannel.Size = new System.Drawing.Size(1445, 693);
             this.middlePannel.TabIndex = 39;
+            // 
+            // view_btn
+            // 
+            this.view_btn.AccessibleName = "view_btn";
+            this.view_btn.BorderRadius = 10;
+            this.view_btn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.view_btn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.view_btn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.view_btn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.view_btn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.view_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F);
+            this.view_btn.ForeColor = System.Drawing.Color.White;
+            this.view_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.view_btn.ImageSize = new System.Drawing.Size(22, 22);
+            this.view_btn.Location = new System.Drawing.Point(1158, 447);
+            this.view_btn.Name = "view_btn";
+            this.view_btn.Size = new System.Drawing.Size(177, 44);
+            this.view_btn.TabIndex = 84;
+            this.view_btn.Tag = "Delete";
+            this.view_btn.Text = "View";
+            this.view_btn.Click += new System.EventHandler(this.view_btn_Click);
             // 
             // guna2PictureBox1
             // 
@@ -280,7 +292,7 @@ namespace GSMS
             this.guna2Button5.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.guna2Button5.HoverState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2Button5.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.guna2Button5.Location = new System.Drawing.Point(938, 446);
+            this.guna2Button5.Location = new System.Drawing.Point(953, 447);
             this.guna2Button5.Name = "guna2Button5";
             this.guna2Button5.Size = new System.Drawing.Size(178, 44);
             this.guna2Button5.TabIndex = 5;
@@ -437,19 +449,19 @@ namespace GSMS
             // 
             this.txt_GridLibrary.AllowUserToResizeColumns = false;
             this.txt_GridLibrary.AllowUserToResizeRows = false;
-            dataGridViewCellStyle13.BackColor = System.Drawing.Color.White;
-            this.txt_GridLibrary.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.txt_GridLibrary.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.txt_GridLibrary.AutoGenerateColumns = false;
             this.txt_GridLibrary.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.txt_GridLibrary.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle14.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.txt_GridLibrary.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.txt_GridLibrary.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.txt_GridLibrary.ColumnHeadersHeight = 4;
             this.txt_GridLibrary.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.txt_GridLibrary.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -460,14 +472,14 @@ namespace GSMS
             this.authorDataGridViewTextBoxColumn,
             this.borrowedBooksDataGridViewTextBoxColumn});
             this.txt_GridLibrary.DataSource = this.librarytblBindingSource;
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle15.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.txt_GridLibrary.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.txt_GridLibrary.DefaultCellStyle = dataGridViewCellStyle6;
             this.txt_GridLibrary.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.txt_GridLibrary.Location = new System.Drawing.Point(30, 79);
             this.txt_GridLibrary.Name = "txt_GridLibrary";
@@ -584,11 +596,11 @@ namespace GSMS
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label1.Location = new System.Drawing.Point(518, 22);
+            this.label1.Location = new System.Drawing.Point(108, 18);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(378, 46);
+            this.label1.Size = new System.Drawing.Size(255, 38);
             this.label1.TabIndex = 41;
             this.label1.Text = "LIBRARY SECTION";
             // 
@@ -597,22 +609,23 @@ namespace GSMS
             this.ribbenPannel.BackColor = System.Drawing.Color.Transparent;
             this.ribbenPannel.BorderRadius = 20;
             this.ribbenPannel.BorderThickness = 10;
+            this.ribbenPannel.Controls.Add(this.Btn_Logout);
             this.ribbenPannel.Controls.Add(this.pic_library);
             this.ribbenPannel.Controls.Add(this.label1);
             this.ribbenPannel.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
             this.ribbenPannel.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.ribbenPannel.Location = new System.Drawing.Point(269, 57);
             this.ribbenPannel.Name = "ribbenPannel";
-            this.ribbenPannel.Size = new System.Drawing.Size(1445, 87);
+            this.ribbenPannel.Size = new System.Drawing.Size(1445, 73);
             this.ribbenPannel.TabIndex = 36;
             // 
             // pic_library
             // 
             this.pic_library.Image = global::GSMS.Properties.Resources.library;
             this.pic_library.ImageRotate = 0F;
-            this.pic_library.Location = new System.Drawing.Point(422, 4);
+            this.pic_library.Location = new System.Drawing.Point(45, 9);
             this.pic_library.Name = "pic_library";
-            this.pic_library.Size = new System.Drawing.Size(90, 80);
+            this.pic_library.Size = new System.Drawing.Size(57, 55);
             this.pic_library.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pic_library.TabIndex = 42;
             this.pic_library.TabStop = false;
@@ -747,7 +760,7 @@ namespace GSMS
             this.Home_btn.Size = new System.Drawing.Size(179, 51);
             this.Home_btn.TabIndex = 27;
             this.Home_btn.Tag = "Home";
-            this.Home_btn.Text = "HOME";
+            this.Home_btn.Text = "DASHBOARD";
             this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click_1);
             // 
             // label9
@@ -797,71 +810,23 @@ namespace GSMS
             this.close_btn.TabIndex = 80;
             this.close_btn.Click += new System.EventHandler(this.close_btn_Click_1);
             // 
-            // label3
+            // Btn_Logout
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(722, 572);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(182, 29);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "TOTAL BOOKS";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label4.Location = new System.Drawing.Point(933, 572);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(239, 29);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "AVAILABLE BOOKS";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label5.Location = new System.Drawing.Point(1178, 572);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(248, 29);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "BORROWED BOOKS";
-            // 
-            // Lbl_Total
-            // 
-            this.Lbl_Total.AutoSize = true;
-            this.Lbl_Total.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
-            this.Lbl_Total.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Lbl_Total.Location = new System.Drawing.Point(722, 621);
-            this.Lbl_Total.Name = "Lbl_Total";
-            this.Lbl_Total.Size = new System.Drawing.Size(182, 29);
-            this.Lbl_Total.TabIndex = 5;
-            this.Lbl_Total.Text = "TOTAL BOOKS";
-            // 
-            // Lbl_Available
-            // 
-            this.Lbl_Available.AutoSize = true;
-            this.Lbl_Available.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
-            this.Lbl_Available.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Lbl_Available.Location = new System.Drawing.Point(949, 621);
-            this.Lbl_Available.Name = "Lbl_Available";
-            this.Lbl_Available.Size = new System.Drawing.Size(182, 29);
-            this.Lbl_Available.TabIndex = 5;
-            this.Lbl_Available.Text = "TOTAL BOOKS";
-            // 
-            // Lbl_Borrowed
-            // 
-            this.Lbl_Borrowed.AutoSize = true;
-            this.Lbl_Borrowed.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
-            this.Lbl_Borrowed.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Lbl_Borrowed.Location = new System.Drawing.Point(1202, 621);
-            this.Lbl_Borrowed.Name = "Lbl_Borrowed";
-            this.Lbl_Borrowed.Size = new System.Drawing.Size(182, 29);
-            this.Lbl_Borrowed.TabIndex = 5;
-            this.Lbl_Borrowed.Text = "TOTAL BOOKS";
+            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.Btn_Logout.IconColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_Logout.IconSize = 30;
+            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Btn_Logout.Location = new System.Drawing.Point(1284, 18);
+            this.Btn_Logout.Name = "Btn_Logout";
+            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
+            this.Btn_Logout.TabIndex = 93;
+            this.Btn_Logout.Text = "LOG OUT    ";
+            this.Btn_Logout.UseVisualStyleBackColor = false;
+            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
             // 
             // Library
             // 
@@ -940,12 +905,8 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button Home_btn;
         private Guna.UI2.WinForms.Guna2TextBox txt_BookId;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label Lbl_Borrowed;
-        private System.Windows.Forms.Label Lbl_Available;
-        private System.Windows.Forms.Label Lbl_Total;
-        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2Button view_btn;
+        private FontAwesome.Sharp.IconButton Btn_Logout;
     }
 }
 

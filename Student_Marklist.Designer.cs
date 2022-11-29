@@ -30,9 +30,9 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.StudentMarkGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.studentIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -69,13 +69,9 @@ namespace GSMS
             this.btn_Update = new Guna.UI2.WinForms.Guna2Button();
             this.btn_Delete = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
-            this.Btn_Events = new Guna.UI2.WinForms.Guna2Button();
-            this.Btn_Library = new Guna.UI2.WinForms.Guna2Button();
-            this.Btn_Teachers = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Students = new Guna.UI2.WinForms.Guna2Button();
             this.label4 = new System.Windows.Forms.Label();
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Btn_Home = new Guna.UI2.WinForms.Guna2Button();
             this.Name_Text = new Guna.UI2.WinForms.Guna2TextBox();
             this.Tamil_Text = new Guna.UI2.WinForms.Guna2TextBox();
             this.Eng_Text = new Guna.UI2.WinForms.Guna2TextBox();
@@ -90,6 +86,7 @@ namespace GSMS
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Close_Timer = new System.Windows.Forms.Timer(this.components);
+            this.Btn_Home = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.StudentMarkGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentMarklisttblBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gsms_dbDataSet1)).BeginInit();
@@ -114,19 +111,19 @@ namespace GSMS
             this.StudentMarkGrid.AllowUserToDeleteRows = false;
             this.StudentMarkGrid.AllowUserToResizeColumns = false;
             this.StudentMarkGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
-            this.StudentMarkGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black;
+            this.StudentMarkGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
             this.StudentMarkGrid.AutoGenerateColumns = false;
             this.StudentMarkGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentMarkGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentMarkGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.StudentMarkGrid.ColumnHeadersHeight = 15;
             this.StudentMarkGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.StudentMarkGrid.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -138,14 +135,14 @@ namespace GSMS
             this.dataGridViewTextBoxColumn5,
             this.dataGridViewTextBoxColumn6});
             this.StudentMarkGrid.DataSource = this.studentMarklisttblBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentMarkGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentMarkGrid.DefaultCellStyle = dataGridViewCellStyle9;
             this.StudentMarkGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(239)))), ((int)(((byte)(241)))), ((int)(((byte)(243)))));
             this.StudentMarkGrid.Location = new System.Drawing.Point(284, 614);
             this.StudentMarkGrid.Margin = new System.Windows.Forms.Padding(4);
@@ -281,17 +278,17 @@ namespace GSMS
             this.sPanel2.Location = new System.Drawing.Point(284, 55);
             this.sPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.sPanel2.Name = "sPanel2";
-            this.sPanel2.Size = new System.Drawing.Size(1418, 105);
+            this.sPanel2.Size = new System.Drawing.Size(1418, 73);
             this.sPanel2.TabIndex = 79;
             // 
             // guna2PictureBox1
             // 
             this.guna2PictureBox1.Image = global::GSMS.Properties.Resources.Student_logo;
             this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(72, 4);
+            this.guna2PictureBox1.Location = new System.Drawing.Point(39, 10);
             this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(101, 80);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(75, 56);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 59;
             this.guna2PictureBox1.TabStop = false;
@@ -301,7 +298,7 @@ namespace GSMS
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft YaHei UI", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label3.Location = new System.Drawing.Point(181, 28);
+            this.label3.Location = new System.Drawing.Point(118, 22);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(393, 31);
@@ -322,7 +319,7 @@ namespace GSMS
             this.txt_searchteacher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_searchteacher.IconLeft = global::GSMS.Properties.Resources._1251067;
             this.txt_searchteacher.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.txt_searchteacher.Location = new System.Drawing.Point(953, 28);
+            this.txt_searchteacher.Location = new System.Drawing.Point(973, 10);
             this.txt_searchteacher.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_searchteacher.Name = "txt_searchteacher";
             this.txt_searchteacher.PasswordChar = '\0';
@@ -373,10 +370,10 @@ namespace GSMS
             this.Btn_print.HoverState.ForeColor = System.Drawing.Color.Black;
             this.Btn_print.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Btn_print.ImageSize = new System.Drawing.Size(40, 40);
-            this.Btn_print.Location = new System.Drawing.Point(1210, 493);
+            this.Btn_print.Location = new System.Drawing.Point(22, 534);
             this.Btn_print.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_print.Name = "Btn_print";
-            this.Btn_print.Size = new System.Drawing.Size(163, 51);
+            this.Btn_print.Size = new System.Drawing.Size(179, 51);
             this.Btn_print.TabIndex = 111;
             this.Btn_print.Text = "XL PRINT";
             this.Btn_print.Click += new System.EventHandler(this.Btn_print_Click);
@@ -410,7 +407,7 @@ namespace GSMS
             this.Btn_Grade.HoverState.ForeColor = System.Drawing.Color.Black;
             this.Btn_Grade.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Btn_Grade.ImageSize = new System.Drawing.Size(40, 40);
-            this.Btn_Grade.Location = new System.Drawing.Point(1444, 493);
+            this.Btn_Grade.Location = new System.Drawing.Point(1379, 493);
             this.Btn_Grade.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Btn_Grade.Name = "Btn_Grade";
             this.Btn_Grade.Size = new System.Drawing.Size(163, 51);
@@ -576,80 +573,16 @@ namespace GSMS
             // guna2Panel4
             // 
             this.guna2Panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(174)))), ((int)(((byte)(212)))), ((int)(((byte)(255)))));
-            this.guna2Panel4.Controls.Add(this.Btn_Events);
-            this.guna2Panel4.Controls.Add(this.Btn_Library);
-            this.guna2Panel4.Controls.Add(this.Btn_Teachers);
+            this.guna2Panel4.Controls.Add(this.Btn_Home);
             this.guna2Panel4.Controls.Add(this.Btn_Students);
             this.guna2Panel4.Controls.Add(this.label4);
             this.guna2Panel4.Controls.Add(this.logo_pic);
-            this.guna2Panel4.Controls.Add(this.Btn_Home);
+            this.guna2Panel4.Controls.Add(this.Btn_print);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel4.Location = new System.Drawing.Point(0, 0);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.Size = new System.Drawing.Size(220, 885);
             this.guna2Panel4.TabIndex = 135;
-            // 
-            // Btn_Events
-            // 
-            this.Btn_Events.BorderRadius = 10;
-            this.Btn_Events.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Events.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Events.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Btn_Events.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Events.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_Events.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Events.ForeColor = System.Drawing.Color.White;
-            this.Btn_Events.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.Btn_Events.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Events.Image = global::GSMS.Properties.Resources._1250932;
-            this.Btn_Events.Location = new System.Drawing.Point(22, 584);
-            this.Btn_Events.Name = "Btn_Events";
-            this.Btn_Events.Size = new System.Drawing.Size(179, 51);
-            this.Btn_Events.TabIndex = 19;
-            this.Btn_Events.Tag = "Home";
-            this.Btn_Events.Text = "EVENTS";
-            // 
-            // Btn_Library
-            // 
-            this.Btn_Library.BorderRadius = 10;
-            this.Btn_Library.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Library.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Library.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Btn_Library.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Library.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_Library.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Library.ForeColor = System.Drawing.Color.White;
-            this.Btn_Library.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.Btn_Library.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Library.Image = global::GSMS.Properties.Resources._1245160;
-            this.Btn_Library.Location = new System.Drawing.Point(22, 500);
-            this.Btn_Library.Name = "Btn_Library";
-            this.Btn_Library.Size = new System.Drawing.Size(179, 51);
-            this.Btn_Library.TabIndex = 18;
-            this.Btn_Library.Tag = "Home";
-            this.Btn_Library.Text = "LIBRARY";
-            this.Btn_Library.Click += new System.EventHandler(this.Btn_Library_Click);
-            // 
-            // Btn_Teachers
-            // 
-            this.Btn_Teachers.BorderRadius = 10;
-            this.Btn_Teachers.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Teachers.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Teachers.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Btn_Teachers.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Teachers.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_Teachers.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Teachers.ForeColor = System.Drawing.Color.White;
-            this.Btn_Teachers.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.Btn_Teachers.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Teachers.Image = global::GSMS.Properties.Resources._1202881;
-            this.Btn_Teachers.Location = new System.Drawing.Point(22, 419);
-            this.Btn_Teachers.Name = "Btn_Teachers";
-            this.Btn_Teachers.Size = new System.Drawing.Size(179, 51);
-            this.Btn_Teachers.TabIndex = 17;
-            this.Btn_Teachers.Tag = "Home";
-            this.Btn_Teachers.Text = "TEACHERS";
-            this.Btn_Teachers.Click += new System.EventHandler(this.Btn_Teachers_Click);
             // 
             // Btn_Students
             // 
@@ -664,7 +597,7 @@ namespace GSMS
             this.Btn_Students.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.Btn_Students.HoverState.ForeColor = System.Drawing.Color.Black;
             this.Btn_Students.Image = global::GSMS.Properties.Resources._1252284;
-            this.Btn_Students.Location = new System.Drawing.Point(22, 335);
+            this.Btn_Students.Location = new System.Drawing.Point(22, 427);
             this.Btn_Students.Name = "Btn_Students";
             this.Btn_Students.Size = new System.Drawing.Size(179, 51);
             this.Btn_Students.TabIndex = 16;
@@ -692,28 +625,6 @@ namespace GSMS
             this.logo_pic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.logo_pic.TabIndex = 10;
             this.logo_pic.TabStop = false;
-            // 
-            // Btn_Home
-            // 
-            this.Btn_Home.BorderRadius = 10;
-            this.Btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Btn_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Home.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_Home.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Home.ForeColor = System.Drawing.Color.White;
-            this.Btn_Home.HoverState.BorderColor = System.Drawing.Color.Transparent;
-            this.Btn_Home.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.Btn_Home.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Home.Image = global::GSMS.Properties.Resources._69524;
-            this.Btn_Home.Location = new System.Drawing.Point(22, 253);
-            this.Btn_Home.Name = "Btn_Home";
-            this.Btn_Home.Size = new System.Drawing.Size(179, 51);
-            this.Btn_Home.TabIndex = 11;
-            this.Btn_Home.Tag = "Home";
-            this.Btn_Home.Text = "HOME";
-            this.Btn_Home.Click += new System.EventHandler(this.Btn_Home_Click);
             // 
             // Name_Text
             // 
@@ -981,6 +892,27 @@ namespace GSMS
             // 
             this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
             // 
+            // Btn_Home
+            // 
+            this.Btn_Home.BorderRadius = 10;
+            this.Btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_Home.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Home.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Home.ForeColor = System.Drawing.Color.White;
+            this.Btn_Home.HoverState.BorderColor = System.Drawing.Color.Transparent;
+            this.Btn_Home.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
+            this.Btn_Home.HoverState.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Home.Image = global::GSMS.Properties.Resources._69524;
+            this.Btn_Home.Location = new System.Drawing.Point(22, 322);
+            this.Btn_Home.Name = "Btn_Home";
+            this.Btn_Home.Size = new System.Drawing.Size(179, 51);
+            this.Btn_Home.TabIndex = 112;
+            this.Btn_Home.Tag = "Home";
+            this.Btn_Home.Text = "HOME";
+            // 
             // Student_Marklist
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -1003,7 +935,6 @@ namespace GSMS
             this.Controls.Add(this.StudentMarkGrid);
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label15);
-            this.Controls.Add(this.Btn_print);
             this.Controls.Add(this.label16);
             this.Controls.Add(this.Btn_Grade);
             this.Controls.Add(this.label17);
@@ -1087,13 +1018,9 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button btn_Update;
         private Guna.UI2.WinForms.Guna2Button btn_Delete;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel4;
-        private Guna.UI2.WinForms.Guna2Button Btn_Events;
-        private Guna.UI2.WinForms.Guna2Button Btn_Library;
-        private Guna.UI2.WinForms.Guna2Button Btn_Teachers;
         private Guna.UI2.WinForms.Guna2Button Btn_Students;
         private System.Windows.Forms.Label label4;
         private Guna.UI2.WinForms.Guna2PictureBox logo_pic;
-        private Guna.UI2.WinForms.Guna2Button Btn_Home;
         private Guna.UI2.WinForms.Guna2TextBox txt_ID;
         private Guna.UI2.WinForms.Guna2TextBox Grade_Txt;
         private Guna.UI2.WinForms.Guna2TextBox Avg_Txt;
@@ -1108,5 +1035,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
         private System.Windows.Forms.Timer Close_Timer;
+        private Guna.UI2.WinForms.Guna2Button Btn_Home;
     }
 }

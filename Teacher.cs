@@ -57,8 +57,6 @@ namespace GSMS
             finally
             {
                 txt_address.Text = "";
-                txt_alert.Text = "";
-                txt_alert1.Text = "";
                 txt_basicpay.Text = "";
                 txt_designation.Text = "";
                 txt_email.Text = "";
@@ -115,8 +113,6 @@ namespace GSMS
             finally
             {
                 txt_address.Text = "";
-                txt_alert.Text = "";
-                txt_alert1.Text = "";
                 txt_basicpay.Text = "";
                 txt_designation.Text = "";
                 txt_email.Text = "";
@@ -159,8 +155,6 @@ namespace GSMS
             finally
             {
                 txt_address.Text = "";
-                txt_alert.Text = "";
-                txt_alert1.Text = "";
                 txt_basicpay.Text = "";
                 txt_designation.Text = "";
                 txt_email.Text = "";
@@ -196,8 +190,6 @@ namespace GSMS
             finally
             {
                 txt_address.Text = "";
-                txt_alert.Text = "";
-                txt_alert1.Text = "";
                 txt_basicpay.Text = "";
                 txt_designation.Text = "";
                 txt_email.Text = "";
@@ -233,13 +225,6 @@ namespace GSMS
             this.Hide();
         }
 
-        private void Btn_Teachers_Click(object sender, EventArgs e)
-        {
-            Teacher obj = new Teacher();
-            obj.Show();
-            this.Hide();
-        }
-
         private void Btn_Library_Click(object sender, EventArgs e)
         {
             Library obj = new Library();
@@ -250,12 +235,6 @@ namespace GSMS
         private void Btn_Events_Click(object sender, EventArgs e)
         {
             Events obj = new Events();
-            obj.Show();
-            this.Hide();
-        }
-        private void Home_btn_Click(object sender, EventArgs e)
-        {
-            Index obj = new Index();
             obj.Show();
             this.Hide();
         }
@@ -281,6 +260,27 @@ namespace GSMS
                 Close_Timer.Stop();
                 Application.Exit();
             }
+        }
+
+        private void Btn_Home_Click(object sender, EventArgs e)
+        {
+            Index obj = new Index();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Btn_Logout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void iconButton1_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
         }
     }
 }

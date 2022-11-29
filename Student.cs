@@ -299,6 +299,20 @@ namespace GSMS
                 Application.Exit();
             }
         }
+
+        private void Btn_Teachers_Click(object sender, EventArgs e)
+        {
+            Teacher obj = new Teacher();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void Btn_Logout_Click(object sender, EventArgs e)
+        {
+            Login obj = new Login();
+            obj.Show();
+            this.Hide();
+        }
     }
 }
 

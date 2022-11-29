@@ -244,6 +244,9 @@
     <Content Include="Resources\69524.png" />
     <None Include="Resources\695241.png" />
     <Content Include="Resources\Account_Logo.jpg" />
+    <None Include="Resources\Dashboard_GSMS.gif" />
+    <None Include="Resources\Dashboard_icon.jpg" />
+    <None Include="Resources\Back_icon.png" />
     <Content Include="Resources\Error.gif" />
     <Content Include="Resources\Error_img.gif" />
     <Content Include="Resources\Error_img1.gif" />
@@ -261,6 +264,7 @@
     <None Include="Resources\library icons.gif" />
     <Content Include="Resources\Logo GSMS.gif" />
     <None Include="Resources\Logo GSMS1.gif" />
+    <None Include="Resources\Log_Out.jpg" />
     <Content Include="Resources\Pa_logo.gif" />
     <Content Include="Resources\Screenshot 2022-11-22 220256.png" />
     <Content Include="Resources\Screenshot 2022-11-22 2202561.png" />

@@ -30,9 +30,9 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.sPanel1 = new Sipaa.Framework.SPanel();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -62,13 +62,11 @@ namespace GSMS
             this.Btn_Students = new Guna.UI2.WinForms.Guna2Button();
             this.label11 = new System.Windows.Forms.Label();
             this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.Btn_Home = new Guna.UI2.WinForms.Guna2Button();
             this.label9 = new System.Windows.Forms.Label();
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Home_btn = new Guna.UI2.WinForms.Guna2Button();
             this.txt_dataGrid = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.txt_alert = new System.Windows.Forms.Label();
-            this.txt_alert1 = new System.Windows.Forms.Label();
             this.txt_warning3 = new System.Windows.Forms.Label();
             this.txt_gridview = new System.Windows.Forms.Label();
             this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -77,6 +75,9 @@ namespace GSMS
             this.update_btn = new Guna.UI2.WinForms.Guna2Button();
             this.btn_insert = new Guna.UI2.WinForms.Guna2Button();
             this.Close_Timer = new System.Windows.Forms.Timer(this.components);
+            this.label8 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
             this.sPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.guna2Panel1.SuspendLayout();
@@ -99,6 +100,7 @@ namespace GSMS
             this.sPanel1.BorderRadius = 10;
             this.sPanel1.BorderSize = 0;
             this.sPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sPanel1.Controls.Add(this.iconButton1);
             this.sPanel1.Controls.Add(this.guna2PictureBox1);
             this.sPanel1.Controls.Add(this.label10);
             this.sPanel1.Controls.Add(this.txt_searchteacher);
@@ -144,7 +146,7 @@ namespace GSMS
             this.txt_searchteacher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_searchteacher.IconLeft = global::GSMS.Properties.Resources._1251067;
             this.txt_searchteacher.IconLeftSize = new System.Drawing.Size(25, 25);
-            this.txt_searchteacher.Location = new System.Drawing.Point(1083, 14);
+            this.txt_searchteacher.Location = new System.Drawing.Point(590, 14);
             this.txt_searchteacher.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.txt_searchteacher.Name = "txt_searchteacher";
             this.txt_searchteacher.PasswordChar = '\0';
@@ -441,7 +443,7 @@ namespace GSMS
             this.sPanel2.Controls.Add(this.Btn_Students);
             this.sPanel2.Controls.Add(this.label11);
             this.sPanel2.Controls.Add(this.guna2PictureBox3);
-            this.sPanel2.Controls.Add(this.guna2Button1);
+            this.sPanel2.Controls.Add(this.Btn_Home);
             this.sPanel2.Dock = System.Windows.Forms.DockStyle.Left;
             this.sPanel2.ForeColor = System.Drawing.Color.White;
             this.sPanel2.Location = new System.Drawing.Point(0, 0);
@@ -511,7 +513,6 @@ namespace GSMS
             this.Btn_Teachers.TabIndex = 24;
             this.Btn_Teachers.Tag = "Home";
             this.Btn_Teachers.Text = "TEACHERS";
-            this.Btn_Teachers.Click += new System.EventHandler(this.Btn_Teachers_Click);
             // 
             // Btn_Students
             // 
@@ -555,23 +556,24 @@ namespace GSMS
             this.guna2PictureBox3.TabIndex = 20;
             this.guna2PictureBox3.TabStop = false;
             // 
-            // guna2Button1
+            // Btn_Home
             // 
-            this.guna2Button1.BorderRadius = 10;
-            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.guna2Button1.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2Button1.ForeColor = System.Drawing.Color.White;
-            this.guna2Button1.Image = global::GSMS.Properties.Resources._69524;
-            this.guna2Button1.Location = new System.Drawing.Point(23, 262);
-            this.guna2Button1.Name = "guna2Button1";
-            this.guna2Button1.Size = new System.Drawing.Size(179, 51);
-            this.guna2Button1.TabIndex = 21;
-            this.guna2Button1.Tag = "Home";
-            this.guna2Button1.Text = "HOME";
+            this.Btn_Home.BorderRadius = 10;
+            this.Btn_Home.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Home.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Home.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_Home.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_Home.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Home.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Home.ForeColor = System.Drawing.Color.White;
+            this.Btn_Home.Image = global::GSMS.Properties.Resources._69524;
+            this.Btn_Home.Location = new System.Drawing.Point(23, 262);
+            this.Btn_Home.Name = "Btn_Home";
+            this.Btn_Home.Size = new System.Drawing.Size(179, 51);
+            this.Btn_Home.TabIndex = 21;
+            this.Btn_Home.Tag = "Home";
+            this.Btn_Home.Text = "HOME";
+            this.Btn_Home.Click += new System.EventHandler(this.Btn_Home_Click);
             // 
             // label9
             // 
@@ -611,31 +613,30 @@ namespace GSMS
             this.Home_btn.TabIndex = 11;
             this.Home_btn.Tag = "Home";
             this.Home_btn.Text = "HOME";
-            this.Home_btn.Click += new System.EventHandler(this.Home_btn_Click);
             // 
             // txt_dataGrid
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.txt_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.txt_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.txt_dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.txt_dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(3)))), ((int)(((byte)(169)))), ((int)(((byte)(243)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.txt_dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.txt_dataGrid.ColumnHeadersHeight = 4;
             this.txt_dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.txt_dataGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.txt_dataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.txt_dataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.txt_dataGrid.Location = new System.Drawing.Point(254, 482);
             this.txt_dataGrid.MaximumSize = new System.Drawing.Size(1447, 375);
@@ -669,32 +670,11 @@ namespace GSMS
             this.txt_dataGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
             this.txt_dataGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // txt_alert
-            // 
-            this.txt_alert.AutoSize = true;
-            this.txt_alert.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_alert.Location = new System.Drawing.Point(797, 396);
-            this.txt_alert.Name = "txt_alert";
-            this.txt_alert.Size = new System.Drawing.Size(922, 18);
-            this.txt_alert.TabIndex = 88;
-            this.txt_alert.Text = ". If you want delete your information use your email id delete your information, " +
-    "but don\'t use continuously Admin will be terminate you.";
-            // 
-            // txt_alert1
-            // 
-            this.txt_alert1.AutoSize = true;
-            this.txt_alert1.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_alert1.Location = new System.Drawing.Point(1011, 357);
-            this.txt_alert1.Name = "txt_alert1";
-            this.txt_alert1.Size = new System.Drawing.Size(549, 18);
-            this.txt_alert1.TabIndex = 89;
-            this.txt_alert1.Text = ". If you want update your information use your email id update your information";
-            // 
             // txt_warning3
             // 
             this.txt_warning3.AutoSize = true;
             this.txt_warning3.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_warning3.Location = new System.Drawing.Point(907, 357);
+            this.txt_warning3.Location = new System.Drawing.Point(957, 375);
             this.txt_warning3.Name = "txt_warning3";
             this.txt_warning3.Size = new System.Drawing.Size(68, 18);
             this.txt_warning3.TabIndex = 90;
@@ -714,7 +694,7 @@ namespace GSMS
             // 
             this.guna2PictureBox2.Image = global::GSMS.Properties.Resources._1243910;
             this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(981, 355);
+            this.guna2PictureBox2.Location = new System.Drawing.Point(1031, 372);
             this.guna2PictureBox2.Name = "guna2PictureBox2";
             this.guna2PictureBox2.Size = new System.Drawing.Size(24, 20);
             this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -810,15 +790,52 @@ namespace GSMS
             // 
             this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
             // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(1058, 375);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(502, 17);
+            this.label8.TabIndex = 92;
+            this.label8.Text = ". If you want update your information use your email id update your information";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(835, 398);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(844, 17);
+            this.label12.TabIndex = 92;
+            this.label12.Text = ". If you want delete your information use your email id delete your information, " +
+    "but don\'t use continuously Admin will be terminate you.";
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.iconButton1.ForeColor = System.Drawing.Color.White;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.iconButton1.IconColor = System.Drawing.Color.White;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 30;
+            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.iconButton1.Location = new System.Drawing.Point(1336, 14);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(138, 41);
+            this.iconButton1.TabIndex = 94;
+            this.iconButton1.Text = "LOG OUT    ";
+            this.iconButton1.UseVisualStyleBackColor = false;
+            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            // 
             // Teacher
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1750, 885);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.txt_gridview);
             this.Controls.Add(this.txt_warning3);
-            this.Controls.Add(this.txt_alert1);
-            this.Controls.Add(this.txt_alert);
             this.Controls.Add(this.guna2PictureBox2);
             this.Controls.Add(this.view_btn);
             this.Controls.Add(this.txt_dataGrid);
@@ -899,8 +916,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
         private System.Windows.Forms.Label txt_gridview;
         private System.Windows.Forms.Label txt_warning3;
-        private System.Windows.Forms.Label txt_alert1;
-        private System.Windows.Forms.Label txt_alert;
         private Sipaa.Framework.SPanel sPanel2;
         private Guna.UI2.WinForms.Guna2Button Btn_Events;
         private Guna.UI2.WinForms.Guna2Button Btn_Library;
@@ -908,7 +923,10 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button Btn_Students;
         private System.Windows.Forms.Label label11;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
-        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private Guna.UI2.WinForms.Guna2Button Btn_Home;
         private System.Windows.Forms.Timer Close_Timer;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label8;
+        private FontAwesome.Sharp.IconButton iconButton1;
     }
 }
