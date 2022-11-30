@@ -21,6 +21,28 @@ namespace GSMS
             InitializeComponent();
         }
 
+        public void TextClear()
+        {
+            txt_Author.Text = "";
+            txt_Borrowed.Text = "";
+            txt_GridLibrary.Text = "";
+            txt_Name.Text = "";
+            txt_Rack.Text = "";
+            txt_Search.Text = "";
+            txt_Shelves.Text = "";
+        }
+        public void TableRefresh()
+        {
+            SqlConnection connection = LibraryCon.connect();
+            SqlCommand cmd = new SqlCommand("StudentMarklist_View", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter d = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+            txt_GridLibrary.DataSource = dt;
+            connection.Close();
+        }
+
         private void Btn_add_Click(object sender, EventArgs e)
         {
             SqlConnection connection = LibraryCon.connect();
@@ -53,20 +75,10 @@ namespace GSMS
             }
             finally
             {
-                txt_Author.Text = "";
-                txt_Borrowed.Text = "";
-                txt_GridLibrary.Text = "";
-                txt_Name.Text = "";
-                txt_Rack.Text = "";
-                txt_Search.Text = "";
-                txt_Shelves.Text = "";
+                TableRefresh();
+                TextClear();
             }
-            SqlCommand comme = new SqlCommand("select * from Library_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            txt_GridLibrary.DataSource = dt;
-            connection.Close();
+            
         }
 
         private void txt_Search_KeyUp(object sender, KeyEventArgs e)
@@ -122,20 +134,9 @@ namespace GSMS
             }
             finally
             {
-                txt_Author.Text = "";
-                txt_Borrowed.Text = "";
-                txt_GridLibrary.Text = "";
-                txt_Name.Text = "";
-                txt_Rack.Text = "";
-                txt_Search.Text = "";
-                txt_Shelves.Text = "";
+                TableRefresh();
+                TextClear();
             }
-            SqlCommand comme = new SqlCommand("select * from Library_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            txt_GridLibrary.DataSource = dt;
-            connection.Close();
         }
 
         private void Btn_Remove_Click(object sender, EventArgs e)
@@ -156,12 +157,6 @@ namespace GSMS
                 {
                     MessageBox.Show("Not Working");
                 }
-                SqlCommand comme = new SqlCommand("select * from Library_tbl", connection);
-                SqlDataAdapter d = new SqlDataAdapter(comme);
-                DataTable dt = new DataTable();
-                d.Fill(dt);
-                txt_GridLibrary.DataSource = dt;
-                connection.Close();
             }
             catch (Exception ex)
             {
@@ -169,21 +164,23 @@ namespace GSMS
             }
             finally
             {
-                txt_Author.Text = "";
-                txt_Borrowed.Text = "";
-                txt_GridLibrary.Text = "";
-                txt_Name.Text = "";
-                txt_Rack.Text = "";
-                txt_Search.Text = "";
-                txt_Shelves.Text = "";
+                TableRefresh();
+                TextClear();
             }
         }
 
         private void Home_btn_Click_1(object sender, EventArgs e)
         {
-            Index obj = new Index();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Index obj = new Index();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void close_btn_Click_1(object sender, EventArgs e)
@@ -193,9 +190,16 @@ namespace GSMS
 
         private void Btn_Students_Click(object sender, EventArgs e)
         {
-            Student obj = new Student();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Student obj = new Student();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void minimize_btn_Click(object sender, EventArgs e)
@@ -205,23 +209,58 @@ namespace GSMS
 
         private void Btn_Teachers_Click(object sender, EventArgs e)
         {
-            Teacher obj = new Teacher();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Teacher obj = new Teacher();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Library_Click(object sender, EventArgs e)
         {
-           Library obj = new Library();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Library obj = new Library();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_Events_Click(object sender, EventArgs e)
         {
-            Events obj = new Events();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Events obj = new Events();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Btn_Logout_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Login obj = new Login();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

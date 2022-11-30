@@ -30,9 +30,9 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.Event_GridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.iconButton3 = new FontAwesome.Sharp.IconButton();
@@ -44,6 +44,7 @@ namespace GSMS
             this.txt_EventName = new Guna.UI2.WinForms.Guna2TextBox();
             this.date_EventDate = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.sPanel2 = new Sipaa.Framework.SPanel();
+            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
             this.Img_Event_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label_Event_Details = new System.Windows.Forms.Label();
             this.txt_EventDiscription = new System.Windows.Forms.RichTextBox();
@@ -63,7 +64,7 @@ namespace GSMS
             this.label_EventID = new System.Windows.Forms.Label();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
+            this.Btn_Refresh = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.Event_GridView)).BeginInit();
             this.sPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Img_Event_Logo)).BeginInit();
@@ -82,26 +83,26 @@ namespace GSMS
             // 
             this.Event_GridView.AllowUserToAddRows = false;
             this.Event_GridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            this.Event_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle7;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Event_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.Event_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Event_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.Event_GridView.ColumnHeadersHeight = 4;
             this.Event_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Event_GridView.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Event_GridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.Event_GridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Event_GridView.Location = new System.Drawing.Point(7, 7);
             this.Event_GridView.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -275,6 +276,24 @@ namespace GSMS
             this.sPanel2.Size = new System.Drawing.Size(1442, 89);
             this.sPanel2.TabIndex = 80;
             // 
+            // Btn_Logout
+            // 
+            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.Btn_Logout.IconColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_Logout.IconSize = 30;
+            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Btn_Logout.Location = new System.Drawing.Point(1266, 24);
+            this.Btn_Logout.Name = "Btn_Logout";
+            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
+            this.Btn_Logout.TabIndex = 93;
+            this.Btn_Logout.Text = "LOG OUT    ";
+            this.Btn_Logout.UseVisualStyleBackColor = false;
+            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
+            // 
             // Img_Event_Logo
             // 
             this.Img_Event_Logo.Image = global::GSMS.Properties.Resources._1250932;
@@ -368,11 +387,9 @@ namespace GSMS
             this.Btn_Events.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Btn_Events.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Btn_Events.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Events.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Events.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
             this.Btn_Events.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Events.ForeColor = System.Drawing.Color.White;
-            this.Btn_Events.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.Btn_Events.HoverState.ForeColor = System.Drawing.Color.Black;
             this.Btn_Events.Image = global::GSMS.Properties.Resources._1250932;
             this.Btn_Events.Location = new System.Drawing.Point(22, 576);
             this.Btn_Events.Name = "Btn_Events";
@@ -549,23 +566,21 @@ namespace GSMS
             this.close_btn.Size = new System.Drawing.Size(31, 28);
             this.close_btn.TabIndex = 84;
             // 
-            // Btn_Logout
+            // Btn_Refresh
             // 
-            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
-            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.Btn_Logout.IconColor = System.Drawing.Color.White;
-            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Btn_Logout.IconSize = 30;
-            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Btn_Logout.Location = new System.Drawing.Point(1266, 24);
-            this.Btn_Logout.Name = "Btn_Logout";
-            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
-            this.Btn_Logout.TabIndex = 93;
-            this.Btn_Logout.Text = "LOG OUT    ";
-            this.Btn_Logout.UseVisualStyleBackColor = false;
-            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
+            this.Btn_Refresh.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Refresh.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Refresh.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_Refresh.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_Refresh.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Btn_Refresh.ForeColor = System.Drawing.Color.White;
+            this.Btn_Refresh.Location = new System.Drawing.Point(1517, 377);
+            this.Btn_Refresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Btn_Refresh.Name = "Btn_Refresh";
+            this.Btn_Refresh.Size = new System.Drawing.Size(200, 42);
+            this.Btn_Refresh.TabIndex = 48;
+            this.Btn_Refresh.Text = "REFRESH";
+            this.Btn_Refresh.Click += new System.EventHandler(this.Btn_Refresh_Click);
             // 
             // Events
             // 
@@ -585,6 +600,7 @@ namespace GSMS
             this.Controls.Add(this.txt_Eventid);
             this.Controls.Add(this.txt_EventName);
             this.Controls.Add(this.Btn_Update);
+            this.Controls.Add(this.Btn_Refresh);
             this.Controls.Add(this.Btn_Delete);
             this.Controls.Add(this.Btn_Add);
             this.Controls.Add(this.iconButton3);
@@ -640,5 +656,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
         private FontAwesome.Sharp.IconButton Btn_Logout;
+        private Guna.UI2.WinForms.Guna2Button Btn_Refresh;
     }
 }

@@ -258,6 +258,7 @@ namespace GSMS
             this.txt_searchteacher.SelectedText = "";
             this.txt_searchteacher.Size = new System.Drawing.Size(425, 49);
             this.txt_searchteacher.TabIndex = 2;
+            this.txt_searchteacher.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txt_searchteacher_KeyUp);
             // 
             // label_Avg
             // 
@@ -547,6 +548,7 @@ namespace GSMS
             this.Btn_Home.TabIndex = 112;
             this.Btn_Home.Tag = "Home";
             this.Btn_Home.Text = "HOME";
+            this.Btn_Home.Click += new System.EventHandler(this.Btn_Home_Click_1);
             // 
             // Btn_Students
             // 

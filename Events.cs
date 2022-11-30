@@ -20,11 +20,29 @@ namespace GSMS
         }
         DBConnection EventCon = new DBConnection();
 
-        private void Btn_Delete_Click(object sender, EventArgs e)
+        public void TableRefresh()
         {
             SqlConnection connection = EventCon.connect();
+            SqlCommand comme = new SqlCommand("select * from Event_tbl", connection);
+            SqlDataAdapter d = new SqlDataAdapter(comme);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+            Event_GridView.DataSource = dt;
+            connection.Close();
+        }
+        public void TextClear()
+        {
+            txt_EventName.Text = "";
+            txt_EventDiscription.Text = "";
+        }
+
+
+        private void Btn_Delete_Click(object sender, EventArgs e)
+        {
+           
             try
             {
+                SqlConnection connection = EventCon.connect();
                 SqlCommand cmd = new SqlCommand("Event_delete", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param1 = new SqlParameter("@Event_id", SqlDbType.Int);
@@ -46,22 +64,18 @@ namespace GSMS
             }
             finally
             {
-                txt_EventName.Text = "";
-                txt_EventDiscription.Text = "";
+                TextClear();
+                TableRefresh();
             }
-            SqlCommand comme = new SqlCommand("select * from Event_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            Event_GridView.DataSource = dt;
-            connection.Close();
+            
         }
 
         private void Btn_Update_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = EventCon.connect();
+            
             try
             {
+                SqlConnection connection = EventCon.connect();
                 SqlCommand cmd = new SqlCommand("Event_update", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param1 = new SqlParameter("@Event_Name", SqlDbType.VarChar);
@@ -89,22 +103,17 @@ namespace GSMS
             }
             finally
             {
-                txt_EventName.Text = "";
-                txt_EventDiscription.Text = "";
+                TextClear();
+                TableRefresh();
             }
-            SqlCommand comme = new SqlCommand("select * from Event_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            Event_GridView.DataSource = dt;
-            connection.Close();
         }
 
         private void Btn_Add_Click(object sender, EventArgs e)
         {
-            SqlConnection connection = EventCon.connect();
+            
             try
             {
+                SqlConnection connection = EventCon.connect();
                 SqlCommand cmd = new SqlCommand("Event_insert", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param1 = new SqlParameter("@Event_Name", SqlDbType.VarChar);
@@ -130,15 +139,9 @@ namespace GSMS
             }
             finally
             {
-                txt_EventName.Text = "";
-                txt_EventDiscription.Text = "";
+                TextClear();
+                TableRefresh();
             }
-            SqlCommand comme = new SqlCommand("select * from Event_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            Event_GridView.DataSource = dt;
-            connection.Close();
         }
 
         private void Home_btn_Click_1(object sender, EventArgs e)
@@ -209,6 +212,11 @@ namespace GSMS
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Btn_Refresh_Click(object sender, EventArgs e)
+        {
+            TableRefresh();
         }
     }
 }

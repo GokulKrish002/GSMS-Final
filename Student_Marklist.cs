@@ -154,77 +154,75 @@ namespace GSMS
                 }
                 else
                 {
-                    MessageBox.Show(" not success");
+                    MessageBox.Show(" Failuer");
                 }
             }
-            catch (Exception)
+            catch (Exception ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
             finally
             {
-                Name_Text.Text = "";
-                Tamil_Text.Text = "";
-                Eng_Text.Text = "";
-                Maths_Text.Text = "";
-                Science_Text.Text = "";
-                Hindi_Text.Text = "";
-                txt_ID.Text = "";
+                TableRefresh();
+                TextClean();
             }
-            SqlCommand comme = new SqlCommand("select * from StudentMarklist_tbl", connection);
-            SqlDataAdapter da = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            StudentMarkGrid.DataSource = dt;
-            connection.Close();
         }
 
         private void Btn_print_Click(object sender, EventArgs e)
         {
-            StudentMarkGrid.SelectAll();
-            DataObject copydata = StudentMarkGrid.GetClipboardContent();
-            if (copydata != null) Clipboard.SetDataObject(copydata);
-            Microsoft.Office.Interop.Excel.Application xlapp = new Microsoft.Office.Interop.Excel.Application();
-            xlapp.Visible = true;
-            Microsoft.Office.Interop.Excel.Workbook xlWbook;
-            Microsoft.Office.Interop.Excel.Worksheet xlsheet;
-            object miseddata = System.Reflection.Missing.Value;
-            xlWbook = xlapp.Workbooks.Add(miseddata);
+            try
+            {
+                StudentMarkGrid.SelectAll();
+                DataObject copydata = StudentMarkGrid.GetClipboardContent();
+                if (copydata != null) Clipboard.SetDataObject(copydata);
+                Microsoft.Office.Interop.Excel.Application xlapp = new Microsoft.Office.Interop.Excel.Application();
+                xlapp.Visible = true;
+                Microsoft.Office.Interop.Excel.Workbook xlWbook;
+                Microsoft.Office.Interop.Excel.Worksheet xlsheet;
+                object miseddata = System.Reflection.Missing.Value;
+                xlWbook = xlapp.Workbooks.Add(miseddata);
 
-            xlsheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWbook.Worksheets.get_Item(1);
-            Microsoft.Office.Interop.Excel.Range xlr = (Microsoft.Office.Interop.Excel.Range)xlsheet.Cells[1, 1];
-            xlr.Select();
+                xlsheet = (Microsoft.Office.Interop.Excel.Worksheet)xlWbook.Worksheets.get_Item(1);
+                Microsoft.Office.Interop.Excel.Range xlr = (Microsoft.Office.Interop.Excel.Range)xlsheet.Cells[1, 1];
+                xlr.Select();
 
-            xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+                xlsheet.PasteSpecial(xlr, Type.Missing, Type.Missing, Type.Missing, Type.Missing, Type.Missing, true);
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
 
         private void Btn_Home_Click(object sender, EventArgs e)
         {
-            Index obj = new Index();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Index obj = new Index();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
         private void Btn_Students_Click(object sender, EventArgs e)
         {
-            Student obj = new Student();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Student obj = new Student();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        private void Btn_Teachers_Click(object sender, EventArgs e)
-        {
-            Teacher obj = new Teacher();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void Btn_Library_Click(object sender, EventArgs e)
-        {
-            Library obj = new Library();
-            obj.Show();
-            this.Hide();
-        }
 
         private void btn_Insert_Click(object sender, EventArgs e)
         {
@@ -254,7 +252,7 @@ namespace GSMS
                 }
                 else
                 {
-                    MessageBox.Show(" not success");
+                    MessageBox.Show("Failure");
                 }
             }
             catch (Exception)
@@ -263,20 +261,9 @@ namespace GSMS
             }
             finally
             {
-                Name_Text.Text = "";
-                Tamil_Text.Text = "";
-                Eng_Text.Text = "";
-                Maths_Text.Text = "";
-                Science_Text.Text = "";
-                Hindi_Text.Text = "";
-                txt_ID.Text = "";
+                TableRefresh();
+                TextClean();
             }
-            SqlCommand comme = new SqlCommand("select * from StudentMarklist_tbl", connection);
-            SqlDataAdapter da = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            da.Fill(dt);
-            StudentMarkGrid.DataSource = dt;
-            connection.Close();
         }
 
         private void close_btn_Click(object sender, EventArgs e)
@@ -294,6 +281,29 @@ namespace GSMS
             Events obj = new Events();
             obj.Show();
             this.Hide();
+        }
+
+        private void txt_searchteacher_KeyUp(object sender, KeyEventArgs e)
+        {
+            try
+            {
+                SqlConnection connection = StudentMarklistCon.connect();
+                SqlCommand cmd = new SqlCommand("select * from Student_Marklist_tbl where Full_name like '%" + txt_searchteacher.Text + "%'", connection);
+                SqlDataAdapter d = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                d.Fill(dt);
+                StudentMarkGrid.DataSource = dt;
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void Btn_Home_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

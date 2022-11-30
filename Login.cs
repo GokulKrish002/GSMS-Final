@@ -78,6 +78,11 @@ namespace GSMS
             }
 
         }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
 

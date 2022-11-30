@@ -20,6 +20,28 @@ namespace GSMS
         }
         DBConnection LibraryCon = new DBConnection();
 
+        public void TextClear()
+        {
+            txt_address.Text = "";
+            txt_basicpay.Text = "";
+            txt_designation.Text = "";
+            txt_email.Text = "";
+            txt_fullname.Text = "";
+            txt_phone.Text = "";
+            txt_staffid.Text = "";
+            txt_searchteacher.Text = "";
+        }
+        public void TableRefresh()
+        {
+            SqlConnection connection = LibraryCon.connect();
+            SqlCommand cmd = new SqlCommand("select * from Staff_tbl where Full_name like '%" + txt_searchteacher.Text + "%'", connection);
+            SqlDataAdapter d = new SqlDataAdapter(cmd);
+            DataTable dt = new DataTable();
+            d.Fill(dt);
+            txt_dataGrid.DataSource = dt;
+            connection.Close();
+        }
+
         private void btn_insert_Click(object sender, EventArgs e)
         {
             SqlConnection connection = LibraryCon.connect();
@@ -56,22 +78,9 @@ namespace GSMS
             }
             finally
             {
-                txt_address.Text = "";
-                txt_basicpay.Text = "";
-                txt_designation.Text = "";
-                txt_email.Text = "";
-                txt_fullname.Text = "";
-                txt_phone.Text = "";
-                txt_staffid.Text = "";
-                txt_searchteacher.Text = "";
+                TextClear();
+                TableRefresh();
             }
-
-            SqlCommand comme = new SqlCommand("select * from Staff_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            txt_dataGrid.DataSource = dt;
-            connection.Close();
         }
 
         private void update_btn_Click(object sender, EventArgs e)
@@ -112,21 +121,9 @@ namespace GSMS
             }
             finally
             {
-                txt_address.Text = "";
-                txt_basicpay.Text = "";
-                txt_designation.Text = "";
-                txt_email.Text = "";
-                txt_fullname.Text = "";
-                txt_phone.Text = "";
-                txt_staffid.Text = "";
-                txt_searchteacher.Text = "";
+                TextClear();
+                TableRefresh();
             }
-            SqlCommand comme = new SqlCommand("select * from Staff_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            txt_dataGrid.DataSource = dt;
-            connection.Close();
         }
         private void delete_btn_Click(object sender, EventArgs e)
         {
@@ -146,28 +143,19 @@ namespace GSMS
                 else
                 {
                     MessageBox.Show("some thing wrong happen try again later....");
+                    this.Refresh();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                this.Refresh();
             }
             finally
             {
-                txt_address.Text = "";
-                txt_basicpay.Text = "";
-                txt_designation.Text = "";
-                txt_email.Text = "";
-                txt_fullname.Text = "";
-                txt_phone.Text = "";
-                txt_staffid.Text = "";
-                txt_searchteacher.Text = "";
+                TextClear();
+                TableRefresh();
             }
-            SqlCommand comme = new SqlCommand("select * from Staff_tbl" ,connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            txt_dataGrid.DataSource = dt;
         }
 
         private void view_btn_Click(object sender, EventArgs e)
@@ -189,14 +177,8 @@ namespace GSMS
             }
             finally
             {
-                txt_address.Text = "";
-                txt_basicpay.Text = "";
-                txt_designation.Text = "";
-                txt_email.Text = "";
-                txt_fullname.Text = "";
-                txt_phone.Text = "";
-                txt_staffid.Text = "";
-                txt_searchteacher.Text = "";
+                TextClear();
+                TableRefresh();
             }
         }
 
@@ -241,7 +223,7 @@ namespace GSMS
 
         private void close_btn_Click(object sender, EventArgs e)
         {
-            Close_Timer.Start();
+            Application.Exit();
         }
 
         private void minimize_btn_Click(object sender, EventArgs e)
@@ -258,16 +240,16 @@ namespace GSMS
 
         private void Btn_Logout_Click(object sender, EventArgs e)
         {
-            Login obj = new Login();
-            obj.Show();
-            this.Hide();
-        }
-
-        private void iconButton1_Click(object sender, EventArgs e)
-        {
-            Login obj = new Login();
-            obj.Show();
-            this.Hide();
+            try
+            {
+                Login obj = new Login();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

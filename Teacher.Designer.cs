@@ -30,13 +30,13 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.sPanel1 = new Sipaa.Framework.SPanel();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
+            this.Teacher_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label_Teacher_Details = new System.Windows.Forms.Label();
             this.txt_searchteacher = new Guna.UI2.WinForms.Guna2TextBox();
             this.btn_minimize = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -79,7 +79,7 @@ namespace GSMS
             this.label_Warning = new System.Windows.Forms.Label();
             this.label_Warning2 = new System.Windows.Forms.Label();
             this.sPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Teacher_Logo)).BeginInit();
             this.guna2Panel1.SuspendLayout();
             this.sPanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Gsms_Logo)).BeginInit();
@@ -100,8 +100,8 @@ namespace GSMS
             this.sPanel1.BorderRadius = 10;
             this.sPanel1.BorderSize = 0;
             this.sPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.sPanel1.Controls.Add(this.iconButton1);
-            this.sPanel1.Controls.Add(this.guna2PictureBox1);
+            this.sPanel1.Controls.Add(this.Btn_Logout);
+            this.sPanel1.Controls.Add(this.Teacher_Logo);
             this.sPanel1.Controls.Add(this.label_Teacher_Details);
             this.sPanel1.Controls.Add(this.txt_searchteacher);
             this.sPanel1.ForeColor = System.Drawing.Color.White;
@@ -110,34 +110,34 @@ namespace GSMS
             this.sPanel1.Size = new System.Drawing.Size(1496, 73);
             this.sPanel1.TabIndex = 77;
             // 
-            // iconButton1
+            // Btn_Logout
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.iconButton1.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.iconButton1.ForeColor = System.Drawing.Color.White;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.iconButton1.IconColor = System.Drawing.Color.White;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 30;
-            this.iconButton1.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.iconButton1.Location = new System.Drawing.Point(1336, 14);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(138, 41);
-            this.iconButton1.TabIndex = 94;
-            this.iconButton1.Text = "LOG OUT    ";
-            this.iconButton1.UseVisualStyleBackColor = false;
-            this.iconButton1.Click += new System.EventHandler(this.iconButton1_Click);
+            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.Btn_Logout.IconColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_Logout.IconSize = 30;
+            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Btn_Logout.Location = new System.Drawing.Point(1336, 14);
+            this.Btn_Logout.Name = "Btn_Logout";
+            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
+            this.Btn_Logout.TabIndex = 94;
+            this.Btn_Logout.Text = "LOG OUT    ";
+            this.Btn_Logout.UseVisualStyleBackColor = false;
+            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
             // 
-            // guna2PictureBox1
+            // Teacher_Logo
             // 
-            this.guna2PictureBox1.Image = global::GSMS.Properties.Resources.Teacher_s_Deatls;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(38, 3);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(76, 65);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2PictureBox1.TabIndex = 59;
-            this.guna2PictureBox1.TabStop = false;
+            this.Teacher_Logo.Image = global::GSMS.Properties.Resources.Teacher_s_Deatls;
+            this.Teacher_Logo.ImageRotate = 0F;
+            this.Teacher_Logo.Location = new System.Drawing.Point(38, 3);
+            this.Teacher_Logo.Name = "Teacher_Logo";
+            this.Teacher_Logo.Size = new System.Drawing.Size(76, 65);
+            this.Teacher_Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Teacher_Logo.TabIndex = 59;
+            this.Teacher_Logo.TabStop = false;
             // 
             // label_Teacher_Details
             // 
@@ -634,27 +634,27 @@ namespace GSMS
             // 
             this.txt_dataGrid.AllowUserToAddRows = false;
             this.txt_dataGrid.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
-            this.txt_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(229)))), ((int)(((byte)(251)))));
+            this.txt_dataGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.txt_dataGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.txt_dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.txt_dataGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.txt_dataGrid.ColumnHeadersHeight = 4;
             this.txt_dataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.txt_dataGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(205)))), ((int)(((byte)(237)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.txt_dataGrid.DefaultCellStyle = dataGridViewCellStyle3;
             this.txt_dataGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
             this.txt_dataGrid.Location = new System.Drawing.Point(254, 482);
             this.txt_dataGrid.MaximumSize = new System.Drawing.Size(1447, 375);
@@ -864,7 +864,7 @@ namespace GSMS
             this.Text = "Teacher";
             this.sPanel1.ResumeLayout(false);
             this.sPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Teacher_Logo)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
             this.sPanel2.ResumeLayout(false);
@@ -882,7 +882,7 @@ namespace GSMS
 
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private Sipaa.Framework.SPanel sPanel1;
-        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox Teacher_Logo;
         private System.Windows.Forms.Label label_Teacher_Details;
         private Guna.UI2.WinForms.Guna2TextBox txt_searchteacher;
         private Guna.UI2.WinForms.Guna2ControlBox btn_minimize;
@@ -924,6 +924,6 @@ namespace GSMS
         private System.Windows.Forms.Timer Close_Timer;
         private System.Windows.Forms.Label label_Warning2;
         private System.Windows.Forms.Label label_Warning;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton Btn_Logout;
     }
 }
