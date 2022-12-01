@@ -18,12 +18,14 @@ namespace GSMS
         public Student_Marklist()
         {
             InitializeComponent();
+            TableRefresh();
         }
 
         public void TableRefresh()
         {
             SqlConnection connection = StudentMarklistCon.connect();
-            SqlCommand comme = new SqlCommand("select * from StudentMarklist_tbl", connection);
+            SqlCommand comme = new SqlCommand("StudentMarklist_View", connection);
+            comme.CommandType = CommandType.StoredProcedure;
             SqlDataAdapter da = new SqlDataAdapter(comme);
             DataTable dt = new DataTable();
             da.Fill(dt);
@@ -195,20 +197,6 @@ namespace GSMS
             }
         }
 
-
-        private void Btn_Home_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Index obj = new Index();
-                obj.Show();
-                this.Hide();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
         private void Btn_Students_Click(object sender, EventArgs e)
         {
             try
@@ -268,7 +256,7 @@ namespace GSMS
 
         private void close_btn_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Close_Timer.Start();
         }
 
         private void minimize_btn_Click(object sender, EventArgs e)
@@ -276,12 +264,6 @@ namespace GSMS
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void Btn_Events_Click(object sender, EventArgs e)
-        {
-            Events obj = new Events();
-            obj.Show();
-            this.Hide();
-        }
 
         private void txt_searchteacher_KeyUp(object sender, KeyEventArgs e)
         {
@@ -303,7 +285,29 @@ namespace GSMS
 
         private void Btn_Home_Click_1(object sender, EventArgs e)
         {
+            try
+            {
+                Index obj = new Index();
+                obj.Show();
+                this.Hide();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
 
+        private void Close_Timer_Tick_1(object sender, EventArgs e)
+        {
+            if (this.Opacity >= 0)
+            {
+                this.Opacity -= 0.7;
+            }
+            else
+            {
+                Close_Timer.Stop();
+                Application.Exit();
+            }
         }
     }
 }

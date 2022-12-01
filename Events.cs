@@ -17,14 +17,16 @@ namespace GSMS
         public Events()
         {
             InitializeComponent();
+            TableRefresh();
         }
         DBConnection EventCon = new DBConnection();
 
         public void TableRefresh()
         {
             SqlConnection connection = EventCon.connect();
-            SqlCommand comme = new SqlCommand("select * from Event_tbl", connection);
-            SqlDataAdapter d = new SqlDataAdapter(comme);
+            SqlCommand cmd = new SqlCommand("Event_view", connection);
+            cmd.CommandType = CommandType.StoredProcedure;
+            SqlDataAdapter d = new SqlDataAdapter(cmd);
             DataTable dt = new DataTable();
             d.Fill(dt);
             Event_GridView.DataSource = dt;
@@ -217,6 +219,24 @@ namespace GSMS
         private void Btn_Refresh_Click(object sender, EventArgs e)
         {
             TableRefresh();
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Close_Timer.Start();
+        }
+
+        private void Close_Timer_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity >= 0)
+            {
+                this.Opacity -= 0.7;
+            }
+            else
+            {
+                Close_Timer.Stop();
+                Application.Exit();
+            }
         }
     }
 }

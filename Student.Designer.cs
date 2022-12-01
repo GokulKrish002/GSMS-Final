@@ -77,8 +77,8 @@ namespace GSMS
             this.label_Student_details = new System.Windows.Forms.Label();
             this.txt_searchteacher = new Guna.UI2.WinForms.Guna2TextBox();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.btn_close = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Close_Timer = new System.Windows.Forms.Timer(this.components);
+            this.Btn_Close = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).BeginInit();
             this.Pannel_main.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Img_Warning)).BeginInit();
@@ -303,7 +303,7 @@ namespace GSMS
             this.txt_Mobile.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.txt_Mobile.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Mobile.Location = new System.Drawing.Point(261, 290);
-            this.txt_Mobile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Mobile.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Mobile.Name = "txt_Mobile";
             this.txt_Mobile.PasswordChar = '\0';
             this.txt_Mobile.PlaceholderText = "";
@@ -325,7 +325,7 @@ namespace GSMS
             this.Txt_RollNo.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.Txt_RollNo.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Txt_RollNo.Location = new System.Drawing.Point(261, 100);
-            this.Txt_RollNo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Txt_RollNo.Margin = new System.Windows.Forms.Padding(4);
             this.Txt_RollNo.Name = "Txt_RollNo";
             this.Txt_RollNo.PasswordChar = '\0';
             this.Txt_RollNo.PlaceholderText = "";
@@ -347,7 +347,7 @@ namespace GSMS
             this.txt_Name.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.txt_Name.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Name.Location = new System.Drawing.Point(259, 32);
-            this.txt_Name.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txt_Name.Margin = new System.Windows.Forms.Padding(4);
             this.txt_Name.Name = "txt_Name";
             this.txt_Name.PasswordChar = '\0';
             this.txt_Name.PlaceholderText = "";
@@ -359,7 +359,7 @@ namespace GSMS
             // 
             this.Img_Warning.Image = global::GSMS.Properties.Resources._1243910;
             this.Img_Warning.ImageRotate = 0F;
-            this.Img_Warning.Location = new System.Drawing.Point(927, 377);
+            this.Img_Warning.Location = new System.Drawing.Point(978, 379);
             this.Img_Warning.Name = "Img_Warning";
             this.Img_Warning.Size = new System.Drawing.Size(24, 20);
             this.Img_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -369,11 +369,11 @@ namespace GSMS
             // Label_warning
             // 
             this.Label_warning.AutoSize = true;
-            this.Label_warning.Font = new System.Drawing.Font("Microsoft JhengHei UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Label_warning.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Label_warning.ForeColor = System.Drawing.SystemColors.Control;
             this.Label_warning.Location = new System.Drawing.Point(632, 379);
             this.Label_warning.Name = "Label_warning";
-            this.Label_warning.Size = new System.Drawing.Size(289, 18);
+            this.Label_warning.Size = new System.Drawing.Size(340, 23);
             this.Label_warning.TabIndex = 42;
             this.Label_warning.Text = "Teacher only access the student mark list";
             // 
@@ -920,26 +920,34 @@ namespace GSMS
             this.minimize_btn.TabIndex = 83;
             this.minimize_btn.Click += new System.EventHandler(this.minimize_btn_Click);
             // 
-            // btn_close
+            // Close_Timer
             // 
-            this.btn_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btn_close.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.btn_close.CustomIconSize = 15F;
-            this.btn_close.FillColor = System.Drawing.Color.Transparent;
-            this.btn_close.IconColor = System.Drawing.Color.Black;
-            this.btn_close.Location = new System.Drawing.Point(1707, 12);
-            this.btn_close.Name = "btn_close";
-            this.btn_close.Size = new System.Drawing.Size(31, 28);
-            this.btn_close.TabIndex = 82;
-            this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
+            this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
+            // 
+            // Btn_Close
+            // 
+            this.Btn_Close.CustomImages.Image = global::GSMS.Properties.Resources.Close_Icon;
+            this.Btn_Close.CustomImages.ImageSize = new System.Drawing.Size(15, 15);
+            this.Btn_Close.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Close.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Close.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_Close.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_Close.FillColor = System.Drawing.Color.Transparent;
+            this.Btn_Close.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Btn_Close.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Close.Location = new System.Drawing.Point(1704, 12);
+            this.Btn_Close.Name = "Btn_Close";
+            this.Btn_Close.Size = new System.Drawing.Size(34, 28);
+            this.Btn_Close.TabIndex = 91;
+            this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
             // Student
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
             this.ClientSize = new System.Drawing.Size(1750, 885);
+            this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.minimize_btn);
-            this.Controls.Add(this.btn_close);
             this.Controls.Add(this.HeadderPannel);
             this.Controls.Add(this.Panel_Navigation);
             this.Controls.Add(this.Pannel_main);
@@ -991,7 +999,6 @@ namespace GSMS
         private System.Windows.Forms.Label label_Student_details;
         private Guna.UI2.WinForms.Guna2TextBox txt_searchteacher;
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
-        private Guna.UI2.WinForms.Guna2ControlBox btn_close;
         private System.Windows.Forms.Label Label_warning;
         private Guna.UI2.WinForms.Guna2PictureBox Img_Warning;
         private Guna.UI2.WinForms.Guna2TextBox Txt_Address;
@@ -1007,5 +1014,6 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2ComboBox Combo_Standrad;
         private Guna.UI2.WinForms.Guna2ComboBox Combo_Section;
         private Guna.UI2.WinForms.Guna2ComboBox Combo_BloodGrp;
+        private Guna.UI2.WinForms.Guna2Button Btn_Close;
     }
 }

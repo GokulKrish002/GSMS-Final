@@ -19,6 +19,7 @@ namespace GSMS
         public Student()
         {
             InitializeComponent();
+            RefreshTbl();
         }
 
         public void RefreshTbl()
@@ -26,7 +27,7 @@ namespace GSMS
             try
             {
                 SqlConnection connection = StudentCon.connect();
-                SqlCommand cmd = new SqlCommand("Student_tbl_View", connection);
+                SqlCommand cmd = new SqlCommand("Student_View", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlDataAdapter d = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -42,15 +43,15 @@ namespace GSMS
         }
         public void ClearTextBox()
         {
-            Combo_BloodGrp.Text = "";
+            Combo_BloodGrp.Items.Clear();
             txt_Mobile.Text = "";
             txt_Name.Text = "";
             Txt_Address.Text = "";
             Txt_Date.Text = "";
-            Txt_Gender.Text = "";
+            Txt_Gender.Items.Clear();
             Txt_RollNo.Text = "";
-            Combo_Section.Text = "";
-            Combo_Standrad.Text = "";
+            Combo_Section.Items.Clear();
+            Combo_Standrad.Items.Clear();
         }
 
         private void btn_Insert_Click(object sender, EventArgs e)
@@ -157,7 +158,7 @@ namespace GSMS
             {
                 SqlCommand cmd = new SqlCommand("Student_tbl_Delete",connection);
                 cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Student_Roll",SqlDbType.Int);
+                SqlParameter param1 = new SqlParameter("@Roll",SqlDbType.Int);
                 cmd.Parameters.Add(param1).Value = Txt_RollNo.Text;
                 int i = cmd.ExecuteNonQuery();
                 connection.Close();
@@ -195,7 +196,8 @@ namespace GSMS
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("wait there is an server error");
+
             }
         }
 
@@ -308,18 +310,6 @@ namespace GSMS
             }
         }
 
-        private void btn_close_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                Application.Exit();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-        }
-
         private void btn_View_Click(object sender, EventArgs e)
         {
             RefreshTbl();
@@ -337,6 +327,24 @@ namespace GSMS
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void Close_Timer_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity >= 0)
+            {
+                this.Opacity -= 0.7;
+            }
+            else
+            {
+                Close_Timer.Stop();
+                Application.Exit();
+            }
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Close_Timer.Start();
         }
     }
 }

@@ -19,6 +19,7 @@ namespace GSMS
         public Library()
         {
             InitializeComponent();
+            TableRefresh();
         }
 
         public void TextClear()
@@ -33,14 +34,21 @@ namespace GSMS
         }
         public void TableRefresh()
         {
-            SqlConnection connection = LibraryCon.connect();
-            SqlCommand cmd = new SqlCommand("StudentMarklist_View", connection);
-            cmd.CommandType = CommandType.StoredProcedure;
-            SqlDataAdapter d = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            d.Fill(dt);
-            txt_GridLibrary.DataSource = dt;
-            connection.Close();
+            try
+            {
+                SqlConnection connection = LibraryCon.connect();
+                SqlCommand cmd = new SqlCommand("Library_View", connection);
+                cmd.CommandType = CommandType.StoredProcedure;
+                SqlDataAdapter d = new SqlDataAdapter(cmd);
+                DataTable dt = new DataTable();
+                d.Fill(dt);
+                txt_GridLibrary.DataSource = dt;
+                connection.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void Btn_add_Click(object sender, EventArgs e)
@@ -52,9 +60,9 @@ namespace GSMS
                 SqlParameter param1 = new SqlParameter("@Book_Name", SqlDbType.VarChar);
                 cmd.Parameters.Add(param1).Value = txt_Name.Text;
                 SqlParameter param2 = new SqlParameter("@Rack", SqlDbType.Int);
-                cmd.Parameters.Add(param2).Value = txt_Rack.Text;
+                cmd.Parameters.Add(param2).Value = Combo_Rack.Text;
                 SqlParameter param3 = new SqlParameter("@Shelves", SqlDbType.Int);
-                cmd.Parameters.Add(param3).Value = txt_Shelves.Text;
+                cmd.Parameters.Add(param3).Value = Combo_Shelves.Text;
                 SqlParameter param4 = new SqlParameter("@Author", SqlDbType.VarChar);
                 cmd.Parameters.Add(param4).Value = txt_Author.Text;
                 SqlParameter param5 = new SqlParameter("@Borrowed_Books", SqlDbType.VarChar);
@@ -183,11 +191,6 @@ namespace GSMS
             }
         }
 
-        private void close_btn_Click_1(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void Btn_Students_Click(object sender, EventArgs e)
         {
             try
@@ -260,6 +263,29 @@ namespace GSMS
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void view_btn_Click(object sender, EventArgs e)
+        {
+            TableRefresh();  
+        }
+
+        private void Btn_Close_Click(object sender, EventArgs e)
+        {
+            Close_Timer.Start();
+        }
+
+        private void Close_Timer_Tick(object sender, EventArgs e)
+        {
+            if (this.Opacity >= 0)
+            {
+                this.Opacity -= 0.7;
+            }
+            else
+            {
+                Close_Timer.Stop();
+                Application.Exit();
             }
         }
     }

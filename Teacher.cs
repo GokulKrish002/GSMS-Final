@@ -17,6 +17,7 @@ namespace GSMS
         public Teacher()
         {
             InitializeComponent();
+            TableRefresh();
         }
         DBConnection LibraryCon = new DBConnection();
 

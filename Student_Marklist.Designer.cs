@@ -30,9 +30,9 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.StudentMarkGrid = new Guna.UI2.WinForms.Guna2DataGridView();
             this.studentMarklisttblBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -79,8 +79,8 @@ namespace GSMS
             this.btn_Insert = new Guna.UI2.WinForms.Guna2Button();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.close_btn = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.Close_Timer = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.Close_Timer = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.StudentMarkGrid)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.studentMarklisttblBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gsms_dbDataSet1)).BeginInit();
@@ -91,6 +91,7 @@ namespace GSMS
             ((System.ComponentModel.ISupportInitialize)(this.Img_Student_Logo)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
+            this.guna2Panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2BorderlessForm1
@@ -105,59 +106,59 @@ namespace GSMS
             this.StudentMarkGrid.AllowUserToDeleteRows = false;
             this.StudentMarkGrid.AllowUserToResizeColumns = false;
             this.StudentMarkGrid.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
-            this.StudentMarkGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black;
+            this.StudentMarkGrid.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.StudentMarkGrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.StudentMarkGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.StudentMarkGrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.StudentMarkGrid.ColumnHeadersHeight = 15;
             this.StudentMarkGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.StudentMarkGrid.DefaultCellStyle = dataGridViewCellStyle3;
-            this.StudentMarkGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.StudentMarkGrid.Location = new System.Drawing.Point(284, 614);
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.StudentMarkGrid.DefaultCellStyle = dataGridViewCellStyle6;
+            this.StudentMarkGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.StudentMarkGrid.Location = new System.Drawing.Point(24, 423);
             this.StudentMarkGrid.Margin = new System.Windows.Forms.Padding(4);
             this.StudentMarkGrid.Name = "StudentMarkGrid";
             this.StudentMarkGrid.ReadOnly = true;
             this.StudentMarkGrid.RowHeadersVisible = false;
             this.StudentMarkGrid.RowHeadersWidth = 51;
             this.StudentMarkGrid.RowTemplate.Height = 24;
-            this.StudentMarkGrid.Size = new System.Drawing.Size(1311, 258);
+            this.StudentMarkGrid.Size = new System.Drawing.Size(1418, 258);
             this.StudentMarkGrid.TabIndex = 40;
-            this.StudentMarkGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Light;
-            this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(249)))));
+            this.StudentMarkGrid.Theme = Guna.UI2.WinForms.Enums.DataGridViewPresetThemes.Blue;
+            this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(189)))), ((int)(((byte)(223)))), ((int)(((byte)(251)))));
             this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.Font = null;
             this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Black;
             this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
             this.StudentMarkGrid.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
             this.StudentMarkGrid.ThemeStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(225)))), ((int)(((byte)(239)))), ((int)(((byte)(255)))));
-            this.StudentMarkGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(179)))), ((int)(((byte)(230)))), ((int)(((byte)(251)))));
-            this.StudentMarkGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(234)))), ((int)(((byte)(237)))));
+            this.StudentMarkGrid.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(187)))), ((int)(((byte)(222)))), ((int)(((byte)(251)))));
+            this.StudentMarkGrid.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(242)))));
             this.StudentMarkGrid.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.StudentMarkGrid.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentMarkGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black;
+            this.StudentMarkGrid.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.StudentMarkGrid.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.StudentMarkGrid.ThemeStyle.HeaderStyle.Height = 15;
             this.StudentMarkGrid.ThemeStyle.ReadOnly = true;
-            this.StudentMarkGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.StudentMarkGrid.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             this.StudentMarkGrid.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.StudentMarkGrid.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.StudentMarkGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.StudentMarkGrid.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.StudentMarkGrid.ThemeStyle.RowsStyle.Height = 24;
-            this.StudentMarkGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(87)))), ((int)(((byte)(197)))), ((int)(((byte)(247)))));
+            this.StudentMarkGrid.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
             this.StudentMarkGrid.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
             // studentMarklisttblBindingSource
@@ -244,7 +245,7 @@ namespace GSMS
             this.txt_searchteacher.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_searchteacher.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_searchteacher.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_searchteacher.Font = new System.Drawing.Font("Segoe UI Symbol", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_searchteacher.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
             this.txt_searchteacher.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_searchteacher.IconLeft = global::GSMS.Properties.Resources._1251067;
             this.txt_searchteacher.IconLeftSize = new System.Drawing.Size(25, 25);
@@ -365,11 +366,11 @@ namespace GSMS
             // 
             this.label_Name.AutoSize = true;
             this.label_Name.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.label_Name.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Name.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Name.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Name.Location = new System.Drawing.Point(314, 206);
             this.label_Name.Name = "label_Name";
-            this.label_Name.Size = new System.Drawing.Size(98, 34);
+            this.label_Name.Size = new System.Drawing.Size(96, 38);
             this.label_Name.TabIndex = 125;
             this.label_Name.Text = "NAME";
             // 
@@ -377,11 +378,11 @@ namespace GSMS
             // 
             this.label_Hindi.AutoSize = true;
             this.label_Hindi.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.label_Hindi.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Hindi.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Hindi.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Hindi.Location = new System.Drawing.Point(314, 510);
             this.label_Hindi.Name = "label_Hindi";
-            this.label_Hindi.Size = new System.Drawing.Size(107, 34);
+            this.label_Hindi.Size = new System.Drawing.Size(93, 38);
             this.label_Hindi.TabIndex = 123;
             this.label_Hindi.Text = "HINDI";
             // 
@@ -389,11 +390,11 @@ namespace GSMS
             // 
             this.label_Science.AutoSize = true;
             this.label_Science.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.label_Science.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Science.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Science.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Science.Location = new System.Drawing.Point(314, 454);
             this.label_Science.Name = "label_Science";
-            this.label_Science.Size = new System.Drawing.Size(141, 34);
+            this.label_Science.Size = new System.Drawing.Size(130, 38);
             this.label_Science.TabIndex = 122;
             this.label_Science.Text = "SCIENCE";
             // 
@@ -401,11 +402,11 @@ namespace GSMS
             // 
             this.label_Maths.AutoSize = true;
             this.label_Maths.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.label_Maths.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Maths.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Maths.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Maths.Location = new System.Drawing.Point(314, 394);
             this.label_Maths.Name = "label_Maths";
-            this.label_Maths.Size = new System.Drawing.Size(115, 34);
+            this.label_Maths.Size = new System.Drawing.Size(110, 38);
             this.label_Maths.TabIndex = 121;
             this.label_Maths.Text = "MATHS";
             // 
@@ -413,11 +414,11 @@ namespace GSMS
             // 
             this.label_English.AutoSize = true;
             this.label_English.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.label_English.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_English.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_English.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_English.Location = new System.Drawing.Point(314, 330);
             this.label_English.Name = "label_English";
-            this.label_English.Size = new System.Drawing.Size(144, 34);
+            this.label_English.Size = new System.Drawing.Size(135, 38);
             this.label_English.TabIndex = 124;
             this.label_English.Text = "ENGLISH";
             // 
@@ -425,11 +426,11 @@ namespace GSMS
             // 
             this.label_Tamil.AutoSize = true;
             this.label_Tamil.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
-            this.label_Tamil.Font = new System.Drawing.Font("Tahoma", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_Tamil.Font = new System.Drawing.Font("Trebuchet MS", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_Tamil.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label_Tamil.Location = new System.Drawing.Point(314, 265);
             this.label_Tamil.Name = "label_Tamil";
-            this.label_Tamil.Size = new System.Drawing.Size(106, 34);
+            this.label_Tamil.Size = new System.Drawing.Size(99, 38);
             this.label_Tamil.TabIndex = 120;
             this.label_Tamil.Text = "TAMIL";
             // 
@@ -603,9 +604,10 @@ namespace GSMS
             this.Name_Text.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Name_Text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Name_Text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Name_Text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Name_Text.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name_Text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Name_Text.Location = new System.Drawing.Point(533, 199);
+            this.Name_Text.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name_Text.Name = "Name_Text";
             this.Name_Text.PasswordChar = '\0';
             this.Name_Text.PlaceholderText = "";
@@ -624,9 +626,10 @@ namespace GSMS
             this.Tamil_Text.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Tamil_Text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Tamil_Text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Tamil_Text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Tamil_Text.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Tamil_Text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Tamil_Text.Location = new System.Drawing.Point(533, 261);
+            this.Tamil_Text.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Tamil_Text.Name = "Tamil_Text";
             this.Tamil_Text.PasswordChar = '\0';
             this.Tamil_Text.PlaceholderText = "";
@@ -645,9 +648,10 @@ namespace GSMS
             this.Eng_Text.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Eng_Text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Eng_Text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Eng_Text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Eng_Text.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Eng_Text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Eng_Text.Location = new System.Drawing.Point(533, 322);
+            this.Eng_Text.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Eng_Text.Name = "Eng_Text";
             this.Eng_Text.PasswordChar = '\0';
             this.Eng_Text.PlaceholderText = "";
@@ -666,9 +670,10 @@ namespace GSMS
             this.Maths_Text.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Maths_Text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Maths_Text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Maths_Text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Maths_Text.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Maths_Text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Maths_Text.Location = new System.Drawing.Point(533, 386);
+            this.Maths_Text.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Maths_Text.Name = "Maths_Text";
             this.Maths_Text.PasswordChar = '\0';
             this.Maths_Text.PlaceholderText = "";
@@ -687,9 +692,10 @@ namespace GSMS
             this.Science_Text.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Science_Text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Science_Text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Science_Text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Science_Text.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Science_Text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Science_Text.Location = new System.Drawing.Point(533, 446);
+            this.Science_Text.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Science_Text.Name = "Science_Text";
             this.Science_Text.PasswordChar = '\0';
             this.Science_Text.PlaceholderText = "";
@@ -708,9 +714,10 @@ namespace GSMS
             this.Hindi_Text.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Hindi_Text.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Hindi_Text.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Hindi_Text.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Hindi_Text.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Hindi_Text.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Hindi_Text.Location = new System.Drawing.Point(533, 509);
+            this.Hindi_Text.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Hindi_Text.Name = "Hindi_Text";
             this.Hindi_Text.PasswordChar = '\0';
             this.Hindi_Text.PlaceholderText = "";
@@ -729,9 +736,10 @@ namespace GSMS
             this.Total_Txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Total_Txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Total_Txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Total_Txt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Total_Txt.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Total_Txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Total_Txt.Location = new System.Drawing.Point(1341, 199);
+            this.Total_Txt.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Total_Txt.Name = "Total_Txt";
             this.Total_Txt.PasswordChar = '\0';
             this.Total_Txt.PlaceholderText = "";
@@ -750,9 +758,10 @@ namespace GSMS
             this.Avg_Txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Avg_Txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Avg_Txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Avg_Txt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Avg_Txt.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Avg_Txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Avg_Txt.Location = new System.Drawing.Point(1341, 261);
+            this.Avg_Txt.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Avg_Txt.Name = "Avg_Txt";
             this.Avg_Txt.PasswordChar = '\0';
             this.Avg_Txt.PlaceholderText = "";
@@ -771,9 +780,10 @@ namespace GSMS
             this.Grade_Txt.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Grade_Txt.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.Grade_Txt.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Grade_Txt.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Grade_Txt.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Grade_Txt.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.Grade_Txt.Location = new System.Drawing.Point(1341, 322);
+            this.Grade_Txt.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Grade_Txt.Name = "Grade_Txt";
             this.Grade_Txt.PasswordChar = '\0';
             this.Grade_Txt.PlaceholderText = "";
@@ -792,9 +802,10 @@ namespace GSMS
             this.txt_ID.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_ID.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_ID.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_ID.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_ID.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_ID.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_ID.Location = new System.Drawing.Point(1341, 386);
+            this.txt_ID.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.PasswordChar = '\0';
             this.txt_ID.PlaceholderText = "";
@@ -858,10 +869,15 @@ namespace GSMS
             // guna2Panel1
             // 
             this.guna2Panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(101)))), ((int)(((byte)(149)))), ((int)(((byte)(221)))));
+            this.guna2Panel1.Controls.Add(this.StudentMarkGrid);
             this.guna2Panel1.Location = new System.Drawing.Point(260, 162);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(1463, 695);
             this.guna2Panel1.TabIndex = 142;
+            // 
+            // Close_Timer
+            // 
+            this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick_1);
             // 
             // Student_Marklist
             // 
@@ -882,7 +898,6 @@ namespace GSMS
             this.Controls.Add(this.Tamil_Text);
             this.Controls.Add(this.Name_Text);
             this.Controls.Add(this.guna2Panel4);
-            this.Controls.Add(this.StudentMarkGrid);
             this.Controls.Add(this.label_Avg);
             this.Controls.Add(this.label_Total);
             this.Controls.Add(this.label_StudentId);
@@ -919,6 +934,7 @@ namespace GSMS
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
+            this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -971,8 +987,8 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2Button btn_Insert;
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
         private Guna.UI2.WinForms.Guna2ControlBox close_btn;
-        private System.Windows.Forms.Timer Close_Timer;
         private Guna.UI2.WinForms.Guna2Button Btn_Home;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
+        private System.Windows.Forms.Timer Close_Timer;
     }
 }

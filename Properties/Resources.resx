@@ -121,6 +121,9 @@
   <data name="teachers info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\teachers info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Dashboard_GSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Dashboard_GSMS.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1252284" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1252284.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -133,11 +136,14 @@
   <data name="Account_Logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Account_Logo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1248252" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\12482521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="208821" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\208821.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="1242850" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1242850.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1248252" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\12482521.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Teaching" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Teaching.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -184,9 +190,6 @@
   <data name="1243910" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1243910.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="208821" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\208821.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Student logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Student logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -199,7 +202,7 @@
   <data name="library icons" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\library icons.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Dashboard_GSMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Dashboard_GSMS.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Close_Icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Close_Icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
