@@ -43,8 +43,6 @@ namespace GSMS
             this.txt_Mobile = new Guna.UI2.WinForms.Guna2TextBox();
             this.Txt_RollNo = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Name = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Img_Warning = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Label_warning = new System.Windows.Forms.Label();
             this.label_BloodGroup = new System.Windows.Forms.Label();
             this.Txt_Gender = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Txt_Date = new Guna.UI2.WinForms.Guna2DateTimePicker();
@@ -81,7 +79,6 @@ namespace GSMS
             this.Btn_Close = new Guna.UI2.WinForms.Guna2Button();
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).BeginInit();
             this.Pannel_main.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Img_Warning)).BeginInit();
             this.Panel_Navigation.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
             this.HeadderPannel.SuspendLayout();
@@ -105,7 +102,7 @@ namespace GSMS
             dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Student_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
-            this.Student_GridView.ColumnHeadersHeight = 4;
+            this.Student_GridView.ColumnHeadersHeight = 24;
             this.Student_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
@@ -138,7 +135,7 @@ namespace GSMS
             this.Student_GridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Student_GridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.Student_GridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.Student_GridView.ThemeStyle.HeaderStyle.Height = 4;
+            this.Student_GridView.ThemeStyle.HeaderStyle.Height = 24;
             this.Student_GridView.ThemeStyle.ReadOnly = true;
             this.Student_GridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             this.Student_GridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -165,8 +162,6 @@ namespace GSMS
             this.Pannel_main.Controls.Add(this.txt_Mobile);
             this.Pannel_main.Controls.Add(this.Txt_RollNo);
             this.Pannel_main.Controls.Add(this.txt_Name);
-            this.Pannel_main.Controls.Add(this.Img_Warning);
-            this.Pannel_main.Controls.Add(this.Label_warning);
             this.Pannel_main.Controls.Add(this.label_BloodGroup);
             this.Pannel_main.Controls.Add(this.Txt_Gender);
             this.Pannel_main.Controls.Add(this.Txt_Date);
@@ -354,28 +349,6 @@ namespace GSMS
             this.txt_Name.SelectedText = "";
             this.txt_Name.Size = new System.Drawing.Size(264, 46);
             this.txt_Name.TabIndex = 86;
-            // 
-            // Img_Warning
-            // 
-            this.Img_Warning.Image = global::GSMS.Properties.Resources._1243910;
-            this.Img_Warning.ImageRotate = 0F;
-            this.Img_Warning.Location = new System.Drawing.Point(978, 379);
-            this.Img_Warning.Name = "Img_Warning";
-            this.Img_Warning.Size = new System.Drawing.Size(24, 20);
-            this.Img_Warning.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Img_Warning.TabIndex = 85;
-            this.Img_Warning.TabStop = false;
-            // 
-            // Label_warning
-            // 
-            this.Label_warning.AutoSize = true;
-            this.Label_warning.Font = new System.Drawing.Font("Trebuchet MS", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Label_warning.ForeColor = System.Drawing.SystemColors.Control;
-            this.Label_warning.Location = new System.Drawing.Point(632, 379);
-            this.Label_warning.Name = "Label_warning";
-            this.Label_warning.Size = new System.Drawing.Size(340, 23);
-            this.Label_warning.TabIndex = 42;
-            this.Label_warning.Text = "Teacher only access the student mark list";
             // 
             // label_BloodGroup
             // 
@@ -900,7 +873,7 @@ namespace GSMS
             this.txt_searchteacher.Name = "txt_searchteacher";
             this.txt_searchteacher.PasswordChar = '\0';
             this.txt_searchteacher.PlaceholderForeColor = System.Drawing.Color.DarkGray;
-            this.txt_searchteacher.PlaceholderText = "Search";
+            this.txt_searchteacher.PlaceholderText = "Search Student ID";
             this.txt_searchteacher.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.txt_searchteacher.SelectedText = "";
             this.txt_searchteacher.Size = new System.Drawing.Size(319, 40);
@@ -958,7 +931,6 @@ namespace GSMS
             ((System.ComponentModel.ISupportInitialize)(this.Student_GridView)).EndInit();
             this.Pannel_main.ResumeLayout(false);
             this.Pannel_main.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Img_Warning)).EndInit();
             this.Panel_Navigation.ResumeLayout(false);
             this.Panel_Navigation.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
@@ -999,8 +971,6 @@ namespace GSMS
         private System.Windows.Forms.Label label_Student_details;
         private Guna.UI2.WinForms.Guna2TextBox txt_searchteacher;
         private Guna.UI2.WinForms.Guna2ControlBox minimize_btn;
-        private System.Windows.Forms.Label Label_warning;
-        private Guna.UI2.WinForms.Guna2PictureBox Img_Warning;
         private Guna.UI2.WinForms.Guna2TextBox Txt_Address;
         private Guna.UI2.WinForms.Guna2TextBox txt_Mobile;
         private Guna.UI2.WinForms.Guna2TextBox Txt_RollNo;

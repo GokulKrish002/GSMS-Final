@@ -33,10 +33,16 @@ namespace GSMS
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.middlePannel = new Guna.UI2.WinForms.Guna2Panel();
+            this.label_Tips = new System.Windows.Forms.Label();
+            this.Combo_Shelves = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.Combo_Rack = new Guna.UI2.WinForms.Guna2ComboBox();
             this.view_btn = new Guna.UI2.WinForms.Guna2Button();
             this.Img_Library = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.txt_Borrowed = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.Combo_Borrowed = new Guna.UI2.WinForms.Guna2ComboBox();
             this.txt_BookId = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Author = new Guna.UI2.WinForms.Guna2TextBox();
             this.txt_Name = new Guna.UI2.WinForms.Guna2TextBox();
@@ -76,10 +82,9 @@ namespace GSMS
             this.label9 = new System.Windows.Forms.Label();
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
-            this.Combo_Rack = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.Combo_Shelves = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Btn_Close = new Guna.UI2.WinForms.Guna2Button();
-            this.label_Tips = new System.Windows.Forms.Label();
+            this.Label_TTLBook = new System.Windows.Forms.Label();
+            this.TBook_Count = new Guna.UI2.WinForms.Guna2DataGridView();
             this.middlePannel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Img_Library)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GridLibrary)).BeginInit();
@@ -89,6 +94,7 @@ namespace GSMS
             ((System.ComponentModel.ISupportInitialize)(this.pic_library)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBook_Count)).BeginInit();
             this.SuspendLayout();
             // 
             // middlePannel
@@ -96,12 +102,14 @@ namespace GSMS
             this.middlePannel.BackColor = System.Drawing.Color.Transparent;
             this.middlePannel.BorderRadius = 20;
             this.middlePannel.BorderThickness = 10;
+            this.middlePannel.Controls.Add(this.TBook_Count);
+            this.middlePannel.Controls.Add(this.Label_TTLBook);
             this.middlePannel.Controls.Add(this.label_Tips);
             this.middlePannel.Controls.Add(this.Combo_Shelves);
             this.middlePannel.Controls.Add(this.Combo_Rack);
             this.middlePannel.Controls.Add(this.view_btn);
             this.middlePannel.Controls.Add(this.Img_Library);
-            this.middlePannel.Controls.Add(this.txt_Borrowed);
+            this.middlePannel.Controls.Add(this.Combo_Borrowed);
             this.middlePannel.Controls.Add(this.txt_BookId);
             this.middlePannel.Controls.Add(this.txt_Author);
             this.middlePannel.Controls.Add(this.txt_Name);
@@ -125,6 +133,66 @@ namespace GSMS
             this.middlePannel.Size = new System.Drawing.Size(1445, 693);
             this.middlePannel.TabIndex = 39;
             // 
+            // label_Tips
+            // 
+            this.label_Tips.AutoSize = true;
+            this.label_Tips.Location = new System.Drawing.Point(947, 390);
+            this.label_Tips.Name = "label_Tips";
+            this.label_Tips.Size = new System.Drawing.Size(248, 17);
+            this.label_Tips.TabIndex = 87;
+            this.label_Tips.Text = "Delete,Update,Remove Using Book ID";
+            // 
+            // Combo_Shelves
+            // 
+            this.Combo_Shelves.BackColor = System.Drawing.Color.Transparent;
+            this.Combo_Shelves.BorderRadius = 10;
+            this.Combo_Shelves.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Combo_Shelves.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Combo_Shelves.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Combo_Shelves.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Combo_Shelves.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Combo_Shelves.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.Combo_Shelves.ItemHeight = 30;
+            this.Combo_Shelves.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7"});
+            this.Combo_Shelves.Location = new System.Drawing.Point(1022, 191);
+            this.Combo_Shelves.Name = "Combo_Shelves";
+            this.Combo_Shelves.Size = new System.Drawing.Size(345, 36);
+            this.Combo_Shelves.TabIndex = 86;
+            // 
+            // Combo_Rack
+            // 
+            this.Combo_Rack.BackColor = System.Drawing.Color.Transparent;
+            this.Combo_Rack.BorderRadius = 10;
+            this.Combo_Rack.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Combo_Rack.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Combo_Rack.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Combo_Rack.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Combo_Rack.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Combo_Rack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.Combo_Rack.ItemHeight = 30;
+            this.Combo_Rack.Items.AddRange(new object[] {
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10"});
+            this.Combo_Rack.Location = new System.Drawing.Point(1021, 149);
+            this.Combo_Rack.Name = "Combo_Rack";
+            this.Combo_Rack.Size = new System.Drawing.Size(346, 36);
+            this.Combo_Rack.TabIndex = 85;
+            // 
             // view_btn
             // 
             this.view_btn.AccessibleName = "view_btn";
@@ -138,7 +206,7 @@ namespace GSMS
             this.view_btn.ForeColor = System.Drawing.Color.White;
             this.view_btn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.view_btn.ImageSize = new System.Drawing.Size(22, 22);
-            this.view_btn.Location = new System.Drawing.Point(1098, 535);
+            this.view_btn.Location = new System.Drawing.Point(1110, 487);
             this.view_btn.Name = "view_btn";
             this.view_btn.Size = new System.Drawing.Size(191, 49);
             this.view_btn.TabIndex = 84;
@@ -157,24 +225,24 @@ namespace GSMS
             this.Img_Library.TabIndex = 12;
             this.Img_Library.TabStop = false;
             // 
-            // txt_Borrowed
+            // Combo_Borrowed
             // 
-            this.txt_Borrowed.BackColor = System.Drawing.Color.Transparent;
-            this.txt_Borrowed.BorderRadius = 10;
-            this.txt_Borrowed.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.txt_Borrowed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.txt_Borrowed.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Borrowed.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txt_Borrowed.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.txt_Borrowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.txt_Borrowed.ItemHeight = 30;
-            this.txt_Borrowed.Items.AddRange(new object[] {
+            this.Combo_Borrowed.BackColor = System.Drawing.Color.Transparent;
+            this.Combo_Borrowed.BorderRadius = 10;
+            this.Combo_Borrowed.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.Combo_Borrowed.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.Combo_Borrowed.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Combo_Borrowed.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Combo_Borrowed.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.Combo_Borrowed.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.Combo_Borrowed.ItemHeight = 30;
+            this.Combo_Borrowed.Items.AddRange(new object[] {
             "Yes",
             "No"});
-            this.txt_Borrowed.Location = new System.Drawing.Point(1021, 275);
-            this.txt_Borrowed.Name = "txt_Borrowed";
-            this.txt_Borrowed.Size = new System.Drawing.Size(346, 36);
-            this.txt_Borrowed.TabIndex = 11;
+            this.Combo_Borrowed.Location = new System.Drawing.Point(1021, 275);
+            this.Combo_Borrowed.Name = "Combo_Borrowed";
+            this.Combo_Borrowed.Size = new System.Drawing.Size(346, 36);
+            this.Combo_Borrowed.TabIndex = 11;
             // 
             // txt_BookId
             // 
@@ -195,6 +263,7 @@ namespace GSMS
             this.txt_BookId.SelectedText = "";
             this.txt_BookId.Size = new System.Drawing.Size(345, 36);
             this.txt_BookId.TabIndex = 10;
+            this.txt_BookId.TextChanged += new System.EventHandler(this.txt_BookId_TextChanged);
             // 
             // txt_Author
             // 
@@ -264,7 +333,7 @@ namespace GSMS
             this.Btn_Remove.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.Btn_Remove.HoverState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Remove.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Remove.Location = new System.Drawing.Point(816, 535);
+            this.Btn_Remove.Location = new System.Drawing.Point(828, 487);
             this.Btn_Remove.Name = "Btn_Remove";
             this.Btn_Remove.Size = new System.Drawing.Size(191, 49);
             this.Btn_Remove.TabIndex = 4;
@@ -309,7 +378,7 @@ namespace GSMS
             this.Btn_Update.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.Btn_Update.HoverState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_Update.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Update.Location = new System.Drawing.Point(1098, 440);
+            this.Btn_Update.Location = new System.Drawing.Point(1110, 421);
             this.Btn_Update.Name = "Btn_Update";
             this.Btn_Update.Size = new System.Drawing.Size(191, 47);
             this.Btn_Update.TabIndex = 3;
@@ -343,7 +412,7 @@ namespace GSMS
             this.Btn_add.HoverState.FillColor = System.Drawing.Color.WhiteSmoke;
             this.Btn_add.HoverState.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Btn_add.HoverState.ForeColor = System.Drawing.Color.Black;
-            this.Btn_add.Location = new System.Drawing.Point(816, 440);
+            this.Btn_add.Location = new System.Drawing.Point(828, 421);
             this.Btn_add.Name = "Btn_add";
             this.Btn_add.Size = new System.Drawing.Size(191, 49);
             this.Btn_add.TabIndex = 2;
@@ -413,7 +482,7 @@ namespace GSMS
             dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
             dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black;
             dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -445,7 +514,7 @@ namespace GSMS
             this.txt_GridLibrary.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             this.txt_GridLibrary.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.txt_GridLibrary.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_GridLibrary.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.Black;
+            this.txt_GridLibrary.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.txt_GridLibrary.ThemeStyle.RowsStyle.Height = 24;
             this.txt_GridLibrary.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(107)))), ((int)(((byte)(185)))), ((int)(((byte)(246)))));
             this.txt_GridLibrary.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
@@ -756,57 +825,6 @@ namespace GSMS
             this.minimize_btn.TabIndex = 81;
             this.minimize_btn.Click += new System.EventHandler(this.minimize_btn_Click);
             // 
-            // Combo_Rack
-            // 
-            this.Combo_Rack.BackColor = System.Drawing.Color.Transparent;
-            this.Combo_Rack.BorderRadius = 10;
-            this.Combo_Rack.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Combo_Rack.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Combo_Rack.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Combo_Rack.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Combo_Rack.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Combo_Rack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.Combo_Rack.ItemHeight = 30;
-            this.Combo_Rack.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7",
-            "8",
-            "9",
-            "10"});
-            this.Combo_Rack.Location = new System.Drawing.Point(1021, 149);
-            this.Combo_Rack.Name = "Combo_Rack";
-            this.Combo_Rack.Size = new System.Drawing.Size(346, 36);
-            this.Combo_Rack.TabIndex = 85;
-            // 
-            // Combo_Shelves
-            // 
-            this.Combo_Shelves.BackColor = System.Drawing.Color.Transparent;
-            this.Combo_Shelves.BorderRadius = 10;
-            this.Combo_Shelves.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.Combo_Shelves.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.Combo_Shelves.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Combo_Shelves.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Combo_Shelves.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.Combo_Shelves.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.Combo_Shelves.ItemHeight = 30;
-            this.Combo_Shelves.Items.AddRange(new object[] {
-            "1",
-            "2",
-            "3",
-            "4",
-            "5",
-            "6",
-            "7"});
-            this.Combo_Shelves.Location = new System.Drawing.Point(1022, 191);
-            this.Combo_Shelves.Name = "Combo_Shelves";
-            this.Combo_Shelves.Size = new System.Drawing.Size(345, 36);
-            this.Combo_Shelves.TabIndex = 86;
-            // 
             // Btn_Close
             // 
             this.Btn_Close.CustomImages.Image = global::GSMS.Properties.Resources.Close_Icon;
@@ -824,14 +842,66 @@ namespace GSMS
             this.Btn_Close.TabIndex = 91;
             this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
-            // label_Tips
+            // Label_TTLBook
             // 
-            this.label_Tips.AutoSize = true;
-            this.label_Tips.Location = new System.Drawing.Point(935, 409);
-            this.label_Tips.Name = "label_Tips";
-            this.label_Tips.Size = new System.Drawing.Size(248, 17);
-            this.label_Tips.TabIndex = 87;
-            this.label_Tips.Text = "Delete,Update,Remove Using Book ID";
+            this.Label_TTLBook.AutoSize = true;
+            this.Label_TTLBook.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Label_TTLBook.Location = new System.Drawing.Point(819, 567);
+            this.Label_TTLBook.Name = "Label_TTLBook";
+            this.Label_TTLBook.Size = new System.Drawing.Size(210, 29);
+            this.Label_TTLBook.TabIndex = 88;
+            this.Label_TTLBook.Text = "Number Of Book";
+            // 
+            // TBook_Count
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TBook_Count.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.TBook_Count.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TBook_Count.DefaultCellStyle = dataGridViewCellStyle3;
+            this.TBook_Count.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TBook_Count.Location = new System.Drawing.Point(1108, 567);
+            this.TBook_Count.Name = "TBook_Count";
+            this.TBook_Count.RowHeadersVisible = false;
+            this.TBook_Count.RowHeadersWidth = 51;
+            this.TBook_Count.RowTemplate.Height = 24;
+            this.TBook_Count.Size = new System.Drawing.Size(199, 83);
+            this.TBook_Count.TabIndex = 89;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.TBook_Count.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TBook_Count.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TBook_Count.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.TBook_Count.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBook_Count.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.TBook_Count.ThemeStyle.HeaderStyle.Height = 4;
+            this.TBook_Count.ThemeStyle.ReadOnly = false;
+            this.TBook_Count.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.TBook_Count.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBook_Count.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.Control;
+            this.TBook_Count.ThemeStyle.RowsStyle.Height = 24;
+            this.TBook_Count.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TBook_Count.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             // 
             // Library
             // 
@@ -860,6 +930,7 @@ namespace GSMS
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.TBook_Count)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -882,7 +953,7 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2TextBox txt_Name;
         private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
         private System.Windows.Forms.Timer Close_Timer;
-        private Guna.UI2.WinForms.Guna2ComboBox txt_Borrowed;
+        private Guna.UI2.WinForms.Guna2ComboBox Combo_Borrowed;
         private System.Windows.Forms.Label label_Borrowed;
         private gsms_dbDataSet gsms_dbDataSet;
         private System.Windows.Forms.BindingSource librarytblBindingSource;
@@ -912,6 +983,8 @@ namespace GSMS
         private Guna.UI2.WinForms.Guna2ComboBox Combo_Rack;
         private Guna.UI2.WinForms.Guna2Button Btn_Close;
         private System.Windows.Forms.Label label_Tips;
+        private System.Windows.Forms.Label Label_TTLBook;
+        private Guna.UI2.WinForms.Guna2DataGridView TBook_Count;
     }
 }
 

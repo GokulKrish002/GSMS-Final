@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GSMS.App_Code
 {
-    class Validate
+    class Validation
     {
         //validation for email
         public bool ValidateEmail(string email)

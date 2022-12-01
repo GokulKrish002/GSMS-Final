@@ -15,6 +15,7 @@ namespace GSMS
     public partial class Student_Marklist : Form
     {
         DBConnection StudentMarklistCon = new DBConnection();
+        Validation validate = new Validation();
         public Student_Marklist()
         {
             InitializeComponent();

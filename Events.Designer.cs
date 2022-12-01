@@ -94,7 +94,7 @@ namespace GSMS
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.Event_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.Event_GridView.ColumnHeadersHeight = 4;
+            this.Event_GridView.ColumnHeadersHeight = 24;
             this.Event_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
@@ -127,7 +127,7 @@ namespace GSMS
             this.Event_GridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Event_GridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.Event_GridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.Event_GridView.ThemeStyle.HeaderStyle.Height = 4;
+            this.Event_GridView.ThemeStyle.HeaderStyle.Height = 24;
             this.Event_GridView.ThemeStyle.ReadOnly = true;
             this.Event_GridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(211)))), ((int)(((byte)(233)))), ((int)(((byte)(252)))));
             this.Event_GridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
@@ -236,6 +236,7 @@ namespace GSMS
             this.txt_EventName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_EventName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_EventName.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txt_EventName.ForeColor = System.Drawing.Color.Black;
             this.txt_EventName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_EventName.Location = new System.Drawing.Point(460, 179);
             this.txt_EventName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -529,6 +530,7 @@ namespace GSMS
             this.txt_Eventid.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
             this.txt_Eventid.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Eventid.Font = new System.Drawing.Font("Trebuchet MS", 13.8F, System.Drawing.FontStyle.Bold);
+            this.txt_Eventid.ForeColor = System.Drawing.Color.Black;
             this.txt_Eventid.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txt_Eventid.Location = new System.Drawing.Point(461, 240);
             this.txt_Eventid.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

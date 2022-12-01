@@ -19,10 +19,14 @@ namespace GSMS
             InitializeComponent();
         }
         DBConnection LoginCon = new DBConnection();
-        Validate validation = new Validate();
+        Validation validation = new Validation();
         private void Btn_Submit_Click(object sender, EventArgs e)
         {
-            try
+            Index obj = new Index();
+            obj.Show();
+            this.Hide();
+
+            /*try
             {
                 bool input1, input2;
 
@@ -82,7 +86,7 @@ namespace GSMS
             catch (Exception ex)
             {
                 MessageBox.Show("There is an error while converting your message " + ex);
-            }
+            }*/
 
         }
 
