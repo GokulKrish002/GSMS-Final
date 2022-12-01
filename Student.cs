@@ -24,9 +24,9 @@ namespace GSMS
 
         public void RefreshTbl()
         {
+            SqlConnection connection = StudentCon.connect();
             try
             {
-                SqlConnection connection = StudentCon.connect();
                 SqlCommand cmd = new SqlCommand("Student_View", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlDataAdapter d = new SqlDataAdapter(cmd);
@@ -37,28 +37,29 @@ namespace GSMS
             }
             catch(Exception ex)
             {
+                connection.Close();
                 MessageBox.Show(ex.Message);
             }
             
         }
         public void ClearTextBox()
         {
-            Combo_BloodGrp.Items.Clear();
+            Combo_BloodGrp.SelectedIndex = -1;
             txt_Mobile.Text = "";
             txt_Name.Text = "";
             Txt_Address.Text = "";
             Txt_Date.Text = "";
-            Txt_Gender.Items.Clear();
+            Txt_Gender.SelectedIndex = -1;
             Txt_RollNo.Text = "";
-            Combo_Section.Items.Clear();
-            Combo_Standrad.Items.Clear();
+            Combo_Section.SelectedIndex = -1; 
+            Combo_Standrad.SelectedIndex = -1;
         }
 
         private void btn_Insert_Click(object sender, EventArgs e)
         {
+            SqlConnection connection = StudentCon.connect();
             try
             {
-                SqlConnection connection = StudentCon.connect();
                 SqlCommand cmd = new SqlCommand("Student_tbl_insert", connection);
                 cmd.CommandType = CommandType.StoredProcedure;
                 SqlParameter param1 = new SqlParameter("@Name", SqlDbType.VarChar);
@@ -87,17 +88,19 @@ namespace GSMS
                 }
                 else
                 {
-                    MessageBox.Show("There is an problem..");
+                    MessageBox.Show("There is an problem while inserting");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                connection.Close();
             }
             finally
             {
                 RefreshTbl();
                 ClearTextBox();
+                connection.Close();
             }
          
         }
@@ -137,17 +140,19 @@ namespace GSMS
                 }
                 else
                 {
-                    MessageBox.Show("Success");
+                    MessageBox.Show("here is an problem while inserting");
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                connection.Close();
             }
             finally
             {
                 RefreshTbl();
                 ClearTextBox();
+                connection.Close();
             }
         }
 
@@ -168,25 +173,28 @@ namespace GSMS
                 }
                 else
                 {
-                    MessageBox.Show("Failure");
+                    MessageBox.Show("here is an problem while inserting");
+                    connection.Close();
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("wait there is an server error " + ex.Message);
+                connection.Close();
             }
             finally
             {
                 RefreshTbl();
                 ClearTextBox();
+                connection.Close();
             }
         }
 
         private void txt_searchteacher_TextChanged(object sender, EventArgs e)
         {
+            SqlConnection connection = StudentCon.connect();
             try
             {
-                SqlConnection connection = StudentCon.connect();
                 SqlCommand cmd = new SqlCommand("select * from Student_tbl where Roll like '%"+txt_searchteacher.Text+"%'", connection);
                 SqlDataAdapter d = new SqlDataAdapter(cmd);
                 DataTable dt = new DataTable();
@@ -196,8 +204,8 @@ namespace GSMS
             }
             catch (Exception ex)
             {
-                MessageBox.Show("wait there is an server error");
-
+                MessageBox.Show("wait there is an server error" + ex);
+                connection.Close();
             }
         }
 
@@ -337,8 +345,8 @@ namespace GSMS
             }
             else
             {
-                Close_Timer.Stop();
                 Application.Exit();
+                Close_Timer.Stop();
             }
         }
 

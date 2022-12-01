@@ -28,9 +28,9 @@ namespace GSMS
             txt_Borrowed.Text = "";
             txt_GridLibrary.Text = "";
             txt_Name.Text = "";
-            txt_Rack.Text = "";
+            Combo_Rack.SelectedIndex = -1 ;
             txt_Search.Text = "";
-            txt_Shelves.Text = "";
+            Combo_Shelves.SelectedIndex = -1;
         }
         public void TableRefresh()
         {
@@ -68,6 +68,7 @@ namespace GSMS
                 SqlParameter param5 = new SqlParameter("@Borrowed_Books", SqlDbType.VarChar);
                 cmd.Parameters.Add(param5).Value = txt_Borrowed.Text;
                 int i = cmd.ExecuteNonQuery();
+                connection.Close();
                 if (i != 0)
                 {
                     MessageBox.Show("executed successfully...");
@@ -116,9 +117,9 @@ namespace GSMS
                 SqlParameter param1 = new SqlParameter("@Book_Name", SqlDbType.VarChar);
                 cmd.Parameters.Add(param1).Value = txt_Name.Text;
                 SqlParameter param2 = new SqlParameter("@Rack", SqlDbType.Int);
-                cmd.Parameters.Add(param2).Value = txt_Rack.Text;
+                cmd.Parameters.Add(param2).Value = Combo_Rack.Text;
                 SqlParameter param3 = new SqlParameter("@Shelves", SqlDbType.Int);
-                cmd.Parameters.Add(param3).Value = txt_Shelves.Text;
+                cmd.Parameters.Add(param3).Value = Combo_Shelves.Text;
                 SqlParameter param4 = new SqlParameter("@Author", SqlDbType.VarChar);
                 cmd.Parameters.Add(param4).Value = txt_Author.Text;
                 SqlParameter param5 = new SqlParameter("@Borrowed_Books", SqlDbType.VarChar);

@@ -67,7 +67,7 @@ namespace GSMS
                         }
                         else
                         {
-                            MessageBox.Show("There is an server error.! try again Later");
+                            MessageBox.Show("Please enter the Valid Information !");
                         }
                     }
                     catch (Exception ex)
