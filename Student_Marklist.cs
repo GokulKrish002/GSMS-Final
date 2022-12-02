@@ -151,6 +151,7 @@ namespace GSMS
                 SqlParameter param7 = new SqlParameter("@Student_id", SqlDbType.Int);
                 cmd.Parameters.Add(param7).Value = txt_ID.Text;
                 int i = cmd.ExecuteNonQuery();
+                connection.Close();
                 if (i != 0)
                 {
                     MessageBox.Show("success");
@@ -158,17 +159,21 @@ namespace GSMS
                 else
                 {
                     MessageBox.Show(" Failuer");
+                    connection.Close();
                 }
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
+                connection.Close();
             }
             finally
             {
                 TableRefresh();
                 TextClean();
+                connection.Close();
             }
+            connection.Close();
         }
 
         private void Btn_print_Click(object sender, EventArgs e)
@@ -312,10 +317,3 @@ namespace GSMS
         }
     }
 }
-
-
-
-
-
-
-     

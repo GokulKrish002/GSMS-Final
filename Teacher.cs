@@ -81,11 +81,11 @@ namespace GSMS
             }
             else if (txt_designation.Text.Length < 1)
             {
-                MessageBox.Show("Please enter a valid Staff !");
+                MessageBox.Show("Please enter a valid Designation !");
             }
             else if (email == false || txt_email.Text.Length < 1)
             {
-                MessageBox.Show("Please enter a valid Staff !");
+                MessageBox.Show("Please enter a valid Email !");
             }
             else
             {
@@ -178,6 +178,7 @@ namespace GSMS
 
                 try
                 {
+                    connection.Open();
                     SqlCommand cmd = new SqlCommand("Staff_tbl_update", connection);
                     cmd.CommandType = CommandType.StoredProcedure;
                     SqlParameter param1 = new SqlParameter("@Full_name", SqlDbType.VarChar);
@@ -193,6 +194,7 @@ namespace GSMS
                     SqlParameter param6 = new SqlParameter("@Email", SqlDbType.VarChar);
                     cmd.Parameters.Add(param6).Value = txt_email.Text;
                     int i = cmd.ExecuteNonQuery();
+                    connection.Close();
                     if (i != 0)
                     {
                         MessageBox.Show("executed successfully...");
@@ -206,13 +208,16 @@ namespace GSMS
                 catch (Exception ex)
                 {
                     MessageBox.Show(ex.Message);
+                    connection.Close();
                 }
                 finally
                 {
                     TextClear();
                     TableRefresh();
+                    connection.Close();
                 }
             }
+            connection.Close();
         }
         private void delete_btn_Click(object sender, EventArgs e)
         {
