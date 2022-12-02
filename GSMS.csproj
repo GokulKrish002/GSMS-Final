@@ -32,6 +32,12 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>GSMS_icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>GSMS.Program</StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="FontAwesome.Sharp, Version=6.1.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
       <HintPath>packages\FontAwesome.Sharp.6.1.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
@@ -212,6 +218,7 @@
     <None Include="Resources\book.gif" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="GSMS_icon.ico" />
     <Content Include="Resources\1000_F_323039861_2tKzvHTbbmwmF1ZSzcxGlZKrHruJHBDA-removebg-preview.png" />
     <None Include="Resources\teachers info.png" />
     <None Include="Resources\1202881.png" />
@@ -246,6 +253,7 @@
     <None Include="Resources\gsms login1.gif" />
     <Content Include="Resources\GSMS logo.gif" />
     <Content Include="Resources\GSMS.gif.gif" />
+    <None Include="Resources\GSMS_DashboardLogo.ico" />
     <Content Include="Resources\key_53876-59981-removebg-preview.png" />
     <Content Include="Resources\key_53876-59981-removebg-preview1.png" />
     <Content Include="Resources\landing_form.gif" />
