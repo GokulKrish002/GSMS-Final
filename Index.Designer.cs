@@ -30,30 +30,31 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Index));
             this.label_Dashboard = new System.Windows.Forms.Label();
             this.HeadderPannel = new Sipaa.Framework.SPanel();
+            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label_CopyRight = new System.Windows.Forms.Label();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Panel_Navigate = new Sipaa.Framework.SPanel();
-            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
-            this.gunaAreaDataset1 = new Guna.Charts.WinForms.GunaAreaDataset();
-            this.gunaPieDataset1 = new Guna.Charts.WinForms.GunaPieDataset();
-            this.Close_Timer = new System.Windows.Forms.Timer(this.components);
-            this.Btn_Close = new Guna.UI2.WinForms.Guna2Button();
-            this.Pannel_Dashboard = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.Btn_Logout = new FontAwesome.Sharp.IconButton();
-            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Btn_Events = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Library = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Teachers = new Guna.UI2.WinForms.Guna2Button();
             this.Btn_Students = new Guna.UI2.WinForms.Guna2Button();
             this.Gsms_Logo = new Guna.UI2.WinForms.Guna2PictureBox();
             this.Home_btn = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
+            this.gunaAreaDataset1 = new Guna.Charts.WinForms.GunaAreaDataset();
+            this.gunaPieDataset1 = new Guna.Charts.WinForms.GunaPieDataset();
+            this.Close_Timer = new System.Windows.Forms.Timer(this.components);
+            this.Btn_Close = new Guna.UI2.WinForms.Guna2Button();
+            this.Pannel_Dashboard = new Guna.UI2.WinForms.Guna2PictureBox();
             this.HeadderPannel.SuspendLayout();
-            this.Panel_Navigate.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pannel_Dashboard)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            this.Panel_Navigate.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Gsms_Logo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pannel_Dashboard)).BeginInit();
             this.SuspendLayout();
             // 
             // label_Dashboard
@@ -83,6 +84,36 @@ namespace GSMS
             this.HeadderPannel.Name = "HeadderPannel";
             this.HeadderPannel.Size = new System.Drawing.Size(1422, 73);
             this.HeadderPannel.TabIndex = 87;
+            // 
+            // Btn_Logout
+            // 
+            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
+            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
+            this.Btn_Logout.IconColor = System.Drawing.Color.White;
+            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.Btn_Logout.IconSize = 30;
+            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
+            this.Btn_Logout.Location = new System.Drawing.Point(1258, 13);
+            this.Btn_Logout.Name = "Btn_Logout";
+            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
+            this.Btn_Logout.TabIndex = 91;
+            this.Btn_Logout.Text = "LOG OUT    ";
+            this.Btn_Logout.UseVisualStyleBackColor = false;
+            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
+            // 
+            // guna2PictureBox2
+            // 
+            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = global::GSMS.Properties.Resources.Account_Logo;
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(43, 9);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(52, 59);
+            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox2.TabIndex = 60;
+            this.guna2PictureBox2.TabStop = false;
             // 
             // label_CopyRight
             // 
@@ -127,86 +158,6 @@ namespace GSMS
             this.Panel_Navigate.Name = "Panel_Navigate";
             this.Panel_Navigate.Size = new System.Drawing.Size(223, 885);
             this.Panel_Navigate.TabIndex = 85;
-            // 
-            // guna2BorderlessForm1
-            // 
-            this.guna2BorderlessForm1.ContainerControl = this;
-            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
-            this.guna2BorderlessForm1.TransparentWhileDrag = true;
-            // 
-            // gunaAreaDataset1
-            // 
-            this.gunaAreaDataset1.BorderColor = System.Drawing.Color.Empty;
-            this.gunaAreaDataset1.FillColor = System.Drawing.Color.Empty;
-            this.gunaAreaDataset1.Label = "Area1";
-            // 
-            // gunaPieDataset1
-            // 
-            this.gunaPieDataset1.Label = "Pie1";
-            // 
-            // Close_Timer
-            // 
-            this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
-            // 
-            // Btn_Close
-            // 
-            this.Btn_Close.CustomImages.Image = global::GSMS.Properties.Resources.Close_Icon;
-            this.Btn_Close.CustomImages.ImageSize = new System.Drawing.Size(15, 15);
-            this.Btn_Close.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Close.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Btn_Close.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Btn_Close.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Btn_Close.FillColor = System.Drawing.Color.Transparent;
-            this.Btn_Close.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.Btn_Close.ForeColor = System.Drawing.Color.Black;
-            this.Btn_Close.Location = new System.Drawing.Point(1704, 12);
-            this.Btn_Close.Name = "Btn_Close";
-            this.Btn_Close.Size = new System.Drawing.Size(34, 28);
-            this.Btn_Close.TabIndex = 90;
-            this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
-            // 
-            // Pannel_Dashboard
-            // 
-            this.Pannel_Dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.Pannel_Dashboard.Image = global::GSMS.Properties.Resources.Dashboard_GSMS;
-            this.Pannel_Dashboard.ImageRotate = 0F;
-            this.Pannel_Dashboard.Location = new System.Drawing.Point(273, 152);
-            this.Pannel_Dashboard.Name = "Pannel_Dashboard";
-            this.Pannel_Dashboard.Size = new System.Drawing.Size(1422, 694);
-            this.Pannel_Dashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.Pannel_Dashboard.TabIndex = 60;
-            this.Pannel_Dashboard.TabStop = false;
-            // 
-            // Btn_Logout
-            // 
-            this.Btn_Logout.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(145)))), ((int)(((byte)(77)))));
-            this.Btn_Logout.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Btn_Logout.ForeColor = System.Drawing.Color.White;
-            this.Btn_Logout.IconChar = FontAwesome.Sharp.IconChar.SignOut;
-            this.Btn_Logout.IconColor = System.Drawing.Color.White;
-            this.Btn_Logout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.Btn_Logout.IconSize = 30;
-            this.Btn_Logout.ImageAlign = System.Drawing.ContentAlignment.BottomRight;
-            this.Btn_Logout.Location = new System.Drawing.Point(1258, 13);
-            this.Btn_Logout.Name = "Btn_Logout";
-            this.Btn_Logout.Size = new System.Drawing.Size(138, 41);
-            this.Btn_Logout.TabIndex = 91;
-            this.Btn_Logout.Text = "LOG OUT    ";
-            this.Btn_Logout.UseVisualStyleBackColor = false;
-            this.Btn_Logout.Click += new System.EventHandler(this.Btn_Logout_Click);
-            // 
-            // guna2PictureBox2
-            // 
-            this.guna2PictureBox2.FillColor = System.Drawing.Color.Transparent;
-            this.guna2PictureBox2.Image = global::GSMS.Properties.Resources.Account_Logo;
-            this.guna2PictureBox2.ImageRotate = 0F;
-            this.guna2PictureBox2.Location = new System.Drawing.Point(43, 9);
-            this.guna2PictureBox2.Name = "guna2PictureBox2";
-            this.guna2PictureBox2.Size = new System.Drawing.Size(52, 59);
-            this.guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox2.TabIndex = 60;
-            this.guna2PictureBox2.TabStop = false;
             // 
             // Btn_Events
             // 
@@ -326,6 +277,56 @@ namespace GSMS
             this.Home_btn.Tag = "Home";
             this.Home_btn.Text = "DASHBOARD";
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
+            // gunaAreaDataset1
+            // 
+            this.gunaAreaDataset1.BorderColor = System.Drawing.Color.Empty;
+            this.gunaAreaDataset1.FillColor = System.Drawing.Color.Empty;
+            this.gunaAreaDataset1.Label = "Area1";
+            // 
+            // gunaPieDataset1
+            // 
+            this.gunaPieDataset1.Label = "Pie1";
+            // 
+            // Close_Timer
+            // 
+            this.Close_Timer.Tick += new System.EventHandler(this.Close_Timer_Tick);
+            // 
+            // Btn_Close
+            // 
+            this.Btn_Close.CustomImages.Image = global::GSMS.Properties.Resources.Close_Icon;
+            this.Btn_Close.CustomImages.ImageSize = new System.Drawing.Size(15, 15);
+            this.Btn_Close.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Close.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Btn_Close.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Btn_Close.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.Btn_Close.FillColor = System.Drawing.Color.Transparent;
+            this.Btn_Close.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.Btn_Close.ForeColor = System.Drawing.Color.Black;
+            this.Btn_Close.Location = new System.Drawing.Point(1704, 12);
+            this.Btn_Close.Name = "Btn_Close";
+            this.Btn_Close.Size = new System.Drawing.Size(34, 28);
+            this.Btn_Close.TabIndex = 90;
+            this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
+            // 
+            // Pannel_Dashboard
+            // 
+            this.Pannel_Dashboard.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.Pannel_Dashboard.Image = global::GSMS.Properties.Resources.Dashboard_GSMS;
+            this.Pannel_Dashboard.ImageRotate = 0F;
+            this.Pannel_Dashboard.Location = new System.Drawing.Point(273, 152);
+            this.Pannel_Dashboard.Name = "Pannel_Dashboard";
+            this.Pannel_Dashboard.Size = new System.Drawing.Size(1422, 694);
+            this.Pannel_Dashboard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.Pannel_Dashboard.TabIndex = 60;
+            this.Pannel_Dashboard.TabStop = false;
+            // 
             // Index
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -339,17 +340,18 @@ namespace GSMS
             this.Controls.Add(this.Panel_Navigate);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.MinimumSize = new System.Drawing.Size(1750, 885);
             this.Name = "Index";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.HeadderPannel.ResumeLayout(false);
             this.HeadderPannel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             this.Panel_Navigate.ResumeLayout(false);
             this.Panel_Navigate.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Pannel_Dashboard)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Gsms_Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pannel_Dashboard)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -30,13 +30,16 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Library));
             this.middlePannel = new Guna.UI2.WinForms.Guna2Panel();
+            this.TBook_Count = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.Label_TTLBook = new System.Windows.Forms.Label();
             this.label_Tips = new System.Windows.Forms.Label();
             this.Combo_Shelves = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Combo_Rack = new Guna.UI2.WinForms.Guna2ComboBox();
@@ -83,9 +86,8 @@ namespace GSMS
             this.logo_pic = new Guna.UI2.WinForms.Guna2PictureBox();
             this.minimize_btn = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Btn_Close = new Guna.UI2.WinForms.Guna2Button();
-            this.Label_TTLBook = new System.Windows.Forms.Label();
-            this.TBook_Count = new Guna.UI2.WinForms.Guna2DataGridView();
             this.middlePannel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TBook_Count)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img_Library)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GridLibrary)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.librarytblBindingSource)).BeginInit();
@@ -94,7 +96,6 @@ namespace GSMS
             ((System.ComponentModel.ISupportInitialize)(this.pic_library)).BeginInit();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TBook_Count)).BeginInit();
             this.SuspendLayout();
             // 
             // middlePannel
@@ -132,6 +133,68 @@ namespace GSMS
             this.middlePannel.Name = "middlePannel";
             this.middlePannel.Size = new System.Drawing.Size(1445, 693);
             this.middlePannel.TabIndex = 39;
+            // 
+            // TBook_Count
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.TBook_Count.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.TBook_Count.ColumnHeadersHeight = 4;
+            this.TBook_Count.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.TBook_Count.DefaultCellStyle = dataGridViewCellStyle3;
+            this.TBook_Count.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TBook_Count.Location = new System.Drawing.Point(1108, 567);
+            this.TBook_Count.Name = "TBook_Count";
+            this.TBook_Count.RowHeadersVisible = false;
+            this.TBook_Count.RowHeadersWidth = 51;
+            this.TBook_Count.RowTemplate.Height = 24;
+            this.TBook_Count.Size = new System.Drawing.Size(199, 83);
+            this.TBook_Count.TabIndex = 89;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.TBook_Count.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TBook_Count.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.TBook_Count.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.TBook_Count.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBook_Count.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.TBook_Count.ThemeStyle.HeaderStyle.Height = 4;
+            this.TBook_Count.ThemeStyle.ReadOnly = false;
+            this.TBook_Count.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.TBook_Count.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.TBook_Count.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TBook_Count.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.Control;
+            this.TBook_Count.ThemeStyle.RowsStyle.Height = 24;
+            this.TBook_Count.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.TBook_Count.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // Label_TTLBook
+            // 
+            this.Label_TTLBook.AutoSize = true;
+            this.Label_TTLBook.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
+            this.Label_TTLBook.Location = new System.Drawing.Point(819, 567);
+            this.Label_TTLBook.Name = "Label_TTLBook";
+            this.Label_TTLBook.Size = new System.Drawing.Size(210, 29);
+            this.Label_TTLBook.TabIndex = 88;
+            this.Label_TTLBook.Text = "Number Of Book";
             // 
             // label_Tips
             // 
@@ -842,67 +905,6 @@ namespace GSMS
             this.Btn_Close.TabIndex = 91;
             this.Btn_Close.Click += new System.EventHandler(this.Btn_Close_Click);
             // 
-            // Label_TTLBook
-            // 
-            this.Label_TTLBook.AutoSize = true;
-            this.Label_TTLBook.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold);
-            this.Label_TTLBook.Location = new System.Drawing.Point(819, 567);
-            this.Label_TTLBook.Name = "Label_TTLBook";
-            this.Label_TTLBook.Size = new System.Drawing.Size(210, 29);
-            this.Label_TTLBook.TabIndex = 88;
-            this.Label_TTLBook.Text = "Number Of Book";
-            // 
-            // TBook_Count
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.TBook_Count.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.TBook_Count.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.TBook_Count.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.TBook_Count.DefaultCellStyle = dataGridViewCellStyle3;
-            this.TBook_Count.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.TBook_Count.Location = new System.Drawing.Point(1108, 567);
-            this.TBook_Count.Name = "TBook_Count";
-            this.TBook_Count.RowHeadersVisible = false;
-            this.TBook_Count.RowHeadersWidth = 51;
-            this.TBook_Count.RowTemplate.Height = 24;
-            this.TBook_Count.Size = new System.Drawing.Size(199, 83);
-            this.TBook_Count.TabIndex = 89;
-            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.TBook_Count.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.TBook_Count.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.TBook_Count.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.TBook_Count.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TBook_Count.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.TBook_Count.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBook_Count.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.TBook_Count.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.TBook_Count.ThemeStyle.HeaderStyle.Height = 4;
-            this.TBook_Count.ThemeStyle.ReadOnly = false;
-            this.TBook_Count.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.TBook_Count.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.TBook_Count.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TBook_Count.ThemeStyle.RowsStyle.ForeColor = System.Drawing.SystemColors.Control;
-            this.TBook_Count.ThemeStyle.RowsStyle.Height = 24;
-            this.TBook_Count.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.TBook_Count.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
             // Library
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -915,11 +917,13 @@ namespace GSMS
             this.Controls.Add(this.ribbenPannel);
             this.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "Library";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.middlePannel.ResumeLayout(false);
             this.middlePannel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.TBook_Count)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Img_Library)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.txt_GridLibrary)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.librarytblBindingSource)).EndInit();
@@ -930,7 +934,6 @@ namespace GSMS
             this.guna2Panel4.ResumeLayout(false);
             this.guna2Panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logo_pic)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.TBook_Count)).EndInit();
             this.ResumeLayout(false);
 
         }

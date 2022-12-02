@@ -22,11 +22,8 @@ namespace GSMS
         Validation validation = new Validation();
         private void Btn_Submit_Click(object sender, EventArgs e)
         {
-            Index obj = new Index();
-            obj.Show();
-            this.Hide();
 
-            /*try
+            try
             {
                 bool input1, input2;
 
@@ -86,7 +83,7 @@ namespace GSMS
             catch (Exception ex)
             {
                 MessageBox.Show("There is an error while converting your message " + ex);
-            }*/
+            }
 
         }
 

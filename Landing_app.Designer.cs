@@ -30,6 +30,7 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Landing_app));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Btn_Minimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Btn_Close = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -105,6 +106,7 @@ namespace GSMS
             this.Controls.Add(this.Btn_Sign_in);
             this.Controls.Add(this.guna2PictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Landing_app";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Landing_app";

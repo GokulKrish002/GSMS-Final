@@ -30,6 +30,7 @@ namespace GSMS
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.Btn_Minimize = new Guna.UI2.WinForms.Guna2ControlBox();
             this.Btn_Close = new Guna.UI2.WinForms.Guna2ControlBox();
@@ -143,9 +144,9 @@ namespace GSMS
             // 
             this.Animated_Picture.Image = global::GSMS.Properties.Resources.gsms_login;
             this.Animated_Picture.ImageRotate = 0F;
-            this.Animated_Picture.Location = new System.Drawing.Point(0, -1);
+            this.Animated_Picture.Location = new System.Drawing.Point(0, -3);
             this.Animated_Picture.Name = "Animated_Picture";
-            this.Animated_Picture.Size = new System.Drawing.Size(1198, 729);
+            this.Animated_Picture.Size = new System.Drawing.Size(1198, 731);
             this.Animated_Picture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Animated_Picture.TabIndex = 10;
             this.Animated_Picture.TabStop = false;
@@ -175,6 +176,7 @@ namespace GSMS
             this.Controls.Add(this.Btn_Close);
             this.Controls.Add(this.Animated_Picture);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
