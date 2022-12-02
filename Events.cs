@@ -36,114 +36,161 @@ namespace GSMS
         {
             txt_EventName.Text = "";
             txt_EventDiscription.Text = "";
+            txt_Eventid.Text = "";
         }
 
 
         private void Btn_Delete_Click(object sender, EventArgs e)
         {
-           
-            try
+            SqlConnection connection = EventCon.connect();
+
+            if (txt_Eventid.Text.Length < 4)
             {
-                SqlConnection connection = EventCon.connect();
-                SqlCommand cmd = new SqlCommand("Event_delete", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Event_id", SqlDbType.Int);
-                cmd.Parameters.Add(param1).Value = txt_Eventid.Text;
-                int i = cmd.ExecuteNonQuery();
-                connection.Close();
-                if (i != 0)
+                MessageBox.Show("Please enter a valid event ID !");
+            }
+            else
+            {
+                try
                 {
-                    MessageBox.Show("Success");
+                    SqlCommand cmd = new SqlCommand("Event_delete", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlParameter param1 = new SqlParameter("@Event_id", SqlDbType.Int);
+                    cmd.Parameters.Add(param1).Value = txt_Eventid.Text;
+                    int i = cmd.ExecuteNonQuery();
+                    connection.Close();
+                    if (i != 0)
+                    {
+                        MessageBox.Show("Success");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Success");
+                        connection.Close();
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Success");
+                    MessageBox.Show(ex.Message);
+                    connection.Close();
+                }
+                finally
+                {
+                    TextClear();
+                    TableRefresh();
+                    connection.Close();
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                TextClear();
-                TableRefresh();
-            }
-            
+            connection.Close();
         }
 
         private void Btn_Update_Click(object sender, EventArgs e)
         {
-            
-            try
+            SqlConnection connection = EventCon.connect();
+
+            if (txt_EventName.Text.Length < 4)
             {
-                SqlConnection connection = EventCon.connect();
-                SqlCommand cmd = new SqlCommand("Event_update", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Event_Name", SqlDbType.VarChar);
-                cmd.Parameters.Add(param1).Value = txt_EventName.Text;
-                SqlParameter param2 = new SqlParameter("@Event_Discription", SqlDbType.VarChar);
-                cmd.Parameters.Add(param2).Value = txt_EventDiscription.Text;
-                SqlParameter param3 = new SqlParameter("@Event_Date", SqlDbType.Date);
-                cmd.Parameters.Add(param3).Value = date_EventDate.Text;
-                SqlParameter param4 = new SqlParameter("@Event_id", SqlDbType.Int);
-                cmd.Parameters.Add(param4).Value = txt_Eventid.Text;
-                int i = cmd.ExecuteNonQuery();
-                connection.Close();
-                if (i != 0)
+                MessageBox.Show("Please enter a valid event Name !");
+            }
+            else if (txt_EventDiscription.Text.Length < 5)
+            {
+                MessageBox.Show("Please enter a valid event Discription Name !");
+            }
+            else if (txt_Eventid.Text.Length < 1)
+            {
+                MessageBox.Show("Please enter a valid event ID !");
+            }
+            else
+            {
+                try
                 {
-                    MessageBox.Show("Success");
+
+                    SqlCommand cmd = new SqlCommand("Event_update", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlParameter param1 = new SqlParameter("@Event_Name", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param1).Value = txt_EventName.Text;
+                    SqlParameter param2 = new SqlParameter("@Event_Discription", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param2).Value = txt_EventDiscription.Text;
+                    SqlParameter param3 = new SqlParameter("@Event_Date", SqlDbType.Date);
+                    cmd.Parameters.Add(param3).Value = date_EventDate.Text;
+                    SqlParameter param4 = new SqlParameter("@Event_id", SqlDbType.Int);
+                    cmd.Parameters.Add(param4).Value = txt_Eventid.Text;
+                    int i = cmd.ExecuteNonQuery();
+                    connection.Close();
+                    if (i != 0)
+                    {
+                        MessageBox.Show("Success");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Success");
+                        connection.Close();
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Success");
+                    MessageBox.Show(ex.Message);
+                    connection.Close();
+                }
+                finally
+                {
+                    TextClear();
+                    TableRefresh();
+                    connection.Close();
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                TextClear();
-                TableRefresh();
-            }
+            connection.Close();
         }
 
         private void Btn_Add_Click(object sender, EventArgs e)
         {
-            
-            try
+            SqlConnection connection = EventCon.connect();
+
+            if (txt_EventName.Text.Length < 4)
             {
-                SqlConnection connection = EventCon.connect();
-                SqlCommand cmd = new SqlCommand("Event_insert", connection);
-                cmd.CommandType = CommandType.StoredProcedure;
-                SqlParameter param1 = new SqlParameter("@Event_Name", SqlDbType.VarChar);
-                cmd.Parameters.Add(param1).Value = txt_EventName.Text;
-                SqlParameter param2 = new SqlParameter("@Event_Discription", SqlDbType.VarChar);
-                cmd.Parameters.Add(param2).Value = txt_EventDiscription.Text;
-                SqlParameter param3 = new SqlParameter("@Event_Date", SqlDbType.Date);
-                cmd.Parameters.Add(param3).Value = date_EventDate.Text;
-                int i = cmd.ExecuteNonQuery();
-                connection.Close();
-                if (i != 0)
+                MessageBox.Show("Please enter a valid event Name !");
+            }
+            else if (txt_EventDiscription.Text.Length < 5)
+            {
+                MessageBox.Show("Please enter a valid event Discription Name !");
+            }
+            else
+            {
+                try
                 {
-                    MessageBox.Show("Success");
+
+                    SqlCommand cmd = new SqlCommand("Event_insert", connection);
+                    cmd.CommandType = CommandType.StoredProcedure;
+                    SqlParameter param1 = new SqlParameter("@Event_Name", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param1).Value = txt_EventName.Text;
+                    SqlParameter param2 = new SqlParameter("@Event_Discription", SqlDbType.VarChar);
+                    cmd.Parameters.Add(param2).Value = txt_EventDiscription.Text;
+                    SqlParameter param3 = new SqlParameter("@Event_Date", SqlDbType.Date);
+                    cmd.Parameters.Add(param3).Value = date_EventDate.Text;
+                    int i = cmd.ExecuteNonQuery();
+                    connection.Close();
+                    if (i != 0)
+                    {
+                        MessageBox.Show("Event Inserted");
+                    }
+                    else
+                    {
+                        MessageBox.Show("There is a problem while inserting");
+                        connection.Close();
+                    }
                 }
-                else
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Success");
+                    MessageBox.Show(ex.Message);
+                    connection.Close();
+                }
+                finally
+                {
+                    TextClear();
+                    TableRefresh();
+                    connection.Close();
                 }
             }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
-            finally
-            {
-                TextClear();
-                TableRefresh();
-            }
+            connection.Close();
         }
 
         private void Home_btn_Click_1(object sender, EventArgs e)
